@@ -1,0 +1,15 @@
+{
+  "files.associations": {
+    "*.csd": "xml",
+    "qcoreapplication": "cpp",
+    "qdebug": "cpp",
+    "qtwebsockets": "cpp",
+    "qlist": "cpp",
+    "quuid": "cpp",
+    "qhash": "cpp",
+    "qtcore": "cpp",
+    "qwebsocket": "cpp",
+    "qobject": "cpp",
+    "qwebsocketserver": "cpp"
+  }
+}
