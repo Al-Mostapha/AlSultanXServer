@@ -10,6 +10,27 @@
     "qtcore": "cpp",
     "qwebsocket": "cpp",
     "qobject": "cpp",
-    "qwebsocketserver": "cpp"
+    "qwebsocketserver": "cpp",
+    "future": "cpp",
+    "system_error": "cpp",
+    "qjsonobject": "cpp",
+    "format": "cpp",
+    "qhostaddress": "cpp",
+    "xlocmes": "cpp",
+    "xutility": "cpp",
+    "chrono": "cpp",
+    "atomic": "cpp",
+    "compare": "cpp",
+    "optional": "cpp",
+    "xmemory": "cpp",
+    "qvariant": "cpp",
+    "xlocale": "cpp",
+    "qmetaproperty": "cpp",
+    "qsqldatabase": "cpp",
+    "qsqlquery": "cpp",
+    "qapplication": "cpp",
+    "xiosbase": "cpp",
+    "qsqlerror": "cpp",
+    "qstring": "cpp"
   }
 }

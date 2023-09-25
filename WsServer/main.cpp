@@ -2,6 +2,9 @@
 #include <QDebug>
 #include <QSettings>
 #include "Server/XServer.h"
+#include "Game/Module/Player/Player.DB.h"
+
+using namespace AlSultan;
 
 int main(int argc, char *argv[])
 {
@@ -10,5 +13,7 @@ int main(int argc, char *argv[])
     qDebug() << "Hello World";
     qDebug() << lSettings.value("Server/Url").toString();
     XServer l_Server(1234);
+    PlayerDB lPlayerDB(nullptr);
+    l_Server.Start();
     return a.exec();
 }
