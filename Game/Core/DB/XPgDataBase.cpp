@@ -35,6 +35,4 @@ void XPgDataBase::Update(const QString &pTable, const QHash<QString, QVariant> p
 
 void XPgDataBase::Delete(const QString &pTable, QHash<QString, QVariant> pWhere){}
 
-void XPgDataBase::Select(const QString &pTable, QVector<QString> pFields, QHash<QString, QVariant> pWhere){}
-
 void XPgDataBase::Execute(const QString pQuery, QHash<QString, QVariant> pBinds){}

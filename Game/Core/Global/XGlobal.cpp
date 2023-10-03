@@ -6,6 +6,8 @@
 
 #include "Core/DB/XPgDataBase.h"
 #include "Core/Logger/XLogger.h"
+#include "Core/Setting/XSetting.h"
+#include "Module/City/Building/Building.DB.h"
 
 XGlobal *XGlobal::Get(){
   static XGlobal _Instance;
@@ -13,12 +15,16 @@ XGlobal *XGlobal::Get(){
 }
 
 bool XGlobal::Init(){
-
+  XSetting::Get()->Init();
   _Logger = new XLogger();
-  _DB = new XPgDataBase();
-
+  auto lDB = new XPgDataBase();
+  lDB->Init();
+  auto lList = lDB->Select<$Building>({"*"}, "\"_CityBuilding\"", "true");
+  for(auto i = 0; i < lList.size(); i++){
+    qDebug() << lList[i]->Get_PlayerID();
+  }
   _Logger->Init();
-  _DB->Init();
+  _DB = lDB;
 
   return true;
 }

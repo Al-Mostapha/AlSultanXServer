@@ -22,6 +22,7 @@ namespace WS{
       void Stop() override;
       void Send(const QString &pMessage, QUuid pPlayerID) override;
       void Send(const QJsonObject &pMessage, QUuid pPlayerID) override;
+      virtual void OnRequest(const QString &pMessage, XConnection *pCon) = 0;
 
   private slots:
       virtual void OnNewConnection() ;

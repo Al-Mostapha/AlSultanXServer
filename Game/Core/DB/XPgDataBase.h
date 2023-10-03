@@ -18,6 +18,29 @@ class XPgDataBase : public IDataBaseService
     void Insert(const QString &pTable, const QHash<QString, QVariant> pParam);
     void Update(const QString &pTable, const QHash<QString, QVariant> pParam, QHash<QString, QVariant> pWhere);
     void Delete(const QString &pTable, QHash<QString, QVariant> pWhere);
-    void Select(const QString &pTable, QVector<QString> pFields, QHash<QString, QVariant> pWhere);
+    template<typename T>
+    QList<QSharedPointer<T>> Select(const QStringList &pFields, const QString &pTable, const QString &pWhere, const QList<QVariant> pBind = {});
     void Execute(const QString pQuery, QHash<QString, QVariant> pBinds);
 };
+
+template<typename T>
+QList<QSharedPointer<T>> XPgDataBase::Select(
+  const QStringList &pFields, const QString &pTable, 
+  const QString &pWhere, const QList<QVariant> pBinds)
+{
+  QString lFields = pFields.join(", ");
+  QSqlQuery query(QString("SELECT %1 FROM " + pTable + " WHERE %3").arg(lFields).arg(pWhere));
+  for(auto lOneBind : pBinds){
+    query.addBindValue(lOneBind);
+  }
+  QList<QSharedPointer<T>> lRetList;
+  while (query.next())
+  {
+    lRetList.push_back(QSharedPointer<T>(new T()));
+    lRetList.back()->FromQuery(query);
+  }
+  
+  qDebug() << query.lastError().text();
+
+  return lRetList;
+}

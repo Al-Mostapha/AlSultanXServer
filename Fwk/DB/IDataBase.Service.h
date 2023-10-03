@@ -30,6 +30,5 @@ public:
   virtual void Insert(const QString &pTable, const QHash<QString, QVariant> pParam) = 0;
   virtual void Update(const QString &pTable, const QHash<QString, QVariant> pParam, QHash<QString, QVariant> pWhere) = 0;
   virtual void Delete(const QString &pTable, QHash<QString, QVariant> pWhere) = 0;
-  virtual void Select(const QString &pTable, QVector<QString> pFields, QHash<QString, QVariant> pWhere) = 0;
   virtual void Execute(const QString pQuery, QHash<QString, QVariant> pBinds) = 0;
 };

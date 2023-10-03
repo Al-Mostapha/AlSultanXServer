@@ -2,6 +2,8 @@
 #include <QObject>
 #include <QUuid>
 #include <QVariant>
+#include <QSqlQuery>
+#include <QMetaProperty>
 #include <QHash>
 #include "XDBMacro.h"
 #include "IDataBase.Service.h"
@@ -14,15 +16,15 @@ class IModel : public QObject
 protected:
   XColumn _PrimaryKey;
   QString _TableName;
-  QHash<QString, QVariant> _Fields;
+  QVariantHash _Fields;
   // XQuery _Query;
 public:
-  IModel(IDataBaseService *pDB, QObject* a_Parent = nullptr);
-  template <typename T>
-  T* As() { return dynamic_cast<T*>(this); }
+  IModel();
+  template <typename Y>
+  Y* As() { return dynamic_cast<Y*>(this); }
 
-  template <typename T>
-  const T* As() const { return dynamic_cast<const T*>(this); }
+  template <typename Y>
+  const Y* As() const { return dynamic_cast<const Y*>(this); }
   
   virtual IModel *Get(const QUuid& pID) const;
   virtual IModel *Get(const int& pID) const;
@@ -40,4 +42,7 @@ public:
   virtual IModel *Update(QHash<QString, QVariant> pRow) const;
   virtual IModel *Delete() const;
   void RegisterColumn();
+  void FromQuery(const QSqlQuery &pVariant);
 };
+
+

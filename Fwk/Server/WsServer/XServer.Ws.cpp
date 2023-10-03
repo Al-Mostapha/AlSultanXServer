@@ -4,7 +4,6 @@
 #include <QtCore>
 
 
-
 QT_USE_NAMESPACE
 
 static QString getIdentifier(QWebSocket *peer)
@@ -49,11 +48,13 @@ void WS::XServer::OnNewConnection()
 //! [onNewConnection]
 
 //! [processMessage]
-void WS::XServer::ProcessMessage(const QString &message)
+void WS::XServer::ProcessMessage(const QString &pMsg)
 {
-  qDebug() << "XServer::ProcessMessage" << message;
+  auto lConnection = qobject_cast<XConnection *>(QObject::sender());
+  OnRequest(pMsg, lConnection);
+  qDebug() << "XServer::ProcessMessage " << pMsg;
   for (auto pClient : _Connections) {
-    pClient->SendJson(message);
+    pClient->SendJson(pMsg);
   }
 }
 //! [processMessage]

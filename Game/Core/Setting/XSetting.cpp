@@ -8,7 +8,7 @@ XSetting *XSetting::Get(){
 }
 
 bool XSetting::Init(){
-  auto lPath = QCoreApplication::applicationFilePath() + "/Config/Config.Static.ini";
+  auto lPath = QCoreApplication::applicationDirPath() + "/Config/Config.Static.ini";
   QSettings lSettings(lPath, QSettings::IniFormat);
   _DBHost     = lSettings.value("DB/DBHost").toString();
   _DBName     = lSettings.value("DB/DBName").toString();

@@ -2,7 +2,7 @@
 #include <QtCore/QObject>
 #include <QtCore/QHash>
 #include <QtCore/QUuid>
-#include "Fwk/Server/WsServer/XServer.Ws.h"
+#include "Server/WsServer/XServer.Ws.h"
 
 QT_FORWARD_DECLARE_CLASS(QWebSocket)
 QT_FORWARD_DECLARE_CLASS(QString)
@@ -21,7 +21,9 @@ public:
     // void OnNewConnection() override;
     // void ProcessMessage(const QString &message)override;
     // void SocketDisconnected() override;
-
+    virtual void RegisterController() override;
+    
+    void OnRequest(const QString &pMessage, XConnection *pCon) override;
 private:
     QHash<QUuid, XConnection *> _Connections;
 };

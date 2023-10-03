@@ -25,10 +25,11 @@ file(GLOB_RECURSE GameHeaderFileList "Game/*/*.h")
 
 message(STATUS "SourceFileList: ${SourceFileList}")
 
-add_executable(${PROJECT_NAME}
+add_executable(
+  ${PROJECT_NAME}
   ${HeaderFileList}
   ${SourceFileList}
-  WsServer/main.cpp
+  main.cpp
 )
 
 
@@ -46,7 +47,8 @@ target_include_directories(XServer.Game PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/Fwk)
 target_link_libraries(${PROJECT_NAME} PRIVATE Qt::Core Qt::WebSockets XServer.Game)
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
-file(COPY ${CMAKE_SOURCE_DIR}/Config DESTINATION ${CMAKE_BINARY_DIR}/Debug)
+file(COPY ${CMAKE_SOURCE_DIR}/Config DESTINATION ${CMAKE_BINARY_DIR}/Debug )
+
 add_custom_command(
     TARGET ${PROJECT_NAME} POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_if_different
@@ -54,5 +56,6 @@ add_custom_command(
         $<TARGET_FILE:Qt6::WebSockets>
         $<TARGET_FILE:Qt6::Network>
         $<TARGET_FILE:Qt6::Sql>
+        ${CMAKE_SOURCE_DIR}/Config
         $<TARGET_FILE_DIR:${PROJECT_NAME}>
 )

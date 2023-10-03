@@ -3,6 +3,7 @@
 
 class XLogger : public ILogger{
   public:
+    static XLogger *Get();
     bool Init() override;
     void Log(QString pMessage) override;
     void LogError(QString pMessage) override;

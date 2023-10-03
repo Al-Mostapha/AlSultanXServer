@@ -1,10 +1,10 @@
 #pragma once
 
-#include <QtCore/QObject>
+#include <QObject>
 #include <QWebSocket>
-#include <QtCore/QUuid>
+#include <QUuid>
+#include <QString>
 
-QT_FORWARD_DECLARE_CLASS(QString)
 
 class XConnection : public QObject
 {
@@ -27,3 +27,5 @@ private slots:
   void OnTextMessageReceived(const QString &message);
   void OnStateChanged(QAbstractSocket::SocketState state);
 };
+
+Q_DECLARE_METATYPE(XConnection *);

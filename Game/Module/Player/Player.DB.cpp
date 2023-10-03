@@ -31,7 +31,7 @@ void getPlayer(){
   }
 }
 
-PlayerDB::PlayerDB(IDataBaseService *pDB, QObject* a_Parent) : IModel(pDB, a_Parent){
+PlayerDB::PlayerDB(IDataBaseService *pDB, QObject* a_Parent) : IModel(){
   _TableName = "_Player";
   getPlayer();
   RegisterColumn();
