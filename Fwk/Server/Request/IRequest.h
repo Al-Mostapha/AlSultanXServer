@@ -2,10 +2,10 @@
 #include <QObject>
 #include "Core/XJson.h"
 #include "Core/Net.Enum.h"
+#include "Server/Connection/XConnection.h"
 
 typedef QHash<QString, QString> XHashString;
 
-class XConnection;
 
 class IRequest : public XJson
 {

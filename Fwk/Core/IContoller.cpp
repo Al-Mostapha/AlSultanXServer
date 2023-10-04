@@ -5,7 +5,7 @@ QHash<QString, IController *> IController::_Controllers = QHash<QString, IContro
 
 IController::IController(QObject *parent) : QObject(parent)
 {
-
+  _Response = new IResponse();
 }
 
 IController *IController::FromWsPath(XEndPoint *pEndPoint)
@@ -33,3 +33,7 @@ void IController::ExecuteAction(const QString &pActionName)
   QMetaObject::invokeMethod(this, pActionName.toStdString().c_str());
 }
 
+void IController::Response()
+{
+  _Request->_Connection->SendJson(_Response->GetJsonStr());
+}

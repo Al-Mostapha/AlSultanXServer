@@ -19,6 +19,7 @@
 class IController : public QObject
 {
   Q_OBJECT
+  public:
   IRequest *_Request;
   IResponse *_Response;
   static QHash<QString, IController *> _Controllers;
@@ -36,6 +37,7 @@ class IController : public QObject
     static IController *FromClassName(const QString &pClassName);
     void ExecuteAction(const QString &pActionName);
     void SetRequest(IRequest *pRequest) {_Request = pRequest;}
+    void Response();
 };
 
 Q_DECLARE_METATYPE(IController *)

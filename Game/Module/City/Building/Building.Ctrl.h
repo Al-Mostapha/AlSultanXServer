@@ -9,6 +9,7 @@ class BuildingCtrl : public IController
 
 public:
   Q_INVOKABLE void GetCityBuildings();
+  
 };
 
 Q_DECLARE_METATYPE(BuildingCtrl *)

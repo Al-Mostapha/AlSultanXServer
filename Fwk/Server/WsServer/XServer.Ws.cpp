@@ -53,9 +53,6 @@ void WS::XServer::ProcessMessage(const QString &pMsg)
   auto lConnection = qobject_cast<XConnection *>(QObject::sender());
   OnRequest(pMsg, lConnection);
   qDebug() << "XServer::ProcessMessage " << pMsg;
-  for (auto pClient : _Connections) {
-    pClient->SendJson(pMsg);
-  }
 }
 //! [processMessage]
 

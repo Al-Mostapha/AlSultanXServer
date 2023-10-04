@@ -22,15 +22,10 @@ AlSultan::XServer::~XServer()
 }
 
 void AlSultan::XServer::RegisterController(){
-  auto myClass = new BuildingCtrl();
-  QMetaObject::invokeMethod(myClass, "GetCityBuildings");
+
 }
 
 void AlSultan::XServer::OnRequest(const QString &pMessage, XConnection *pCon){
-  qRegisterMetaType<BuildingCtrl>("BuildingCtrl");
-  // int id = QMetaType::type("BuildingCtrl");
-
-  // auto lMetaObject = QMetaType::metaObjectForType(id);
 
   BuildingCtrl *lCtrl = new BuildingCtrl();
   auto lmo = lCtrl->metaObject();
@@ -41,4 +36,6 @@ void AlSultan::XServer::OnRequest(const QString &pMessage, XConnection *pCon){
   auto lController = IController::FromWsPath(lEndpoint);
   lController->SetRequest(lRequest);
   lController->ExecuteAction(lEndpoint->GetActionName());
+  lController->Response();
+  lController->deleteLater();
 }
