@@ -41,6 +41,7 @@ public:
   virtual IModel *Insert(QHash<QString, QVariant> pRow) const;
   virtual IModel *Update(QHash<QString, QVariant> pRow) const;
   virtual IModel *Delete() const;
+  virtual QVariantList Select(const QStringList& pColumns, const QString& pWhere, const QVariantList& pValue = {}) const = 0;
   void RegisterColumn();
   void FromQuery(const QSqlQuery &pVariant);
 };

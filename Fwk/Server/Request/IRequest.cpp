@@ -12,5 +12,6 @@ IRequest *IRequest::CreateFromWsMsg(const QString &pMsg, XConnection *pCon)
   auto lRequest = IRequest::Create();
   lRequest->_Connection = pCon;
   lRequest->FromJson(lJson);
+  lRequest->_Json = QJsonDocument::fromJson(lRequest->Data.toUtf8()).object();
   return lRequest;
 }

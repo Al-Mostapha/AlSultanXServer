@@ -1,7 +1,7 @@
 #include "Building.DB.h"
 
-QList< $Building > $Building::GetCityBuildings(int pPlayerID, int pCityID){
-  QList< $Building > lBuildings;
+QList< CityBuilding > CityBuilding::GetCityBuildings(int pPlayerID, int pCityID){
+  QList< CityBuilding > lBuildings;
   
   return lBuildings;
 }

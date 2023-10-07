@@ -24,6 +24,8 @@ class IRequest : public XJson
   X_Json(QString, RequestID)
   X_Json(qint64, Timeout);
   XConnection *_Connection;
+  QJsonObject _Json;
+  int _PlayerID = 1;
   public:
   static IRequest *Create();
   static IRequest *CreateFromWsMsg(const QString &pMsg, XConnection *pCon);

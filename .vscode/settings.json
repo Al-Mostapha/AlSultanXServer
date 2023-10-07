@@ -96,6 +96,9 @@
     "xtr1common": "cpp",
     "xtree": "cpp",
     "qsqlresult": "cpp",
-    "qproperty": "cpp"
+    "qproperty": "cpp",
+    "qjsonvalue": "cpp",
+    "qjsondocument": "cpp",
+    "qsqlrecord": "cpp"
   }
 }

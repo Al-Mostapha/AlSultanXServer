@@ -8,7 +8,7 @@ class BuildingCtrl : public IController
   X_Controller(BuildingCtrl)
 
 public:
-  Q_INVOKABLE void GetCityBuildings();
+  Q_INVOKABLE QVariantHash GetCityBuildings();
   
 };
 

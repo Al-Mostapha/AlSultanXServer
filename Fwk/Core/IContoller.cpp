@@ -30,7 +30,11 @@ IController *IController::FromClassName(const QString &pClassName)
 
 void IController::ExecuteAction(const QString &pActionName)
 {
-  QMetaObject::invokeMethod(this, pActionName.toStdString().c_str());
+  QVariantHash _Ret;
+  QMetaObject::invokeMethod(this, pActionName.toStdString().c_str(), Q_RETURN_ARG(QVariantHash, _Ret));
+  _Ret.insert("RequestID", _Request->RequestID);
+  _Response->_Data = QJsonDocument::fromVariant(_Ret);
+  _Response->_RequestID = _Request->RequestID;
 }
 
 void IController::Response()

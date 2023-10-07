@@ -48,6 +48,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE Qt::Core Qt::WebSockets XServer.Ga
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 file(COPY ${CMAKE_SOURCE_DIR}/Config DESTINATION ${CMAKE_BINARY_DIR}/Debug )
+file(COPY ${CMAKE_SOURCE_DIR}/sqldrivers DESTINATION ${CMAKE_BINARY_DIR}/Debug )
 
 add_custom_command(
     TARGET ${PROJECT_NAME} POST_BUILD

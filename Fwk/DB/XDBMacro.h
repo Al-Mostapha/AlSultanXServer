@@ -7,6 +7,8 @@
   void Set##_Name(_Type pVal) { _Name = pVal; }
 
 #define X_Model_Ctor(_Type) \
-  _Type() : IModel() {\
+  _Type() : XModel() {\
     RegisterColumn(); \
-  }
+    _TableName = #_Type; \
+  }\
+  static _Type *Create() { return new _Type(); }

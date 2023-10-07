@@ -1,10 +1,10 @@
 #pragma once
 #include <QObject>
-#include "DB/IModel.h"
+#include "Core/DB/XModel.h"
 #include "DB/IDataBase.Service.h"
 #include "DB/XColumn.h"
 
-class PlayerDB : public IModel
+class PlayerDB : public XModel
 {
   Q_OBJECT
 public:

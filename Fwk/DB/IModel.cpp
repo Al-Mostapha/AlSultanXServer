@@ -3,7 +3,6 @@
 #include <QDebug>
 #include <QVariant>
 
-
 void IModel::RegisterColumn(){
   const QMetaObject *lMetaObj = metaObject();
   int count = lMetaObj->propertyCount();
@@ -40,3 +39,4 @@ IModel *IModel::Execute() const{ return nullptr;}
 IModel *IModel::Insert(QHash<QString, QVariant> pRow) const{ return nullptr;}
 IModel *IModel::Update(QHash<QString, QVariant> pRow) const{ return nullptr;}
 IModel *IModel::Delete() const{ return nullptr;}
+

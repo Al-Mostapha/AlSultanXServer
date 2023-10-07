@@ -31,4 +31,6 @@ public:
   virtual void Update(const QString &pTable, const QHash<QString, QVariant> pParam, QHash<QString, QVariant> pWhere) = 0;
   virtual void Delete(const QString &pTable, QHash<QString, QVariant> pWhere) = 0;
   virtual void Execute(const QString pQuery, QHash<QString, QVariant> pBinds) = 0;
+  virtual QVariantList Select(const QStringList &pFields, const QString &pTable, const QString &pWhere, const QVariantList pBind = {}) = 0;
+
 };

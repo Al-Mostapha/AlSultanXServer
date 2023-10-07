@@ -1,5 +1,6 @@
 #include "XPgDataBase.h"
 #include <QSqlError>
+#include <QSqlRecord>
 #include "Core/Logger/XLogger.h"
 #include "Core/Setting/XSetting.h"
 #include "Core/Global/XGlobal.h"
@@ -36,3 +37,33 @@ void XPgDataBase::Update(const QString &pTable, const QHash<QString, QVariant> p
 void XPgDataBase::Delete(const QString &pTable, QHash<QString, QVariant> pWhere){}
 
 void XPgDataBase::Execute(const QString pQuery, QHash<QString, QVariant> pBinds){}
+
+QVariantList  XPgDataBase::Select(
+  const QStringList &pFields, const QString &pTable, 
+  const QString &pWhere, const QVariantList pBinds){
+
+  QString lFields = pFields.join(", ");
+  QString lQueryStr = QString("SELECT "+ lFields +" FROM " + pTable + " WHERE " + pWhere);
+  QSqlQuery lQuery;
+  lQuery.prepare(lQueryStr);
+  foreach (QVariant lBind, pBinds) {
+    lQuery.addBindValue(lBind);
+  }
+
+  QVariantList resultList;
+  if(lQuery.exec()){
+    while (lQuery.next()) {
+        QSqlRecord record = lQuery.record();
+        QVariantHash resultHash;
+        for (int i = 0; i < record.count(); ++i) {
+            QString key = record.fieldName(i);
+            QVariant value = record.value(i);
+            resultHash.insert(key, value);
+        }
+        resultList.append(resultHash);
+    }
+  }else{
+    qDebug() << "XPgDataBase::Select error" << lQuery.lastError().text();
+  }
+  return resultList;
+}

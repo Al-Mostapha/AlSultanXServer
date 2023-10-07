@@ -1,5 +1,7 @@
 #pragma once
 #include <QObject>
+#include <QJsonDocument>
+#include <QJsonObject>
 
 
 
@@ -18,8 +20,13 @@ class IResponse : public QObject
 
     static IResponse *Create();
     int _StatusCode = 200;
-    QString _Data = "{\"Test\":\"Test\"}";
+    QJsonDocument _Data;
     EContentType _ContentType = EContentType::Json;
+    QString _RequestID = "RequestID";
 
-    QString GetJsonStr(){ return _Data; }
+    QString GetJsonStr(){
+      //_Data.object().insert("RequestID", QJsonValue::fromVariant(_RequestID)); 
+      qDebug() << "Response ==> " << _Data.object().keys();
+      return _Data.toJson(); 
+    }
 };

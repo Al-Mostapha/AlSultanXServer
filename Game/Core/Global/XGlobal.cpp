@@ -3,6 +3,7 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlError>
+#include <QJsonDocument>
 
 #include "Core/DB/XPgDataBase.h"
 #include "Core/Logger/XLogger.h"
@@ -19,12 +20,7 @@ bool XGlobal::Init(){
   _Logger = new XLogger();
   auto lDB = new XPgDataBase();
   lDB->Init();
-  auto lList = lDB->Select<$Building>({"*"}, "\"_CityBuilding\"", "true");
-  for(auto i = 0; i < lList.size(); i++){
-    qDebug() << lList[i]->Get_PlayerID();
-  }
   _Logger->Init();
   _DB = lDB;
-
   return true;
 }

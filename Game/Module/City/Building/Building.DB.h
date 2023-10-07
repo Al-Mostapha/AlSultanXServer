@@ -2,12 +2,12 @@
 #include <QObject>
 #include <QUuid>
 #include "Building.Enum.h"
-#include "DB/IModel.h"
+#include "Core/DB/XModel.h"
 #include "DB/IDataBase.Service.h"
 #include "DB/XColumn.h"
 
 
-class $Building : public IModel
+class CityBuilding : public XModel
 {
   Q_OBJECT
 public:
@@ -19,6 +19,6 @@ public:
   X_Column(int, _StarLvl)
   X_Column(EBuildingState, _State)
 public:
-  X_Model_Ctor($Building)
-  QList< $Building > GetCityBuildings(int pPlayerID, int pCityID);
+  X_Model_Ctor(CityBuilding)
+  QList< CityBuilding > GetCityBuildings(int pPlayerID, int pCityID);
 };
