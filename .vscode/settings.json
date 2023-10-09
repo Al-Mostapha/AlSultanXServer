@@ -99,6 +99,7 @@
     "qproperty": "cpp",
     "qjsonvalue": "cpp",
     "qjsondocument": "cpp",
-    "qsqlrecord": "cpp"
+    "qsqlrecord": "cpp",
+    "qjsonarray": "cpp"
   }
 }

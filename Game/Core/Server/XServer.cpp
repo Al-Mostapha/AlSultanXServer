@@ -26,11 +26,6 @@ void AlSultan::XServer::RegisterController(){
 }
 
 void AlSultan::XServer::OnRequest(const QString &pMessage, XConnection *pCon){
-
-  BuildingCtrl *lCtrl = new BuildingCtrl();
-  auto lmo = lCtrl->metaObject();
-  auto lNewInst = lmo->newInstance();
-
   auto lRequest = IRequest::CreateFromWsMsg(pMessage, pCon);
   auto lEndpoint = XEndPoint::FromWsPath(lRequest->GetUrl()); 
   auto lController = IController::FromWsPath(lEndpoint);

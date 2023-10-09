@@ -15,7 +15,7 @@
 
 // }
 
-QVariantHash BuildingCtrl::GetCityBuildings()
+QVariantHash ACityBuilding::GetBuildingList()
 {
   auto lBuildingDB   = CityBuilding::Create();
   auto lPlayerID     =  _Request->_PlayerID;

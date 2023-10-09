@@ -21,4 +21,5 @@ public:
 public:
   X_Model_Ctor(CityBuilding)
   QList< CityBuilding > GetCityBuildings(int pPlayerID, int pCityID);
+  void CreateCityBuildings(int pPlayerID, int pCityID);
 };

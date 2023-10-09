@@ -2,14 +2,14 @@
 #include <QObject>
 #include "Core/IController.h"
 
-class BuildingCtrl : public IController
+class ACityBuilding : public IController
 {
   Q_OBJECT
-  X_Controller(BuildingCtrl)
+  X_Controller(ACityBuilding)
 
 public:
-  Q_INVOKABLE QVariantHash GetCityBuildings();
+  Q_INVOKABLE QVariantHash GetBuildingList();
   
 };
 
-Q_DECLARE_METATYPE(BuildingCtrl *)
+Q_DECLARE_METATYPE(ACityBuilding)

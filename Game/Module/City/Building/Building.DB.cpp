@@ -5,3 +5,7 @@ QList< CityBuilding > CityBuilding::GetCityBuildings(int pPlayerID, int pCityID)
   
   return lBuildings;
 }
+
+void CityBuilding::CreateCityBuildings(int pPlayerID, int pCityID){
+  
+}
