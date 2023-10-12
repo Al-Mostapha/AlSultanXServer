@@ -21,6 +21,7 @@ class XPgDataBase : public IDataBaseService
     // template<typename T>
     // QList<QSharedPointer<T>> Select(const QStringList &pFields, const QString &pTable, const QString &pWhere, const QList<QVariant> pBind = {});
     QVariantList Select(const QStringList &pFields, const QString &pTable, const QString &pWhere, const QVariantList pBind = {}) override;
+    QVariant Insert(const QStringList &pFields, const QString &pTable, const QVariantList pBind = {}) override;
     void Execute(const QString pQuery, QHash<QString, QVariant> pBinds);
 };
 

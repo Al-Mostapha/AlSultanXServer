@@ -45,7 +45,10 @@ enum class EBuilding  {
   ServiceCenter = 30005,
   EpicBattle = 30006,
   Mastery = 30008,
-
+  AreaLock_1221 = 1221,
+  AreaLock_1222 = 1222,
+  AreaLock_1223 = 1223,
+  AreaLock_1224 = 1224,
   NEBULA_PALACE
 };
 
@@ -118,7 +121,7 @@ enum class EBuildingIndex {
   MaterialWorkShop = 1151,
   Crystal = 1152,
 
-  Gangkou = 2000,
+  Gangkou = 2000, // خيمة المواد
   Miracle = 1200,
   ElitePalace = 1201,
   MonumentRos = 1202,
@@ -129,7 +132,7 @@ enum class EBuildingIndex {
   Merchant = 20005,
   TroopFlag = 20009,
   LeisureCenter = 30001,
-  HuoChuang = 30002,
+  HuoChuang = 30002,  // daily trade ship
   PetCenter = 30003,
   ResurrectionHall = 30004,
   ServiceCenter = 30005,
@@ -138,11 +141,13 @@ enum class EBuildingIndex {
   Mastery = 30008,
   CommandHall = 30009,
   MagicLamp = 30010,
-  LockArea_1 = static_cast<int>(ELockedArea::AreaLock_1221),
-  LockArea_2 = static_cast<int>(ELockedArea::AreaLock_1222),
-  LockArea_3 = static_cast<int>(ELockedArea::AreaLock_1223),
-  LockArea_4 = static_cast<int>(ELockedArea::AreaLock_1224)
+  LockArea_1 = static_cast<int>(EBuilding::AreaLock_1221),
+  LockArea_2 = static_cast<int>(EBuilding::AreaLock_1222),
+  LockArea_3 = static_cast<int>(EBuilding::AreaLock_1223),
+  LockArea_4 = static_cast<int>(EBuilding::AreaLock_1224)
 };
+
+
 
 enum class EBuildingState {
   Normal = 0, // Normal

@@ -67,3 +67,25 @@ QVariantList  XPgDataBase::Select(
   }
   return resultList;
 }
+
+
+QVariant XPgDataBase::Insert(const QStringList &pFields, const QString &pTable, const QVariantList pBinds){
+  QString lFields = pFields.join(", ");
+  QString lQueryStr = QString("INSERT INTO " + pTable + " (" + lFields + ") VALUES (");
+  for(int i = 0; i < pFields.size(); i++){
+    lQueryStr += QString("?, ");
+  }
+  lQueryStr.chop(2);
+  lQueryStr += QString(")");
+  QSqlQuery lQuery;
+  lQuery.prepare(lQueryStr);
+  foreach (QVariant lBind, pBinds) {
+    lQuery.addBindValue(lBind);
+  }
+  if(lQuery.exec()){
+    return lQuery.lastInsertId();
+  }else{
+    qDebug() << "XPgDataBase::Insert error" << lQuery.lastError().text();
+  }
+  return {};
+}

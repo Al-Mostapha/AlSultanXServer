@@ -10,6 +10,7 @@ class ACity : public IController
 public:
   Q_INVOKABLE QVariantHash GetCityList();
   QVariantHash GetCityInfo();
+  int Create();
   
 };
 

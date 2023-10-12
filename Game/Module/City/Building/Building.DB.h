@@ -13,6 +13,7 @@ class CityBuilding : public XModel
 public:
   X_Column(QUuid, _BuildingID)
   X_Column(int, _PlayerID)
+  X_Column(int, _CityID)
   X_Column(EBuilding, _Type)
   X_Column(EBuildingIndex, _Index)
   X_Column(int, _Lvl)
@@ -21,5 +22,5 @@ public:
 public:
   X_Model_Ctor(CityBuilding)
   QList< CityBuilding > GetCityBuildings(int pPlayerID, int pCityID);
-  void CreateCityBuildings(int pPlayerID, int pCityID);
+  bool Create(int pPlayerID, int pCityID);
 };

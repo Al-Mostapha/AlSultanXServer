@@ -29,3 +29,7 @@ QVariantHash ACity::GetCityInfo()
     {"CityList", lCityList}
   };
 }
+
+int ACity::Create(){
+  return 0;
+}
