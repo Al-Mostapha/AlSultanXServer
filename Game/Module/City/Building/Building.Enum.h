@@ -1,5 +1,9 @@
 #pragma once
 
+enum class EWatchTowerEffect{
+  None = 0
+};
+
 enum class EBuilding  {
   None = 0,
   Castle = 101,
@@ -163,4 +167,11 @@ enum class EBuildingState {
   Idle,
   Working, 
   Harvesting
+};
+
+enum class EBuildingPlace { // inner / outter
+  Inner = 0,
+  Outer = 1,
+  None = 2,
+  Fixed = 3
 };
