@@ -17,9 +17,17 @@ void CBuilding::InitWall(){
   lBuilding.isUpgrade = true;
   lBuilding.maxLvl = 130;
   lBuilding.initLvl = 1;
-  lBuilding.openWl = 1;
-  lBuilding.openStar = 1;
+  lBuilding.openWl = true;
+  lBuilding.openStar = true;
   lBuilding.maxStarLv = 70;
   lBuilding.addmaxstarlv = 70;
+
+  lBuilding.BuildingName = "buildDes_name_102";
+  lBuilding.BuildingIcon = "quest_building_102.png";
+  lBuilding.BuildingBrief = "";
+  lBuilding.UpgradeBrief = "";
+  lBuilding.Describe = "buildDes_describe_102";
+  lBuilding.WarDescribe = "buildDes_upgrade_brief_301";
+  lBuilding.StarDescribe = "star_describe_102";
   
 }

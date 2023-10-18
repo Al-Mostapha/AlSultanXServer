@@ -16,9 +16,17 @@ void CBuilding::InitCastle(){
   _BuildingSpecs[EBuilding::Castle].isUpgrade = true;
   _BuildingSpecs[EBuilding::Castle].maxLvl = 130;
   _BuildingSpecs[EBuilding::Castle].initLvl = 1;
-  _BuildingSpecs[EBuilding::Castle].openWl = 1;
-  _BuildingSpecs[EBuilding::Castle].openStar = 1;
+  _BuildingSpecs[EBuilding::Castle].openWl = true;
+  _BuildingSpecs[EBuilding::Castle].openStar = true;
   _BuildingSpecs[EBuilding::Castle].maxStarLv = 70;
+
+  _BuildingSpecs[EBuilding::Castle].BuildingName = "buildDes_name_101";
+  _BuildingSpecs[EBuilding::Castle].BuildingIcon = "quest_building_101.png";
+  _BuildingSpecs[EBuilding::Castle].BuildingBrief = "";
+  _BuildingSpecs[EBuilding::Castle].UpgradeBrief = "buildDes_upgrade_brief_101";
+  _BuildingSpecs[EBuilding::Castle].Describe = "buildDes_describe_101";
+  _BuildingSpecs[EBuilding::Castle].WarDescribe = "buildDes_upgrade_brief_301";
+  _BuildingSpecs[EBuilding::Castle].StarDescribe = "star_describe_101";
 
   _BuildingSpecs[EBuilding::Castle].Lvls[1] = {}; // index = 1,
   _BuildingSpecs[EBuilding::Castle].Lvls[1].BuildingID = EBuilding::Castle;

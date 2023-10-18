@@ -88,8 +88,8 @@ struct RBuildingSpecs {
   int maxCount = 0;
   int maxLvl = 0;
   int initLvl = 0;
-  int openWl = 0;
-  int openStar = 0;
+  bool openWl = false;
+  bool openStar = false;
   int maxStarLv = 0;
   bool isCanBuild = true;
   unsigned int addmaxstarlv = 0;
