@@ -9,6 +9,6 @@
 #define X_Model_Ctor(_Type) \
   _Type() : XModel() {\
     RegisterColumn(); \
-    _TableName = #_Type; \
+    _TableName = "_"###_Type; \
   }\
   static _Type *Create() { return new _Type(); }

@@ -29,4 +29,34 @@ void CBuilding::InitArrowTower(){
   lBuilding.Describe = "buildDes_describe_103";
   lBuilding.WarDescribe = "buildDes_upgrade_brief_301";
   lBuilding.StarDescribe = "star_describe_103";
+
+  lBuilding.TipButtons.bid = 103;
+  lBuilding.TipButtons.BuildingName = "buildDes_name_103";
+  lBuilding.TipButtons.PicFile = "UnDefined.png";
+  lBuilding.TipButtons.ImgFile = "jianta_2.png";
+  lBuilding.TipButtons.Offset = { 0, -90};
+  lBuilding.TipButtons.OffsetByzantine = {0, -90};
+  lBuilding.TipButtons.bIsInnerBuilding = true;
+  lBuilding.TipButtons.bCanBuild = false;
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpUpgrade,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.CoolingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.TrainingOperateList = {
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
 }

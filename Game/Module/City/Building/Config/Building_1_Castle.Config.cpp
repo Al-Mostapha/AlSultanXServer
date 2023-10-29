@@ -2,123 +2,154 @@
 
 void CBuilding::InitCastle(){
   _BuildingSpecs[EBuilding::Castle] =  {};
-  _BuildingSpecs[EBuilding::Castle].index = 1;
-  _BuildingSpecs[EBuilding::Castle].BuildingID = EBuilding::Castle;
-  _BuildingSpecs[EBuilding::Castle].oldUnlocklevel = 1;
-  _BuildingSpecs[EBuilding::Castle].oldShowlevel = 1;
-  _BuildingSpecs[EBuilding::Castle].unlocklevel = 1;
-  _BuildingSpecs[EBuilding::Castle].showlevel = 1;
-  _BuildingSpecs[EBuilding::Castle].bType = EBuildingPlace::Inner;
-  _BuildingSpecs[EBuilding::Castle].maxCount = 1;
-  _BuildingSpecs[EBuilding::Castle].isDemolish = false;
-  _BuildingSpecs[EBuilding::Castle].isExchange = false;
-  _BuildingSpecs[EBuilding::Castle].isBuild = false;
-  _BuildingSpecs[EBuilding::Castle].isUpgrade = true;
-  _BuildingSpecs[EBuilding::Castle].maxLvl = 130;
-  _BuildingSpecs[EBuilding::Castle].initLvl = 1;
-  _BuildingSpecs[EBuilding::Castle].openWl = true;
-  _BuildingSpecs[EBuilding::Castle].openStar = true;
-  _BuildingSpecs[EBuilding::Castle].maxStarLv = 70;
+  auto lBuilding = _BuildingSpecs[EBuilding::Castle]; // 101
+  lBuilding.index = 1;
+  lBuilding.BuildingID = EBuilding::Castle;
+  lBuilding.oldUnlocklevel = 1;
+  lBuilding.oldShowlevel = 1;
+  lBuilding.unlocklevel = 1;
+  lBuilding.showlevel = 1;
+  lBuilding.bType = EBuildingPlace::Inner;
+  lBuilding.maxCount = 1;
+  lBuilding.isDemolish = false;
+  lBuilding.isExchange = false;
+  lBuilding.isBuild = false;
+  lBuilding.isUpgrade = true;
+  lBuilding.maxLvl = 130;
+  lBuilding.initLvl = 1;
+  lBuilding.openWl = true;
+  lBuilding.openStar = true;
+  lBuilding.maxStarLv = 70;
 
-  _BuildingSpecs[EBuilding::Castle].BuildingName = "buildDes_name_101";
-  _BuildingSpecs[EBuilding::Castle].BuildingIcon = "quest_building_101.png";
-  _BuildingSpecs[EBuilding::Castle].BuildingBrief = "";
-  _BuildingSpecs[EBuilding::Castle].UpgradeBrief = "buildDes_upgrade_brief_101";
-  _BuildingSpecs[EBuilding::Castle].Describe = "buildDes_describe_101";
-  _BuildingSpecs[EBuilding::Castle].WarDescribe = "buildDes_upgrade_brief_301";
-  _BuildingSpecs[EBuilding::Castle].StarDescribe = "star_describe_101";
+  lBuilding.BuildingName = "buildDes_name_101";
+  lBuilding.BuildingIcon = "quest_building_101.png";
+  lBuilding.BuildingBrief = "";
+  lBuilding.UpgradeBrief = "buildDes_upgrade_brief_101";
+  lBuilding.Describe = "buildDes_describe_101";
+  lBuilding.WarDescribe = "buildDes_upgrade_brief_301";
+  lBuilding.StarDescribe = "star_describe_101";
 
-  _BuildingSpecs[EBuilding::Castle].Lvls[1] = {}; // index = 1,
-  _BuildingSpecs[EBuilding::Castle].Lvls[1].BuildingID = EBuilding::Castle;
-  _BuildingSpecs[EBuilding::Castle].Lvls[1].lvl = 1; 
-  _BuildingSpecs[EBuilding::Castle].Lvls[1].kingdomLv = 0;
-  _BuildingSpecs[EBuilding::Castle].Lvls[1].PreCond = {};
-  _BuildingSpecs[EBuilding::Castle].Lvls[1].CostRes = {
+  lBuilding.TipButtons.bid = 101;
+  lBuilding.TipButtons.BuildingName = "buildDes_name_101";
+  lBuilding.TipButtons.PicFile = "#pic400000_2.png";
+  lBuilding.TipButtons.ImgFile = "pic400000_2.png";
+  lBuilding.TipButtons.Offset = {0, -30};
+  lBuilding.TipButtons.OffsetByzantine = {0, -30};
+  lBuilding.TipButtons.bIsInnerBuilding = true;
+  lBuilding.TipButtons.bCanBuild = false;
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpUpgrade,
+    EBuildingTips::OpCityInfo,
+    EBuildingTips::OpCityBuff,
+    EBuildingTips::OpCityDecorate
+  };
+  lBuilding.TipButtons.CoolingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpCityInfo,
+    EBuildingTips::OpCityBuff,
+    EBuildingTips::OpCityDecorate
+  };
+  lBuilding.TipButtons.CoolingOperateList = {
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+
+  lBuilding.Lvls[1] = {}; // index = 1,
+  lBuilding.Lvls[1].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[1].lvl = 1; 
+  lBuilding.Lvls[1].kingdomLv = 0;
+  lBuilding.Lvls[1].PreCond = {};
+  lBuilding.Lvls[1].CostRes = {
     { EResource::Food, 0 },
     { EResource::Wood, 0 },
     { EResource::Iron, 0 },
     { EResource::Mithril, 0 }
   };
-  _BuildingSpecs[EBuilding::Castle].Lvls[1]._CostTime = 0;
-  _BuildingSpecs[EBuilding::Castle].Lvls[1].Reword.exp = 0;
-  _BuildingSpecs[EBuilding::Castle].Lvls[1].kingdomPoint = 0;
-  _BuildingSpecs[EBuilding::Castle].Lvls[1].Reword.power = 25;
-  _BuildingSpecs[EBuilding::Castle].Lvls[1].unlockedBuild = EBuilding::Barrack;
+  lBuilding.Lvls[1]._CostTime = 0;
+  lBuilding.Lvls[1].Reword.exp = 0;
+  lBuilding.Lvls[1].kingdomPoint = 0;
+  lBuilding.Lvls[1].Reword.power = 25;
+  lBuilding.Lvls[1].unlockedBuild = EBuilding::Barrack;
 
-  _BuildingSpecs[EBuilding::Castle].Lvls[2] = {};
-  _BuildingSpecs[EBuilding::Castle].Lvls[2].BuildingID = EBuilding::Castle;
-  _BuildingSpecs[EBuilding::Castle].Lvls[2].lvl = 2;
-  _BuildingSpecs[EBuilding::Castle].Lvls[2].kingdomLv = 0;
-  _BuildingSpecs[EBuilding::Castle].Lvls[2].CostRes = {
+  lBuilding.Lvls[2] = {};
+  lBuilding.Lvls[2].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[2].lvl = 2;
+  lBuilding.Lvls[2].kingdomLv = 0;
+  lBuilding.Lvls[2].CostRes = {
     { EResource::Food, 2800 },
     { EResource::Wood, 2800 },
     { EResource::Iron, 0 },
     { EResource::Mithril, 0 }
   };
-  _BuildingSpecs[EBuilding::Castle].Lvls[2]._CostTime = 210;
-  _BuildingSpecs[EBuilding::Castle].Lvls[2].Reword.exp = 13;
-  _BuildingSpecs[EBuilding::Castle].Lvls[2].kingdomPoint = 48;
-  _BuildingSpecs[EBuilding::Castle].Lvls[2].Reword.power = 70;
-  _BuildingSpecs[EBuilding::Castle].Lvls[2].unlockedBuild = EBuilding::Institute;
+  lBuilding.Lvls[2]._CostTime = 210;
+  lBuilding.Lvls[2].Reword.exp = 13;
+  lBuilding.Lvls[2].kingdomPoint = 48;
+  lBuilding.Lvls[2].Reword.power = 70;
+  lBuilding.Lvls[2].unlockedBuild = EBuilding::Institute;
 
-  _BuildingSpecs[EBuilding::Castle].Lvls[3] = {};
-  _BuildingSpecs[EBuilding::Castle].Lvls[3].BuildingID = EBuilding::Castle;
-  _BuildingSpecs[EBuilding::Castle].Lvls[3].lvl = 3;
-  _BuildingSpecs[EBuilding::Castle].Lvls[3].kingdomLv = 0;
-  _BuildingSpecs[EBuilding::Castle].Lvls[3].PreCond = {
+  lBuilding.Lvls[3] = {};
+  lBuilding.Lvls[3].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[3].lvl = 3;
+  lBuilding.Lvls[3].kingdomLv = 0;
+  lBuilding.Lvls[3].PreCond = {
     {EBuilding::Wall, 2},
     {EBuilding::LumberMill, 2},
     {EBuilding::Depot, 2}
   };
-  _BuildingSpecs[EBuilding::Castle].Lvls[3].CostRes = {
+  lBuilding.Lvls[3].CostRes = {
     { EResource::Food, 4000 },
     { EResource::Wood, 4000 },
     { EResource::Iron, 0 },
     { EResource::Mithril, 0 }
   };
-  _BuildingSpecs[EBuilding::Castle].Lvls[3]._CostTime = 290;
-  _BuildingSpecs[EBuilding::Castle].Lvls[3].Reword.exp = 22;
-  _BuildingSpecs[EBuilding::Castle].Lvls[3].kingdomPoint = 101;
-  _BuildingSpecs[EBuilding::Castle].Lvls[3].Reword.power = 145;
-  _BuildingSpecs[EBuilding::Castle].Lvls[3].unlockedBuild = EBuilding::TargetRange;
+  lBuilding.Lvls[3]._CostTime = 290;
+  lBuilding.Lvls[3].Reword.exp = 22;
+  lBuilding.Lvls[3].kingdomPoint = 101;
+  lBuilding.Lvls[3].Reword.power = 145;
+  lBuilding.Lvls[3].unlockedBuild = EBuilding::TargetRange;
 
-  _BuildingSpecs[EBuilding::Castle].Lvls[4] = {};
-  _BuildingSpecs[EBuilding::Castle].Lvls[4].BuildingID = EBuilding::Castle;
-  _BuildingSpecs[EBuilding::Castle].Lvls[4].lvl = 4;
-  _BuildingSpecs[EBuilding::Castle].Lvls[4].kingdomLv = 0;
-  _BuildingSpecs[EBuilding::Castle].Lvls[4].PreCond = {
+  lBuilding.Lvls[4] = {};
+  lBuilding.Lvls[4].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[4].lvl = 4;
+  lBuilding.Lvls[4].kingdomLv = 0;
+  lBuilding.Lvls[4].PreCond = {
     {EBuilding::Wall, 3},
     {EBuilding::Farm, 3},
   };
-  _BuildingSpecs[EBuilding::Castle].Lvls[4].CostRes = {
+  lBuilding.Lvls[4].CostRes = {
     { EResource::Food, 6000 }, { EResource::Wood, 6000 },
     { EResource::Iron, 0 }, { EResource::Mithril, 0 }
   };
-  _BuildingSpecs[EBuilding::Castle].Lvls[4]._CostTime = 1500;
-  _BuildingSpecs[EBuilding::Castle].Lvls[4].Reword.exp = 73;
-  _BuildingSpecs[EBuilding::Castle].Lvls[4].kingdomPoint = 376;
-  _BuildingSpecs[EBuilding::Castle].Lvls[4].Reword.power = 280;
-  _BuildingSpecs[EBuilding::Castle].Lvls[4].unlockedBuild = EBuilding::Fortress;
+  lBuilding.Lvls[4]._CostTime = 1500;
+  lBuilding.Lvls[4].Reword.exp = 73;
+  lBuilding.Lvls[4].kingdomPoint = 376;
+  lBuilding.Lvls[4].Reword.power = 280;
+  lBuilding.Lvls[4].unlockedBuild = EBuilding::Fortress;
 
 
-  _BuildingSpecs[EBuilding::Castle].Lvls[5] = {};
-  _BuildingSpecs[EBuilding::Castle].Lvls[5].BuildingID = EBuilding::Castle;
-  _BuildingSpecs[EBuilding::Castle].Lvls[5].lvl = 5;
-  _BuildingSpecs[EBuilding::Castle].Lvls[5].kingdomLv = 0;
-  _BuildingSpecs[EBuilding::Castle].Lvls[5].PreCond = {
+  lBuilding.Lvls[5] = {};
+  lBuilding.Lvls[5].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[5].lvl = 5;
+  lBuilding.Lvls[5].kingdomLv = 0;
+  lBuilding.Lvls[5].PreCond = {
     {EBuilding::Wall, 4},
     {EBuilding::Barrack, 4},
     {EBuilding::DrillGrounds, 4}
   };
-  _BuildingSpecs[EBuilding::Castle].Lvls[5].CostRes = {
+  lBuilding.Lvls[5].CostRes = {
     {EResource::Food, 1e4}, {EResource::Wood, 1e4},
     {EResource::Iron, 0}, {EResource::Mithril, 0}
   };
-  _BuildingSpecs[EBuilding::Castle].Lvls[5]._CostTime = 3600;
-  _BuildingSpecs[EBuilding::Castle].Lvls[5].Reword.exp = 142;
-  _BuildingSpecs[EBuilding::Castle].Lvls[5].kingdomPoint = 933;
-  _BuildingSpecs[EBuilding::Castle].Lvls[5].Reword.power = 530;
-  _BuildingSpecs[EBuilding::Castle].Lvls[5].unlockedBuild = EBuilding::ChariotPlant;
+  lBuilding.Lvls[5]._CostTime = 3600;
+  lBuilding.Lvls[5].Reword.exp = 142;
+  lBuilding.Lvls[5].kingdomPoint = 933;
+  lBuilding.Lvls[5].Reword.power = 530;
+  lBuilding.Lvls[5].unlockedBuild = EBuilding::ChariotPlant;
   //   [6] = {
   //     index = 6,
   //     bid = 101,

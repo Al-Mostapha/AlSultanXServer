@@ -1,9 +1,5 @@
 #pragma once
 
-enum class EWatchTowerEffect{
-  None = 0
-};
-
 enum class EBuilding  {
   None = 0,
   Castle = 101,
@@ -34,27 +30,38 @@ enum class EBuilding  {
   Farm = 201,
   LumberMill = 202,
   IronMine = 203,
-  SilverMine = 204,
+  SilverMine   = 204,
   MarchingTent = 205,
   FirstAidTent = 206,
-  CrystalMine = 207,
+  CrystalMine  = 207,
   MaterialWorkShop = 210,
   Miracle = 301,
   ElitePalace = 302,
   Monument = 303,
   StarBraveStatue = 304,
+  NEBULA_PALACE = 305,
   LeisureHouse = 30001,
-  HIP = 30002, // El tager El ageeb
+  CargoShip = 30002, // El tager El ageeb HuoChuang
   PetHouse = 30003,
   ResurrectionHall = 30004,
   ServiceCenter = 30005,
   EpicBattle = 30006,
   Mastery = 30008,
+  MagicLamp = 30010,
   AreaLock_1221 = 1221,
   AreaLock_1222 = 1222,
   AreaLock_1223 = 1223,
   AreaLock_1224 = 1224,
-  NEBULA_PALACE
+  
+};
+
+
+
+enum class EBuildingPlace { // inner / outter
+  Inner = 0,
+  Outer = 1,
+  None = 2,
+  Fixed = 3
 };
 
 enum class ELockedArea{
@@ -126,7 +133,7 @@ enum class EBuildingIndex {
   MaterialWorkShop = 1151,
   Crystal = 1152,
 
-  Gangkou = 2000, // خيمة المواد
+  Gangkou = 2000,
   Miracle = 1200,
   ElitePalace = 1201,
   MonumentRos = 1202,
@@ -137,7 +144,7 @@ enum class EBuildingIndex {
   Merchant = 20005,
   TroopFlag = 20009,
   LeisureCenter = 30001,
-  HuoChuang = 30002,  // daily trade ship
+  HuoChuang = 30002,
   PetCenter = 30003,
   ResurrectionHall = 30004,
   ServiceCenter = 30005,
@@ -152,9 +159,28 @@ enum class EBuildingIndex {
   LockArea_4 = static_cast<int>(EBuilding::AreaLock_1224)
 };
 
+enum class EBuildingPos { CBPlace_None = 0, CBPlace_Fixed = 1, CBPlace_Inner = 2, CBPlace_Outer = 3 };
 
+enum class EBuildingViewModel {
+  None = 0,
+  ViewModel_1 = 1,
+  ViewModel_2 = 2,
+  ViewModel_3 = 3,
+  ViewModel_4 = 4,
+  ViewModel_5 = 5,
+  ViewModel_6 = 6,
+  ViewModel_7 = 7,
+  ViewModel_8 = 8
+};
+
+enum class EBuildingStarState{
+  NORMAL = 0,
+  UPGRADEING = 1
+};
 
 enum class EBuildingState {
+  
+  None = 0, // Normal
   Normal = 0, // Normal
   Building = 1,
   Upgrading = 2,
@@ -170,9 +196,198 @@ enum class EBuildingState {
   Harvesting
 };
 
-enum class EBuildingPlace { // inner / outter
-  Inner = 0,
-  Outer = 1,
-  None = 2,
-  Fixed = 3
+enum class ECityBuildingState{
+  None = 0,
+  Normal = 1,
+  Upgrading_No_Alliance_Help = 2,
+  Upgrading_With_Alliance_Help = 3,
+  Cooling = 4
+};
+
+enum class EWatchTowerEffect{
+  None = 0
+};
+
+enum class EHarvestState{
+  None = 0,
+  Some,
+  Much
+};
+
+enum class EBuildingActionTag{
+  None = 0, 
+  Tag_delayUpdateMainCityPos = 1000,
+  Tag_ContainerViewMove = 1001,
+  Tag_ContainerViewScale = 1002,
+  Tag_Play_Click_Default_Sound = 1003,
+  TagPlayClickBuildSound = 1004
+};
+
+
+enum class EBuildingCastleModel{
+  BYZANTINE = 0,
+  Classical = 1,
+  RAMADAN = 2,
+  WARLV = 3,
+  SUPERVIP = 4,
+  SECOND = 5,
+  THREE = 6,
+  NEWRAMADAN = 7,
+  KOH2018RAMADAN = 8,
+  EGYPT = 9,
+  PANTHER = 10,
+  ICESNOW = 11,
+  NIGHTDX = 12,
+  CRAZYSTAR = 13,
+  EXQUISITE = 14,
+  STREAM = 15,
+  OASIS = 16,
+  WORLDCUP = 17,
+  WATCH = 18,
+  VALENTINE = 19,
+  KINGCOBRA = 20,
+  FORT = 21,
+  CORBAN = 22,
+  CHRISTMAS = 23,
+  HALLOWEEN = 24,
+  CHRISTMAS2018 = 25,
+  HALLOWEEN2018 = 26,
+  NEWYEAR = 27,
+  KOH2019RAMADAN = 28,
+  HEGEMON = 29,
+  STARKING = 30,
+  EASTER = 31,
+  FOURTH = 32,
+  SMAILWIND = 33,
+  WARRIOR = 34,
+  SCORPION = 35,
+  DEGULA = 36,
+  YIJICB = 37,
+  REDGEM = 38,
+  KINGLION = 39,
+  SKYGUARD = 40,
+  KOH2020RAMADAN = 41,
+  CORBAN2020 = 42,
+  FIFTH = 43,
+  CONSTRUCTED = 44,
+  GOLDENCITY = 45,
+  SOARCASTLE = 46,
+  ICECASTLE = 47,
+  KOH2021RAMADAN = 48,
+  KING = 49,
+  SKYGARDEN = 50,
+  THUNDERCLOUD = 51,
+  CORBAN2021 = 52,
+  HOURGLASS = 53,
+  ICEWOLF = 54,
+  KOH2022RAMADAN = 55,
+  CORBAN2022 = 56,
+  SEVENTH = 57,
+  FOOTBALL = 58,
+  KINGSTARBATTLE = 59
+};
+
+enum class EBuildingOperateType {
+  None = -1,
+  Build = 0,
+  Demolish = 1,
+  Upgrade = 2,
+  Exchange = 3,
+  Unlock = 4,
+  UpgradeStar = 5
+};
+
+enum class EOperateMode {
+  Normal = 0,
+  GoldReplace = 1,
+  Immediately = 2,
+  FREE = 3
+};
+
+enum class EBuildingUIType{
+  None = 0,
+  UITypeAlone = 1,
+  UITypeRelyOn = 2
+};
+
+
+enum class EBuildingTips
+{
+	OpNone = 0,
+	OpBoostByTool = 1001,
+	OpBoost = 1002,
+	OpDetails = 1003,
+	OpSpeedUpByGold = 1004,
+	OpSpeedUpByTool = 1005,
+	OpUpgrade = 1006,
+	OpTrade = 1007,
+	OpAuction = 1008,
+	OpResearch = 1009,
+	OpBuild = 1010,
+	OpTrain = 1011,
+	OpHelp = 1012,
+	OpReinforcements = 1013,
+	OpWish = 1014,
+	OpAllianceBattle = 1015,
+	OpDefend = 1016,
+	OpMilitaryInfo = 1017,
+	OpCityInfo = 1018,
+	OpCityDecorate = 1019,
+	OpCityGift = 1020,
+	OpAllianceTreasure = 1021,
+	OpCityBuff = 1022,
+	OpHeal = 1023,
+	OpCollect = 1024,
+	OpForging = 1025,
+	OpStoragebox = 1026,
+	OpPyramid = 1027,
+	OpBadgeBourse = 1028,
+	OpFriend = 1029,
+	OpMilitaryPoint = 1030,
+	OpWar = 1031,
+	OpMonthGift = 1032,
+	OpDailySign = 1033,
+	OpResuscitate = 1034,
+	OpDailyReward = 1035,
+	OpPet = 1036,
+	OpPetMap = 1037,
+	OpPetExchange = 1038,
+	OpPremiumVipMall = 1039,
+	OpWarGem = 1040,
+	OpWarTechnology = 1041,
+	OpArena = 1042,
+	OpDiscuss = 1043,
+	OpSupport = 1044,
+	OpSpringOfLife = 1045,
+	OpFaction = 1046,
+	OpInfoCenter = 1047,
+	OpMonument = 1048,
+	OpTrainHall = 1049,
+	OpPrison = 1050,
+	OpMastery = 1051,
+	OpMainMastery = 1052,
+	OpDrawing = 1053,
+	OpArtifact = 1054,
+	OpMonumentLegend = 1055,
+	OpIntetior = 1056,
+	OpCounterSys = 1057,
+	OpExclusiveVip = 1058,
+	OpStarUpgrade = 1059,
+	OpStarSpeedUp = 1060,
+	OpEndlessTreasure = 1061,
+	OpProcessStudy = 1062,
+	OpWarframeForg = 1063,
+	OpWarframeStoreroom = 1064,
+	OpstatueBrave = 1065,
+	OpMilitaryFortress = 1066,
+  OpForeignPavilion = 1067,
+  OpNebulaTechnology = 1068,
+  OpNebulaTechnologyReward = 1069,
+  OpMeteorMagic = 1070,
+  OpMagicLamp = 1071,
+  OpMagicLampPray = 1072,
+  OpMagicLampBreak = 1073,
+  OpMagicLampStrength = 1074,
+  OpMagicLampClass = 1075,
+  OpCityLevelGift = 1076,
 };

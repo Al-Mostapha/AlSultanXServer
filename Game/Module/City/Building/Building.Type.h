@@ -2,6 +2,7 @@
 #include <QList>
 #include <QString>
 #include <QHash>
+#include <QPoint>
 #include "Building.Enum.h"
 #include "Module/Resource/Resource.Enum.h"
 #include "Module/Player/Item/Item.Type.h"
@@ -72,6 +73,27 @@ struct RBuildingLvlSpecs {
   unsigned int freeTime = 0;
 };
 
+struct RBuildingTipsBtnListData{
+  int bid;
+  EBuilding idBuilding;
+  ECityBuildingState _CityBuildingState = ECityBuildingState::None;
+  QString BuildingName = "buildDes_name_101";
+  QString PicFile;
+  QString ImgFile;
+  QPoint Offset;
+  QPoint OffsetByzantine;
+  bool bIsInnerBuilding;
+  bool bCanBuild;
+  QList<EBuildingTips> NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpUpgrade,
+    EBuildingTips::OpArena,
+    EBuildingTips::OpAllianceBattle
+  };
+  QList<EBuildingTips> CoolingOperateList;
+  QList<EBuildingTips> TrainingOperateList;
+};
+
 struct RBuildingSpecs {
   int index = 0;
   EBuilding BuildingID = EBuilding::None;
@@ -100,5 +122,6 @@ struct RBuildingSpecs {
   const char *Describe = "Describe";
   const char *WarDescribe = "";
   const char *StarDescribe = "";
+  RBuildingTipsBtnListData TipButtons;
   QHash<int, RBuildingLvlSpecs> Lvls;
 };

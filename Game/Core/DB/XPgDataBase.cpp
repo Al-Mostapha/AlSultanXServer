@@ -72,6 +72,7 @@ QVariantList  XPgDataBase::Select(
 QVariant XPgDataBase::Insert(const QStringList &pFields, const QString &pTable, const QVariantList pBinds){
   QString lFields = pFields.join(", ");
   QString lQueryStr = QString("INSERT INTO " + pTable + " (" + lFields + ") VALUES (");
+  qDebug() << "XPgDataBase::Insert :" << lQueryStr;
   for(int i = 0; i < pFields.size(); i++){
     lQueryStr += QString("?, ");
   }

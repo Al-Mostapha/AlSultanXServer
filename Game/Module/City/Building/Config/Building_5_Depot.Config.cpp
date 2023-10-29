@@ -29,4 +29,34 @@ void CBuilding::InitDepot(){
   lBuilding.Describe = "buildDes_describe_105";
   lBuilding.WarDescribe = "buildDes_upgrade_brief_301";
   lBuilding.StarDescribe = "star_describe_105";
+
+  lBuilding.TipButtons.bid = 105;
+  lBuilding.TipButtons.BuildingName = "buildDes_name_105";
+  lBuilding.TipButtons.PicFile = "pic404000_2.png";
+  lBuilding.TipButtons.ImgFile = "building_005.png";
+  lBuilding.TipButtons.Offset = {0, -30};
+  lBuilding.TipButtons.OffsetByzantine = {0, -30};
+  lBuilding.TipButtons.bIsInnerBuilding = true;
+  lBuilding.TipButtons.bCanBuild = false;
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpUpgrade,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.CoolingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.TrainingOperateList = {
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
 }
