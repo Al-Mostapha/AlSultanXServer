@@ -28,4 +28,34 @@ void CBuilding::InitHeroesMonument(){
   lBuilding.Describe = "buildDes_describe_124";
   lBuilding.WarDescribe = "buildDes_upgrade_brief_301";
   lBuilding.StarDescribe = "";
+
+  lBuilding.TipButtons.bid = 124;
+  lBuilding.TipButtons.BuildingName = "buildDes_name_124";
+  lBuilding.TipButtons.PicFile = "pic407000_2.png";
+  lBuilding.TipButtons.ImgFile = "building_007.png";
+  lBuilding.TipButtons.Offset = {0, -110};
+  lBuilding.TipButtons.OffsetByzantine = {0, -110};
+  lBuilding.TipButtons.bIsInnerBuilding = true;
+  lBuilding.TipButtons.bCanBuild = 1;
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpUpgrade,
+    EBuildingTips::OpMonument,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.CoolingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpMonument,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.TrainingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpMonument,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
 }

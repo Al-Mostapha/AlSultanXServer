@@ -28,4 +28,34 @@ void CBuilding::InitBlacksmith(){
   lBuilding.Describe = "buildDes_describe_115";
   lBuilding.WarDescribe = "buildDes_upgrade_brief_301";
   lBuilding.StarDescribe = "";
+
+  lBuilding.TipButtons.bid = 115;
+  lBuilding.TipButtons.BuildingName = "buildDes_name_115";
+  lBuilding.TipButtons.PicFile = "pic429000_2.png";
+  lBuilding.TipButtons.ImgFile = "building_014.png";
+  lBuilding.TipButtons.Offset = { 0, -30 };
+  lBuilding.TipButtons.OffsetByzantine = {0, -30};
+  lBuilding.TipButtons.bIsInnerBuilding = true;
+  lBuilding.TipButtons.bCanBuild = 1;
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpUpgrade,
+    EBuildingTips::OpForging,
+    EBuildingTips::OpStoragebox,
+    EBuildingTips::OpArtifact
+  };
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpForging,
+    EBuildingTips::OpStoragebox,
+    EBuildingTips::OpArtifact
+  };
 }

@@ -61,7 +61,7 @@ QList< RBuildingDefault> BuildingStatic::_DefaultBuildings = {
   {EBuildingIndex::TrainHall, EBuilding::TrainHall, 1},
   {EBuildingIndex::StarBraveStatue, EBuilding::StarBraveStatue, 1},
   {EBuildingIndex::NebulaHall,EBuilding::None },
-  {EBuildingIndex::Merchant, EBuilding::HIP, 1},
+  {EBuildingIndex::Merchant, EBuilding::CargoShip, 1},
   {EBuildingIndex::TroopFlag, EBuilding::TroopDetails, 1},
   {EBuildingIndex::LeisureCenter ,EBuilding::LeisureHouse, 1},
   {EBuildingIndex::HuoChuang, EBuilding::Merchant, 1},

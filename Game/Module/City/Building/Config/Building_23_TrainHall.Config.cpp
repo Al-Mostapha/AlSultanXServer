@@ -28,4 +28,34 @@ void CBuilding::InitTrainHall(){
   lBuilding.Describe = "buildDes_describe_123";
   lBuilding.WarDescribe = "buildDes_upgrade_brief_301";
   lBuilding.StarDescribe = "";
+
+  lBuilding.TipButtons.bid = 123;
+  lBuilding.TipButtons.BuildingName = "buildDes_name_123";
+  lBuilding.TipButtons.PicFile = "pic407000_2.png";
+  lBuilding.TipButtons.ImgFile = "building_007.png";
+  lBuilding.TipButtons.Offset = {0, -30};
+  lBuilding.TipButtons.OffsetByzantine = {0, -30};
+  lBuilding.TipButtons.bIsInnerBuilding = true;
+  lBuilding.TipButtons.bCanBuild = 1;
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpUpgrade,
+    EBuildingTips::OpTrainHall,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.CoolingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpTrainHall,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.CoolingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpTrainHall,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
 }

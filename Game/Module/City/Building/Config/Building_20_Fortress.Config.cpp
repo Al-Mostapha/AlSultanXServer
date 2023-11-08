@@ -28,4 +28,34 @@ void CBuilding::InitFortress(){
   lBuilding.Describe = "buildDes_describe_120";
   lBuilding.WarDescribe = "buildDes_upgrade_brief_301";
   lBuilding.StarDescribe = "";
+
+  lBuilding.TipButtons.bid = 120;
+  lBuilding.TipButtons.BuildingName = "buildDes_name_120";
+  lBuilding.TipButtons.PicFile = "pic416000_2.png";
+  lBuilding.TipButtons.ImgFile = "building_008.png";
+  lBuilding.TipButtons.Offset = {0, -30};
+  lBuilding.TipButtons.OffsetByzantine = {0, -30};
+  lBuilding.TipButtons.bIsInnerBuilding = true;
+  lBuilding.TipButtons.bCanBuild = 1;
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpUpgrade,
+    EBuildingTips::OpBuild,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.CoolingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.TrainingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpBuild,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
 }

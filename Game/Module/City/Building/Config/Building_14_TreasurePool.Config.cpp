@@ -28,4 +28,34 @@ void CBuilding::InitTreasurePool(){
   lBuilding.Describe = "buildDes_describe_114";
   lBuilding.WarDescribe = "buildDes_upgrade_brief_301";
   lBuilding.StarDescribe = "star_describe_114";
+
+  lBuilding.TipButtons.bid = 114;
+  lBuilding.TipButtons.BuildingName = "buildDes_name_114";
+  lBuilding.TipButtons.PicFile = "pic428000_2.png";
+  lBuilding.TipButtons.ImgFile = "building_013.png";
+  lBuilding.TipButtons.Offset = {0, -30};
+  lBuilding.TipButtons.OffsetByzantine = {0, -30};
+  lBuilding.TipButtons.bIsInnerBuilding = true;
+  lBuilding.TipButtons.bCanBuild = 1;
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpUpgrade,
+    EBuildingTips::OpWish,
+    EBuildingTips::OpEndlessTreasure,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.CoolingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpWish,
+    EBuildingTips::OpEndlessTreasure,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.TrainingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpWish,
+    EBuildingTips::OpEndlessTreasure,
+    EBuildingTips::OpNone
+  };
 }

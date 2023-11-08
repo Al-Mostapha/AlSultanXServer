@@ -28,4 +28,34 @@ void CBuilding::InitMarket(){
   lBuilding.Describe = "buildDes_describe_112";
   lBuilding.WarDescribe = "buildDes_upgrade_brief_301";
   lBuilding.StarDescribe = "";
+
+  lBuilding.TipButtons.bid = 112;
+  lBuilding.TipButtons.BuildingName = "buildDes_name_112";
+  lBuilding.TipButtons.PicFile = "pic401000_2.png";
+  lBuilding.TipButtons.ImgFile = "building_010.png";
+  lBuilding.TipButtons.Offset = { 0, -30 };
+  lBuilding.TipButtons.OffsetByzantine = { 0,-30};
+  lBuilding.TipButtons.bIsInnerBuilding = 1;
+  lBuilding.TipButtons.bCanBuild = 1;
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpUpgrade,
+    EBuildingTips::OpTrade,
+    EBuildingTips::OpAuction,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpTrade,
+    EBuildingTips::OpAuction,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
 }

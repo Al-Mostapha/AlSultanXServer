@@ -28,4 +28,34 @@ void CBuilding::InitBarrack(){
   lBuilding.Describe = "buildDes_describe_118";
   lBuilding.WarDescribe = "buildDes_war_describe_03";
   lBuilding.StarDescribe = "Glory_text_04";
+
+  lBuilding.TipButtons.bid = 118;
+  lBuilding.TipButtons.BuildingName = "buildDes_name_118";
+  lBuilding.TipButtons.PicFile = "pic423000_2.png";
+  lBuilding.TipButtons.ImgFile = "ImgFile.png";
+  lBuilding.TipButtons.Offset = {0, -30};
+  lBuilding.TipButtons.OffsetByzantine = {0, -30};
+  lBuilding.TipButtons.bIsInnerBuilding = true;
+  lBuilding.TipButtons.bCanBuild = 1;
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpUpgrade,
+    EBuildingTips::OpTrain,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.CoolingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.TrainingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpTrain,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
 }
