@@ -28,4 +28,35 @@ void CBuilding::InitFirstAidTent(){
   lBuilding.Describe = "buildDes_describe_206";
   lBuilding.WarDescribe = "buildDes_upgrade_brief_301";
   lBuilding.StarDescribe = "star_describe_206";
+
+  lBuilding.TipButtons.bid = 206;
+  lBuilding.TipButtons.BuildingName = "buildDes_name_206";
+  lBuilding.TipButtons.PicFile = "pic411000_2.png";
+  lBuilding.TipButtons.ImgFile = "building_020.png";
+  lBuilding.TipButtons.Offset = {0, -15};
+  lBuilding.TipButtons.OffsetByzantine = {0, -15};
+  lBuilding.TipButtons.bIsInnerBuilding = false;
+  lBuilding.TipButtons.bCanBuild = 2;
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpUpgrade,
+    EBuildingTips::OpHeal,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.CoolingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.TrainingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+
 }

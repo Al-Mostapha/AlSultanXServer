@@ -28,4 +28,35 @@ void CBuilding::InitPrison(){
   lBuilding.Describe = "buildDes_describe_125";
   lBuilding.WarDescribe = "buildDes_upgrade_brief_301";
   lBuilding.StarDescribe = "star_describe_125";
+
+  lBuilding.TipButtons.bid = 125;
+  lBuilding.TipButtons.BuildingName = "buildDes_name_125";
+  lBuilding.TipButtons.PicFile = "pic407000_2.png";
+  lBuilding.TipButtons.ImgFile = "building_007.png";
+  lBuilding.TipButtons.Offset = {0, -30};
+  lBuilding.TipButtons.OffsetByzantine = {0, -30};
+  lBuilding.TipButtons.bIsInnerBuilding = true;
+  lBuilding.TipButtons.bCanBuild = 1;
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpUpgrade,
+    EBuildingTips::OpPrison,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpPrison,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpPrison,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+
 }

@@ -28,4 +28,34 @@ void CBuilding::InitIronMine(){
   lBuilding.Describe = "buildDes_describe_203";
   lBuilding.WarDescribe = "buildDes_upgrade_brief_301";
   lBuilding.StarDescribe = "star_describe_203";
+
+  lBuilding.TipButtons.bid = 203;
+  lBuilding.TipButtons.BuildingName = "buildDes_name_203";
+  lBuilding.TipButtons.PicFile = "pic414000_2.png";
+  lBuilding.TipButtons.ImgFile = "building_018.png";
+  lBuilding.TipButtons.Offset = {0, -15};
+  lBuilding.TipButtons.OffsetByzantine = {0, -15};
+  lBuilding.TipButtons.bIsInnerBuilding = false;
+  lBuilding.TipButtons.bCanBuild = 2;
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpBoost,
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpUpgrade,
+    EBuildingTips::OpCollect,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.CoolingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.TrainingOperateList = {
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
 }
