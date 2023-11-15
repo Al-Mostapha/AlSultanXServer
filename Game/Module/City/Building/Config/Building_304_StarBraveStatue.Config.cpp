@@ -28,4 +28,35 @@ void CBuilding::InitStarBraveStatue(){
   lBuilding.Describe = "buildDes_describe_304";
   lBuilding.WarDescribe = "";
   lBuilding.StarDescribe = "buildDes_describe_304";
+
+  lBuilding.TipButtons.bid = 304;
+  lBuilding.TipButtons.BuildingName = "Soldiers_armor_text_48";
+  lBuilding.TipButtons.PicFile = "";
+  lBuilding.TipButtons.ImgFile = "";
+  lBuilding.TipButtons.Offset = {0, -100};
+  lBuilding.TipButtons.OffsetByzantine = {0, -100};
+  lBuilding.TipButtons.bIsInnerBuilding = true;
+  lBuilding.TipButtons.bCanBuild = 0;
+
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpProcessStudy,
+	  EBuildingTips::OpWarframeForg,
+	  EBuildingTips::OpWarframeStoreroom,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.CoolingOperateList = {
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.TrainingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpProcessStudy,
+	  EBuildingTips::OpWarframeForg,
+	  EBuildingTips::OpWarframeStoreroom
+  };
 }

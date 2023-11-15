@@ -43,5 +43,5 @@ class CBuilding{
     void InitPrison();
     void InitStarBraveStatue();
     void InitLeisureHouse();
-
+    void InitNebulaPalace();
 };

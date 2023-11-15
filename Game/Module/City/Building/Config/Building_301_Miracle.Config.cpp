@@ -28,4 +28,35 @@ void CBuilding::InitMiracle(){
   lBuilding.Describe = "buildDes_describe_301";
   lBuilding.WarDescribe = "buildDes_upgrade_brief_301";
   lBuilding.StarDescribe = "star_describe_301";
+    
+  lBuilding.TipButtons.bid = 301;
+  lBuilding.TipButtons.BuildingName = "buildDes_name_301";
+  lBuilding.TipButtons.PicFile = "BG_statue.png";
+  lBuilding.TipButtons.ImgFile = "BG_statue.png";
+  lBuilding.TipButtons.Offset = {0, 0};
+  lBuilding.TipButtons.OffsetByzantine = {0, 0};
+  lBuilding.TipButtons.bIsInnerBuilding = true;
+  lBuilding.TipButtons.bCanBuild = 0;
+
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpWar,
+    EBuildingTips::OpWarGem,
+    EBuildingTips::OpWarTechnology,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.CoolingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpWarGem,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.CoolingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpWarGem,
+    EBuildingTips::OpWarTechnology,
+    EBuildingTips::OpNone
+  };
 }

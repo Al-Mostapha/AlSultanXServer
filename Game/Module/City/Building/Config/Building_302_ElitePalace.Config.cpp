@@ -28,4 +28,34 @@ void CBuilding::InitElitePalace(){
   lBuilding.Describe = "buildDes_describe_302";
   lBuilding.WarDescribe = "";
   lBuilding.StarDescribe = "";
+
+  lBuilding.TipButtons.bid = 302;
+  lBuilding.TipButtons.BuildingName = "common_text_3129";
+  lBuilding.TipButtons.PicFile = "jingyingdiantang.png";
+  lBuilding.TipButtons.ImgFile = "jingyingdiantang.png";
+  lBuilding.TipButtons.Offset = {0, 0};
+  lBuilding.TipButtons.OffsetByzantine = {0, 0};
+  lBuilding.TipButtons.bIsInnerBuilding = true;
+  lBuilding.TipButtons.bCanBuild = 0;
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpUpgrade,
+    EBuildingTips::OpTrain,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.CoolingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
+  lBuilding.TipButtons.TrainingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpTrain,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
 }
