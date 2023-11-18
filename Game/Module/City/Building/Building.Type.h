@@ -1,4 +1,5 @@
 #pragma once
+#include <QObject>
 #include <QList>
 #include <QString>
 #include <QHash>
@@ -22,6 +23,8 @@ struct RCostBuilding {
   EBuilding TypeReq = EBuilding::None;
   unsigned int lvlReq = 0;
 };
+
+Q_DECLARE_METATYPE(RCostBuilding);
 
 struct RBuildingLvlSpecs {
   QList<RCostBuilding> PreCond;
@@ -73,6 +76,7 @@ struct RBuildingLvlSpecs {
   unsigned int freeTime = 0;
 };
 
+Q_DECLARE_METATYPE(RBuildingLvlSpecs);
 struct RBuildingTipsBtnListData{
   int bid;
   EBuilding idBuilding;
@@ -94,6 +98,7 @@ struct RBuildingTipsBtnListData{
   QList<EBuildingTips> TrainingOperateList;
 };
 
+Q_DECLARE_METATYPE(RBuildingTipsBtnListData);
 struct RBuildingSpecs {
   int index = 0;
   EBuilding BuildingID = EBuilding::None;
@@ -125,3 +130,5 @@ struct RBuildingSpecs {
   RBuildingTipsBtnListData TipButtons;
   QHash<int, RBuildingLvlSpecs> Lvls;
 };
+
+Q_DECLARE_METATYPE(RBuildingSpecs);
