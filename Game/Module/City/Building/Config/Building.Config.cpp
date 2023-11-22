@@ -1,5 +1,7 @@
 #include "Building.Config.h"
 #include "QJsonObject"
+#include <QJsonDocument>
+#include <QFile>
 
 CBuilding *CBuilding::Get(){
   static CBuilding *pBuilding = new CBuilding();
@@ -38,22 +40,30 @@ void CBuilding::Init(){
   InitMiracle();
   InitElitePalace();
   InitCrystalMine();
-  InitMaterialWorkShop();
+  // InitMaterialWorkShop();
   InitTrainHall();
   InitHeroesMonument();
   InitPrison();
   InitStarBraveStatue();
   InitLeisureHouse();
   InitNebulaPalace();
+
+  ProduceJson();
+  qDebug() << "JsonFile Produced";
 }
 
 void CBuilding::ProduceJson(){
   QJsonObject lJson;
   QVariantHash lBuildingHash;
-  // for(auto [lBuildingType, lBuilding] : _BuildingSpecs.asKeyValueRange()){
-  //   lBuildingHash.insert(
-  //     QString::number(static_cast<int>(lBuildingType)),
-  //     QVariant(lBuilding));
-  // }
-
+  for(auto [lBuildingType, lBuilding] : _BuildingSpecs.asKeyValueRange()){
+    QVariant lVal;
+    lVal.setValue(lBuilding);
+    lBuildingHash.insert(
+      QString::number(static_cast<int>(lBuildingType)),
+      lVal);
+  }
+  auto lJsonDoc = QJsonDocument::fromVariant(lBuildingHash);
+  QFile file("Test.json");
+  file.open(QIODevice::ReadWrite|QIODevice::Text);
+  file.write(lJsonDoc.toJson());
 }

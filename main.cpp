@@ -5,6 +5,7 @@
 #include "Game/Core/Server/XServer.h"
 #include "Game/Module/City/Building/Building.DB.h"
 #include "Game/Core/Global/XGlobal.h"
+#include "Game/Module/Boot/Boot.Mgr.h"
 
 using namespace AlSultan;
 
@@ -17,5 +18,6 @@ int main(int argc, char *argv[])
     l_Server.Start();
     l_Server.RegisterController();
     XGlobal::Get()->Init();
+    BootManager::Get().Init();
     return a.exec();
 }
