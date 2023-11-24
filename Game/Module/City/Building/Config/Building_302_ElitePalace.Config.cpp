@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitElitePalace(){
-  _BuildingSpecs[EBuilding::ElitePalace] =  {}; // 302
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::ElitePalace]; // 302
+  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  _BuildingSpecs.insert(EBuilding::ElitePalace, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::ElitePalace]; // 302
   lBuilding.index = 30;
   lBuilding.oldUnlocklevel = 16;
   lBuilding.oldShowlevel = 16;

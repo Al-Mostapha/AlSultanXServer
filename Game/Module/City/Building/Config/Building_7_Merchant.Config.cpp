@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitMerchant(){
-  _BuildingSpecs[EBuilding::Merchant] =  {}; // 107
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::Merchant]; // 107
+  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  _BuildingSpecs.insert(EBuilding::Merchant, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Merchant]; // 107
   lBuilding.index = 7;
   lBuilding.oldUnlocklevel = 1;
   lBuilding.oldShowlevel = 1;

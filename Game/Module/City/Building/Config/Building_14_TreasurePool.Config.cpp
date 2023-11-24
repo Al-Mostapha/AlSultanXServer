@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitTreasurePool(){
-  _BuildingSpecs[EBuilding::TreasurePool] =  {}; // 114
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::TreasurePool]; // 114
+  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  _BuildingSpecs.insert(EBuilding::TreasurePool, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::TreasurePool]; // 114
   lBuilding.index = 14;
   lBuilding.oldUnlocklevel = 7;
   lBuilding.oldShowlevel = 7;

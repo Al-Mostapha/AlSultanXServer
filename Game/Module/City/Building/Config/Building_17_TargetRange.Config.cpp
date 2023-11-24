@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitTargetRange(){
-  _BuildingSpecs[EBuilding::TargetRange] =  {}; // 117
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::TargetRange]; // 117
+    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+_BuildingSpecs.insert(EBuilding::TargetRange, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::TargetRange]; // 117
   lBuilding.index = 17;
   lBuilding.oldUnlocklevel = 3;
   lBuilding.oldShowlevel = 3;

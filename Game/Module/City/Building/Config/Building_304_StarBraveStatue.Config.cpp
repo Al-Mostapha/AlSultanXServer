@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitStarBraveStatue(){
-  _BuildingSpecs[EBuilding::StarBraveStatue] =  {}; // 304
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::StarBraveStatue]; // 304
+    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+_BuildingSpecs.insert(EBuilding::StarBraveStatue, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::StarBraveStatue]; // 304
   lBuilding.index = 35;
   lBuilding.oldUnlocklevel = 0;
   lBuilding.oldShowlevel = 0;

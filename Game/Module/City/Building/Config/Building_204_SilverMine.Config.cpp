@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitSilverMine(){
-  _BuildingSpecs[EBuilding::SilverMine] =  {}; // 204
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::SilverMine]; // 204
+    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+_BuildingSpecs.insert(EBuilding::SilverMine, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::SilverMine]; // 204
   lBuilding.index = 26;
   lBuilding.oldUnlocklevel = 15;
   lBuilding.oldShowlevel = 15;

@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitBarrack(){
-  _BuildingSpecs[EBuilding::Barrack] =  {}; // 118
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::Barrack]; // 118
+    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+_BuildingSpecs.insert(EBuilding::Barrack, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Barrack]; // 118
   lBuilding.index = 18;
   lBuilding.oldUnlocklevel = 1;
   lBuilding.oldShowlevel = 1;

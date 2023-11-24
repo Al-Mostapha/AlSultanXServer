@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitEmbassy(){
-  _BuildingSpecs[EBuilding::Embassy] =  {}; // 111
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::Embassy]; // 111
+  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  _BuildingSpecs.insert(EBuilding::Embassy, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Embassy]; // 111
   lBuilding.index = 11;
   lBuilding.oldUnlocklevel = 6;
   lBuilding.oldShowlevel = 6;

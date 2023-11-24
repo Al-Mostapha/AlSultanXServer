@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitStable(){
-  _BuildingSpecs[EBuilding::Stable] =  {}; // 116
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::Stable]; // 116
+  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  _BuildingSpecs.insert(EBuilding::Stable, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Stable]; // 116
   lBuilding.index = 16;
   lBuilding.oldUnlocklevel = 1;
   lBuilding.oldShowlevel = 1;

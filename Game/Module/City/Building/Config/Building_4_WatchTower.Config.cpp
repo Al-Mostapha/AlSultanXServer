@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitWatchTower(){
-  _BuildingSpecs[EBuilding::WatchTower] =  {}; // 104
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::WatchTower]; // 104
+  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  _BuildingSpecs.insert(EBuilding::WatchTower, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::WatchTower]; // 104
   lBuilding.index = 4;
   lBuilding.BuildingID = EBuilding::WatchTower; // 104
   lBuilding.oldUnlocklevel = 1;

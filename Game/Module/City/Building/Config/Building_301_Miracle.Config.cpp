@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitMiracle(){
-  _BuildingSpecs[EBuilding::Miracle] =  {}; // 301
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::Miracle]; // 301
+    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+_BuildingSpecs.insert(EBuilding::Miracle, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Miracle]; // 301
   lBuilding.index = 29;
   lBuilding.oldUnlocklevel = 30;
   lBuilding.oldShowlevel = 30;

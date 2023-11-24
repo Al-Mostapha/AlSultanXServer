@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitFortress(){
-  _BuildingSpecs[EBuilding::Fortress] =  {}; // 120
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::Fortress]; // 120
+    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+_BuildingSpecs.insert(EBuilding::Fortress, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Fortress]; // 120
   lBuilding.index = 20;
   lBuilding.oldUnlocklevel = 6;
   lBuilding.oldShowlevel = 6;

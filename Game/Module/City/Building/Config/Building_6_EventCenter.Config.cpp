@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitEventCenter(){
-  _BuildingSpecs[EBuilding::EventCenter] =  {}; // 106
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::EventCenter]; // 106
+  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  _BuildingSpecs.insert(EBuilding::EventCenter, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::EventCenter]; // 106
   lBuilding.index = 6;
   lBuilding.oldUnlocklevel = 1;
   lBuilding.oldShowlevel = 1;

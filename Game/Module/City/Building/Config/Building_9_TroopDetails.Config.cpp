@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitTroopDetails(){
-  _BuildingSpecs[EBuilding::TroopDetails] =  {}; // 109
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::TroopDetails]; // 109
+  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  _BuildingSpecs.insert(EBuilding::TroopDetails, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::TroopDetails]; // 109
   lBuilding.index = 9;
   lBuilding.oldUnlocklevel = 1;
   lBuilding.oldShowlevel = 1;

@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitIronMine(){
-  _BuildingSpecs[EBuilding::IronMine] =  {}; // 203
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::IronMine]; // 203
+    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+_BuildingSpecs.insert(EBuilding::IronMine, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::IronMine]; // 203
   lBuilding.index = 25;
   lBuilding.oldUnlocklevel = 10;
   lBuilding.oldShowlevel = 10;

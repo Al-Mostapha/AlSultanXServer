@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitPort(){
-  _BuildingSpecs[EBuilding::Port] =  {}; // 108
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::Port]; // 108
+  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  _BuildingSpecs.insert(EBuilding::Port, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Port]; // 108
   lBuilding.index = 8;
   lBuilding.oldUnlocklevel = 1;
   lBuilding.oldShowlevel = 1;

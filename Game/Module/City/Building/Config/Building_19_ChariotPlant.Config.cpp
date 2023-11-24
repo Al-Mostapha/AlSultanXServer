@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitChariotPlant(){
-  _BuildingSpecs[EBuilding::ChariotPlant] =  {}; // 119
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::ChariotPlant]; // 119
+    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+_BuildingSpecs.insert(EBuilding::ChariotPlant, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::ChariotPlant]; // 119
   lBuilding.index = 19;
   lBuilding.oldUnlocklevel = 4;
   lBuilding.oldShowlevel = 4;

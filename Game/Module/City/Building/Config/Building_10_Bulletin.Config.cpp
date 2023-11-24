@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitBulletin(){
-  _BuildingSpecs[EBuilding::Bulletin] =  {}; // 110
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::Bulletin]; // 110
+  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  _BuildingSpecs.insert(EBuilding::Bulletin, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Bulletin]; // 110
   lBuilding.index = 10;
 
   lBuilding.oldUnlocklevel = 1;

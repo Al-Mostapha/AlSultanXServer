@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitDepot(){
-  _BuildingSpecs[EBuilding::Depot] =  {}; // 105
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::Depot]; // 105
+  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  _BuildingSpecs.insert(EBuilding::Depot, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Depot]; // 105
   lBuilding.index = 5;
   lBuilding.BuildingID = EBuilding::Depot; // 105
   lBuilding.oldUnlocklevel = 1;

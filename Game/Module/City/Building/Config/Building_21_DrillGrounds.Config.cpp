@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitDrillGrounds(){
-  _BuildingSpecs[EBuilding::DrillGrounds] =  {}; // 121
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::DrillGrounds]; // 121
+    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+_BuildingSpecs.insert(EBuilding::DrillGrounds, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::DrillGrounds]; // 121
   lBuilding.index = 21;
   lBuilding.oldUnlocklevel = 1;
   lBuilding.oldShowlevel = 1;

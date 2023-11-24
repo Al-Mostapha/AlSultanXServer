@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitCrystalMine(){
-  _BuildingSpecs[EBuilding::CrystalMine] =  {}; // 207
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::CrystalMine]; // 207
+    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+_BuildingSpecs.insert(EBuilding::CrystalMine, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::CrystalMine]; // 207
   lBuilding.index = 31;
   lBuilding.oldUnlocklevel = 60;
   lBuilding.oldShowlevel = 60;

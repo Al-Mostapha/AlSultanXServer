@@ -87,7 +87,7 @@ struct RBuildingTipsBtnListData{
   QPoint Offset;
   QPoint OffsetByzantine;
   bool bIsInnerBuilding;
-  bool bCanBuild;
+  int bCanBuild; //0, 1, 2
   QList<EBuildingTips> NormalOperateList = {
     EBuildingTips::OpDetails,
     EBuildingTips::OpUpgrade,
@@ -99,7 +99,10 @@ struct RBuildingTipsBtnListData{
 };
 
 Q_DECLARE_METATYPE(RBuildingTipsBtnListData);
-struct RBuildingSpecs {
+class RBuildingSpecs : QObject {
+  Q_OBJECT
+  public:
+  explicit RBuildingSpecs(QObject *parent = nullptr) : QObject(parent) {}
   int index = 0;
   EBuilding BuildingID = EBuilding::None;
   unsigned int oldUnlocklevel = 0;

@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitTrainHall(){
-  _BuildingSpecs[EBuilding::TrainHall] =  {}; // 123
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::TrainHall]; // 123
+    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+_BuildingSpecs.insert(EBuilding::TrainHall, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::TrainHall]; // 123
   lBuilding.index = 32;
   lBuilding.oldUnlocklevel = 7;
   lBuilding.oldShowlevel = 7;

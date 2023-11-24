@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitHeroesMonument(){
-  _BuildingSpecs[EBuilding::HeroesMonument] =  {}; // 124
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::HeroesMonument]; // 124
+    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+_BuildingSpecs.insert(EBuilding::HeroesMonument, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::HeroesMonument]; // 124
   lBuilding.index = 33;
   lBuilding.oldUnlocklevel = 16;
   lBuilding.oldShowlevel = 16;

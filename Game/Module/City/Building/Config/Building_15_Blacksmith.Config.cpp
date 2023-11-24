@@ -1,8 +1,9 @@
 #include "Building.Config.h"
 
 void CBuilding::InitBlacksmith(){
-  _BuildingSpecs[EBuilding::Blacksmith] =  {}; // 115
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::Blacksmith]; // 115
+  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  _BuildingSpecs.insert(EBuilding::Blacksmith, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Blacksmith]; // 115
   lBuilding.index = 15;
   lBuilding.oldUnlocklevel = 10;
   lBuilding.oldShowlevel = 10;

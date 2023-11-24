@@ -1,8 +1,10 @@
 #include "Building.Config.h"
 
 void CBuilding::InitLeisureHouse(){
-  _BuildingSpecs[EBuilding::LeisureHouse] =  {}; // 30001
-  RBuildingSpecs lBuilding = _BuildingSpecs[EBuilding::LeisureHouse]; // 30001
+  
+    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+_BuildingSpecs.insert(EBuilding::LeisureHouse, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::LeisureHouse]; // 30001
   lBuilding.index = 40;
   lBuilding.oldUnlocklevel = 1;
   lBuilding.oldShowlevel = 1;
