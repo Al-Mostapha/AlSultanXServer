@@ -102,6 +102,7 @@
     "qsqlrecord": "cpp",
     "qjsonarray": "cpp",
     "qsharedpointer": "cpp",
-    "qpointer": "cpp"
+    "qpointer": "cpp",
+    "qsettings": "cpp"
   }
 }

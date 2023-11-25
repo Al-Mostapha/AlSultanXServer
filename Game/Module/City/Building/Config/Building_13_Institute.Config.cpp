@@ -1,8 +1,8 @@
 #include "Building.Config.h"
 
 void CBuilding::InitInstitute(){
-  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
-  _BuildingSpecs.insert(EBuilding::Castle, lPointer);
+  QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  _BuildingSpecs.insert(EBuilding::Institute, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Institute]; // 113
   lBuilding.index = 13;
   lBuilding.oldUnlocklevel = 2;

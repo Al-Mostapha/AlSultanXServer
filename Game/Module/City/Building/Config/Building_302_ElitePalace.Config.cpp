@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitElitePalace(){
-  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
   _BuildingSpecs.insert(EBuilding::ElitePalace, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::ElitePalace]; // 302
   lBuilding.index = 30;

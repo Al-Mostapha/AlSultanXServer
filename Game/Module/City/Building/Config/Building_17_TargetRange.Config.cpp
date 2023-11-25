@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitTargetRange(){
-    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+    QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
 _BuildingSpecs.insert(EBuilding::TargetRange, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::TargetRange]; // 117
   lBuilding.index = 17;

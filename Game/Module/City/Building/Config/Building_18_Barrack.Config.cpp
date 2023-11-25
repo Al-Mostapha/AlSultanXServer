@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitBarrack(){
-    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+    QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
 _BuildingSpecs.insert(EBuilding::Barrack, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Barrack]; // 118
   lBuilding.index = 18;

@@ -7,6 +7,8 @@
 #include "Game/Core/Global/XGlobal.h"
 #include "Game/Module/Boot/Boot.Mgr.h"
 
+#include <QJsonDocument>
+
 using namespace AlSultan;
 
 int main(int argc, char *argv[])

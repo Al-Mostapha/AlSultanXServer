@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitEmbassy(){
-  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
   _BuildingSpecs.insert(EBuilding::Embassy, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Embassy]; // 111
   lBuilding.index = 11;

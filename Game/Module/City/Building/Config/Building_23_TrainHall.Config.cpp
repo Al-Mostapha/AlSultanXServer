@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitTrainHall(){
-    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+    QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
 _BuildingSpecs.insert(EBuilding::TrainHall, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::TrainHall]; // 123
   lBuilding.index = 32;

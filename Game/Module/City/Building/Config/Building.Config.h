@@ -1,11 +1,11 @@
 #pragma once
-#include <QSharedPointer>
+#include <QPointer>
 #include "Module/City/Building/Building.Type.h"
 
 class CBuilding{
   void ProduceJson();
   public:
-    QHash<EBuilding, QSharedPointer<RBuildingSpecs>> _BuildingSpecs;
+    QHash<EBuilding, QPointer<RBuildingSpecs>> _BuildingSpecs;
     static CBuilding *Get();
     void Init();
     void InitCastle();

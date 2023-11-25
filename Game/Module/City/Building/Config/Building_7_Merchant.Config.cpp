@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitMerchant(){
-  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
   _BuildingSpecs.insert(EBuilding::Merchant, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Merchant]; // 107
   lBuilding.index = 7;

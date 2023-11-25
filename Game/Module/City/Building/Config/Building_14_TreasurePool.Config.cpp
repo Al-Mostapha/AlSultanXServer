@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitTreasurePool(){
-  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
   _BuildingSpecs.insert(EBuilding::TreasurePool, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::TreasurePool]; // 114
   lBuilding.index = 14;

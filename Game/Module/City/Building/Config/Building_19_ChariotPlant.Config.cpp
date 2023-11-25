@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitChariotPlant(){
-    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+    QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
 _BuildingSpecs.insert(EBuilding::ChariotPlant, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::ChariotPlant]; // 119
   lBuilding.index = 19;

@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitLumberMill(){
-    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+    QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
 _BuildingSpecs.insert(EBuilding::LumberMill, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::LumberMill]; // 202
   lBuilding.index = 24;

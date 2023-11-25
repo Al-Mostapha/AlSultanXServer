@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitTroopDetails(){
-  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
   _BuildingSpecs.insert(EBuilding::TroopDetails, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::TroopDetails]; // 109
   lBuilding.index = 9;

@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitEventCenter(){
-  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
   _BuildingSpecs.insert(EBuilding::EventCenter, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::EventCenter]; // 106
   lBuilding.index = 6;

@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitNebulaPalace(){
-    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+    QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
 _BuildingSpecs.insert(EBuilding::NEBULA_PALACE, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::NEBULA_PALACE]; // 305
   lBuilding.index = 40;

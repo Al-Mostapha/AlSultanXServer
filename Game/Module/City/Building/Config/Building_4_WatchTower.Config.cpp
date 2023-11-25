@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitWatchTower(){
-  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
   _BuildingSpecs.insert(EBuilding::WatchTower, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::WatchTower]; // 104
   lBuilding.index = 4;

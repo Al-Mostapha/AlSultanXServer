@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitDepot(){
-  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
   _BuildingSpecs.insert(EBuilding::Depot, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Depot]; // 105
   lBuilding.index = 5;

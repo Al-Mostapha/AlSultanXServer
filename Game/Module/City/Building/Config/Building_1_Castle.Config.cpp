@@ -1,10 +1,11 @@
 #include "Building.Config.h"
 #include <QSharedPointer>
+#include <QPointer>
 
 void CBuilding::InitCastle(){
-  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
-  _BuildingSpecs.insert(EBuilding::Castle, lPointer);
-  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Castle]; // 101
+  QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  // _BuildingSpecs.insert(EBuilding::Castle, lPointer);
+  // RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Castle]; // 101
   // lBuilding.index = 1;
   // lBuilding.BuildingID = EBuilding::Castle;
   // lBuilding.oldUnlocklevel = 1;

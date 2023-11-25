@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitBlacksmith(){
-  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
   _BuildingSpecs.insert(EBuilding::Blacksmith, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Blacksmith]; // 115
   lBuilding.index = 15;

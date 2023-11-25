@@ -53,23 +53,20 @@ void CBuilding::Init(){
 }
 
 void CBuilding::ProduceJson(){
-  // QJsonObject lJson;
-  // QVariantHash lBuildingHash;
+  QJsonObject lJson;
 
-  // for(auto [lBuildingType, lBuilding] : _BuildingSpecs.asKeyValueRange()){
-  //   QVariant lVal;
-  //   lVal.setValue(lBuilding);
-  //   lBuildingHash.insert(
-  //     QString::number(static_cast<int>(lBuildingType)),
-  //     lVal);
-  // }
+  for(auto [lBuildingType, lBuilding] : _BuildingSpecs.asKeyValueRange()){
+    lJson.insert(
+      QString::number(static_cast<int>(lBuildingType)),
+      lBuilding->ToJson());
+  }
 
-  // qDebug() << lBuildingHash["101"].value<RBuildingSpecs>().BuildingName;
+  qDebug() << lJson["101"];
 
-  // QJsonDocument lJsonDoc(QJsonObject::fromVariantHash(lBuildingHash));
-  // QFile file("Test1231.json");
-  // file.open(QIODevice::ReadWrite | QIODevice::Text);
-  // auto lJsonString = lJsonDoc.toJson();
-  // file.write(lJsonString);
-  // file.close();
+  QJsonDocument lJsonDoc(lJson);
+  QFile file("Test1231.json");
+  file.open(QIODevice::ReadWrite | QIODevice::Text);
+  auto lJsonString = lJsonDoc.toJson();
+  file.write(lJsonString);
+  file.close();
 }

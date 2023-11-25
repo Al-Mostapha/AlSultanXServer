@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitSilverMine(){
-    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+    QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
 _BuildingSpecs.insert(EBuilding::SilverMine, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::SilverMine]; // 204
   lBuilding.index = 26;

@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitHallOfWar(){
-    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+    QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
 _BuildingSpecs.insert(EBuilding::HallOfWar, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::HallOfWar]; // 122
   lBuilding.index = 22;

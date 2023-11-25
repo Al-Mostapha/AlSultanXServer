@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitCrystalMine(){
-    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+    QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
 _BuildingSpecs.insert(EBuilding::CrystalMine, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::CrystalMine]; // 207
   lBuilding.index = 31;

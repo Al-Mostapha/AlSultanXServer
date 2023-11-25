@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitDrillGrounds(){
-    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+    QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
 _BuildingSpecs.insert(EBuilding::DrillGrounds, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::DrillGrounds]; // 121
   lBuilding.index = 21;

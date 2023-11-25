@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitPrison(){
-  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
   _BuildingSpecs.insert(EBuilding::Prison, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Prison]; // 125
   lBuilding.index = 34;

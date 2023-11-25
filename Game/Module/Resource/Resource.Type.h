@@ -1,4 +1,6 @@
 #pragma once
+#include <QJsonObject>
+#include "Resource.Enum.h"
 
 struct RResource
 {
@@ -10,4 +12,26 @@ struct RResource
   unsigned int Mithril = 0;
   unsigned int Crystal = 0;
   unsigned int MeteorCrystal = 0;
+};
+
+struct RCostResource{
+  EResource ResourceID = EResource::None;
+  unsigned int Amount = 0;
+  QJsonObject ToJson(){
+    return {
+      {"Type", (int)ResourceID},
+      {"Amount", (int)Amount}
+    };
+  }
+};
+
+struct RCapacityResource{
+  EResource ResourceID = EResource::None;
+  unsigned int Amount = 0;
+  QJsonObject ToJson(){
+    return {
+      {"Type", (int)ResourceID},
+      {"Amount", (int)Amount}
+    };
+  }
 };

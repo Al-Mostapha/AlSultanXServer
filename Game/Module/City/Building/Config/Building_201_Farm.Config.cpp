@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitFarm(){
-    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+    QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
 _BuildingSpecs.insert(EBuilding::HallOfWar, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::HallOfWar]; // 201
   lBuilding.index = 23;

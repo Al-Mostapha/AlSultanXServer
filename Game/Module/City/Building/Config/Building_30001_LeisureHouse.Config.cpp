@@ -2,7 +2,7 @@
 
 void CBuilding::InitLeisureHouse(){
   
-    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+    QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
 _BuildingSpecs.insert(EBuilding::LeisureHouse, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::LeisureHouse]; // 30001
   lBuilding.index = 40;

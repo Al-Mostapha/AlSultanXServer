@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitFirstAidTent(){
-    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+    QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
 _BuildingSpecs.insert(EBuilding::FirstAidTent, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::FirstAidTent]; // 206
   lBuilding.index = 28;

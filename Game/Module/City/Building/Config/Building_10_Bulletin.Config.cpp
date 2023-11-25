@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitBulletin(){
-  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
   _BuildingSpecs.insert(EBuilding::Bulletin, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Bulletin]; // 110
   lBuilding.index = 10;

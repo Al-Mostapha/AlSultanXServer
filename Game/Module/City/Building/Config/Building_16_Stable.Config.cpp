@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitStable(){
-  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
   _BuildingSpecs.insert(EBuilding::Stable, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Stable]; // 116
   lBuilding.index = 16;

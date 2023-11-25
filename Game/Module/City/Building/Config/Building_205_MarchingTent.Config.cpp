@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitMarchingTent(){
-    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+    QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
 _BuildingSpecs.insert(EBuilding::MarchingTent, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::MarchingTent]; // 205
   lBuilding.index = 27;

@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitMarket(){
-  QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+  QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
   _BuildingSpecs.insert(EBuilding::Market, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Market]; // 112
   lBuilding.index = 12;

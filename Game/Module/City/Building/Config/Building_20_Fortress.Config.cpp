@@ -1,7 +1,7 @@
 #include "Building.Config.h"
 
 void CBuilding::InitFortress(){
-    QSharedPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
+    QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
 _BuildingSpecs.insert(EBuilding::Fortress, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Fortress]; // 120
   lBuilding.index = 20;
