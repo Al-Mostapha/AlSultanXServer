@@ -103,6 +103,9 @@
     "qjsonarray": "cpp",
     "qsharedpointer": "cpp",
     "qpointer": "cpp",
-    "qsettings": "cpp"
+    "qsettings": "cpp",
+    "qhttpserverrequest": "cpp",
+    "qhttpserverresponse": "cpp",
+    "stdfloat": "cpp"
   }
 }

@@ -14,6 +14,12 @@ IController *IController::FromWsPath(XEndPoint *pEndPoint)
   return IController::FromClassName(lControllerName);
 }
 
+IController *IController::FromHttpPath(XEndPoint *pEndPoint)
+{
+  auto lControllerName = pEndPoint->GetControllerName();
+  return IController::FromClassName(lControllerName);
+}
+
 IController *IController::FromClassName(const QString &pClassName)
 {
   auto lMetaType       = QMetaType::type(pClassName.toStdString().c_str());
@@ -40,4 +46,9 @@ void IController::ExecuteAction(const QString &pActionName)
 void IController::Response()
 {
   _Request->_Connection->SendJson(_Response->GetJsonStr());
+}
+
+QHttpServerResponse IController::HttpResponse()
+{
+  return QHttpServerResponse(_Response->GetJsonStr());
 }

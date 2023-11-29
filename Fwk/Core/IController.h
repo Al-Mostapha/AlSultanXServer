@@ -1,5 +1,6 @@
 #pragma once
 #include <QObject>
+#include <QHttpServerResponse>
 #include "XEndPoint.h"
 #include "Server/Request/IRequest.h"
 #include "Server/Response/IResponse.h"
@@ -34,10 +35,12 @@ class IController : public QObject
   public:
     explicit IController(QObject *parent = nullptr);
     static IController *FromWsPath(XEndPoint *pEndPoint);
+    static IController *FromHttpPath(XEndPoint *pEndPoint);
     static IController *FromClassName(const QString &pClassName);
     void ExecuteAction(const QString &pActionName);
     void SetRequest(IRequest *pRequest) {_Request = pRequest;}
     void Response();
+    QHttpServerResponse HttpResponse();
 };
 
 Q_DECLARE_METATYPE(IController *)

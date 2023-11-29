@@ -4,569 +4,411 @@
 
 void CBuilding::InitCastle(){
   QPointer<RBuildingSpecs> lPointer(new RBuildingSpecs);
-  // _BuildingSpecs.insert(EBuilding::Castle, lPointer);
-  // RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Castle]; // 101
-  // lBuilding.index = 1;
-  // lBuilding.BuildingID = EBuilding::Castle;
-  // lBuilding.oldUnlocklevel = 1;
-  // lBuilding.oldShowlevel = 1;
-  // lBuilding.unlocklevel = 1;
-  // lBuilding.showlevel = 1;
-  // lBuilding.bType = EBuildingPlace::Inner;
-  // lBuilding.maxCount = 1;
-  // lBuilding.isDemolish = false;
-  // lBuilding.isExchange = false;
-  // lBuilding.isBuild = false;
-  // lBuilding.isUpgrade = true;
-  // lBuilding.maxLvl = 130;
-  // lBuilding.initLvl = 1;
-  // lBuilding.openWl = true;
-  // lBuilding.openStar = true;
-  // lBuilding.maxStarLv = 70;
+  _BuildingSpecs.insert(EBuilding::Castle, lPointer);
+  RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Castle]; // 101
+  lBuilding.index = 1;
+  lBuilding.BuildingID = EBuilding::Castle;
+  lBuilding.oldUnlocklevel = 1;
+  lBuilding.oldShowlevel = 1;
+  lBuilding.unlocklevel = 1;
+  lBuilding.showlevel = 1;
+  lBuilding.bType = EBuildingPlace::Inner;
+  lBuilding.maxCount = 1;
+  lBuilding.isDemolish = false;
+  lBuilding.isExchange = false;
+  lBuilding.isBuild = false;
+  lBuilding.isUpgrade = true;
+  lBuilding.maxLvl = 130;
+  lBuilding.initLvl = 1;
+  lBuilding.openWl = true;
+  lBuilding.openStar = true;
+  lBuilding.maxStarLv = 70;
 
-  // lBuilding.BuildingName = "buildDes_name_101";
-  // lBuilding.BuildingIcon = "quest_building_101.png";
-  // lBuilding.BuildingBrief = "";
-  // lBuilding.UpgradeBrief = "buildDes_upgrade_brief_101";
-  // lBuilding.Describe = "buildDes_describe_101";
-  // lBuilding.WarDescribe = "buildDes_upgrade_brief_301";
-  // lBuilding.StarDescribe = "star_describe_101";
+  lBuilding.BuildingName = "buildDes_name_101";
+  lBuilding.BuildingIcon = "quest_building_101.png";
+  lBuilding.BuildingBrief = "";
+  lBuilding.UpgradeBrief = "buildDes_upgrade_brief_101";
+  lBuilding.Describe = "buildDes_describe_101";
+  lBuilding.WarDescribe = "buildDes_upgrade_brief_301";
+  lBuilding.StarDescribe = "star_describe_101";
 
-  // lBuilding.TipButtons.bid = 101;
-  // lBuilding.TipButtons.BuildingName = "buildDes_name_101";
-  // lBuilding.TipButtons.PicFile = "#pic400000_2.png";
-  // lBuilding.TipButtons.ImgFile = "pic400000_2.png";
-  // lBuilding.TipButtons.Offset = {0, -30};
-  // lBuilding.TipButtons.OffsetByzantine = {0, -30};
-  // lBuilding.TipButtons.bIsInnerBuilding = true;
-  // lBuilding.TipButtons.bCanBuild = false;
-  // lBuilding.TipButtons.NormalOperateList = {
-  //   EBuildingTips::OpDetails,
-  //   EBuildingTips::OpUpgrade,
-  //   EBuildingTips::OpCityInfo,
-  //   EBuildingTips::OpCityBuff,
-  //   EBuildingTips::OpCityDecorate
-  // };
-  // lBuilding.TipButtons.CoolingOperateList = {
-  //   EBuildingTips::OpDetails,
-  //   EBuildingTips::OpSpeedUpByGold,
-  //   EBuildingTips::OpCityInfo,
-  //   EBuildingTips::OpCityBuff,
-  //   EBuildingTips::OpCityDecorate
-  // };
-  // lBuilding.TipButtons.CoolingOperateList = {
-  //   EBuildingTips::OpNone,
-  //   EBuildingTips::OpNone,
-  //   EBuildingTips::OpNone,
-  //   EBuildingTips::OpNone,
-  //   EBuildingTips::OpNone
-  // };
+  lBuilding.TipButtons.bid = 101;
+  lBuilding.TipButtons.BuildingName = "buildDes_name_101";
+  lBuilding.TipButtons.PicFile = "#pic400000_2.png";
+  lBuilding.TipButtons.ImgFile = "pic400000_2.png";
+  lBuilding.TipButtons.Offset = {0, -30};
+  lBuilding.TipButtons.OffsetByzantine = {0, -30};
+  lBuilding.TipButtons.bIsInnerBuilding = true;
+  lBuilding.TipButtons.bCanBuild = false;
+  lBuilding.TipButtons.NormalOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpUpgrade,
+    EBuildingTips::OpCityInfo,
+    EBuildingTips::OpCityBuff,
+    EBuildingTips::OpCityDecorate
+  };
+  lBuilding.TipButtons.CoolingOperateList = {
+    EBuildingTips::OpDetails,
+    EBuildingTips::OpSpeedUpByGold,
+    EBuildingTips::OpCityInfo,
+    EBuildingTips::OpCityBuff,
+    EBuildingTips::OpCityDecorate
+  };
+  lBuilding.TipButtons.CoolingOperateList = {
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone,
+    EBuildingTips::OpNone
+  };
 
-  // lBuilding.Lvls[1] = {}; // index = 1,
-  // lBuilding.Lvls[1].BuildingID = EBuilding::Castle;
-  // lBuilding.Lvls[1].lvl = 1; 
-  // lBuilding.Lvls[1].kingdomLv = 0;
-  // lBuilding.Lvls[1].PreCond = {};
-  // lBuilding.Lvls[1].CostRes = {
-  //   { EResource::Food, 0 },
-  //   { EResource::Wood, 0 },
-  //   { EResource::Iron, 0 },
-  //   { EResource::Mithril, 0 }
-  // };
-  // lBuilding.Lvls[1]._CostTime = 0;
-  // lBuilding.Lvls[1].Reword.exp = 0;
-  // lBuilding.Lvls[1].kingdomPoint = 0;
-  // lBuilding.Lvls[1].Reword.power = 25;
-  // lBuilding.Lvls[1].unlockedBuild = EBuilding::Barrack;
+  lBuilding.Lvls[1] = {}; // index = 1,
+  lBuilding.Lvls[1].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[1].lvl = 1; 
+  lBuilding.Lvls[1].kingdomLv = 0;
+  lBuilding.Lvls[1].PreCond = {};
+  lBuilding.Lvls[1].CostRes = {
+    { EResource::Food, 0 },
+    { EResource::Wood, 0 },
+    { EResource::Iron, 0 },
+    { EResource::Mithril, 0 }
+  };
+  lBuilding.Lvls[1].CostTime = 0;
+  lBuilding.Lvls[1].Reword.Exp = 0;
+  lBuilding.Lvls[1].kingdomPoint = 0;
+  lBuilding.Lvls[1].Reword.Power = 25;
+  lBuilding.Lvls[1].unlockedBuild = EBuilding::Barrack;
 
-  // lBuilding.Lvls[2] = {};
-  // lBuilding.Lvls[2].BuildingID = EBuilding::Castle;
-  // lBuilding.Lvls[2].lvl = 2;
-  // lBuilding.Lvls[2].kingdomLv = 0;
-  // lBuilding.Lvls[2].CostRes = {
-  //   { EResource::Food, 2800 },
-  //   { EResource::Wood, 2800 },
-  //   { EResource::Iron, 0 },
-  //   { EResource::Mithril, 0 }
-  // };
-  // lBuilding.Lvls[2]._CostTime = 210;
-  // lBuilding.Lvls[2].Reword.exp = 13;
-  // lBuilding.Lvls[2].kingdomPoint = 48;
-  // lBuilding.Lvls[2].Reword.power = 70;
-  // lBuilding.Lvls[2].unlockedBuild = EBuilding::Institute;
+  lBuilding.Lvls[2] = {};
+  lBuilding.Lvls[2].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[2].lvl = 2;
+  lBuilding.Lvls[2].kingdomLv = 0;
+  lBuilding.Lvls[2].CostRes = {
+    { EResource::Food, 2800 },
+    { EResource::Wood, 2800 },
+    { EResource::Iron, 0 },
+    { EResource::Mithril, 0 }
+  };
+  lBuilding.Lvls[2].CostTime = 210;
+  lBuilding.Lvls[2].Reword.Exp = 13;
+  lBuilding.Lvls[2].kingdomPoint = 48;
+  lBuilding.Lvls[2].Reword.Power = 70;
+  lBuilding.Lvls[2].unlockedBuild = EBuilding::Institute;
 
-  // lBuilding.Lvls[3] = {};
-  // lBuilding.Lvls[3].BuildingID = EBuilding::Castle;
-  // lBuilding.Lvls[3].lvl = 3;
-  // lBuilding.Lvls[3].kingdomLv = 0;
-  // lBuilding.Lvls[3].PreCond = {
-  //   {EBuilding::Wall, 2},
-  //   {EBuilding::LumberMill, 2},
-  //   {EBuilding::Depot, 2}
-  // };
-  // lBuilding.Lvls[3].CostRes = {
-  //   { EResource::Food, 4000 },
-  //   { EResource::Wood, 4000 },
-  //   { EResource::Iron, 0 },
-  //   { EResource::Mithril, 0 }
-  // };
-  // lBuilding.Lvls[3]._CostTime = 290;
-  // lBuilding.Lvls[3].Reword.exp = 22;
-  // lBuilding.Lvls[3].kingdomPoint = 101;
-  // lBuilding.Lvls[3].Reword.power = 145;
-  // lBuilding.Lvls[3].unlockedBuild = EBuilding::TargetRange;
+  lBuilding.Lvls[3] = {};
+  lBuilding.Lvls[3].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[3].lvl = 3;
+  lBuilding.Lvls[3].kingdomLv = 0;
+  lBuilding.Lvls[3].PreCond = {
+    {EBuilding::Wall, 2},
+    {EBuilding::LumberMill, 2},
+    {EBuilding::Depot, 2}
+  };
+  lBuilding.Lvls[3].CostRes = {
+    { EResource::Food, 4000 },
+    { EResource::Wood, 4000 },
+    { EResource::Iron, 0 },
+    { EResource::Mithril, 0 }
+  };
+  lBuilding.Lvls[3].CostTime = 290;
+  lBuilding.Lvls[3].Reword.Exp = 22;
+  lBuilding.Lvls[3].kingdomPoint = 101;
+  lBuilding.Lvls[3].Reword.Power = 145;
+  lBuilding.Lvls[3].unlockedBuild = EBuilding::TargetRange;
 
-  // lBuilding.Lvls[4] = {};
-  // lBuilding.Lvls[4].BuildingID = EBuilding::Castle;
-  // lBuilding.Lvls[4].lvl = 4;
-  // lBuilding.Lvls[4].kingdomLv = 0;
-  // lBuilding.Lvls[4].PreCond = {
-  //   {EBuilding::Wall, 3},
-  //   {EBuilding::Farm, 3},
-  // };
-  // lBuilding.Lvls[4].CostRes = {
-  //   { EResource::Food, 6000 }, { EResource::Wood, 6000 },
-  //   { EResource::Iron, 0 }, { EResource::Mithril, 0 }
-  // };
-  // lBuilding.Lvls[4]._CostTime = 1500;
-  // lBuilding.Lvls[4].Reword.exp = 73;
-  // lBuilding.Lvls[4].kingdomPoint = 376;
-  // lBuilding.Lvls[4].Reword.power = 280;
-  // lBuilding.Lvls[4].unlockedBuild = EBuilding::Fortress;
+  lBuilding.Lvls[4] = {};
+  lBuilding.Lvls[4].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[4].lvl = 4;
+  lBuilding.Lvls[4].kingdomLv = 0;
+  lBuilding.Lvls[4].PreCond = {
+    {EBuilding::Wall, 3},
+    {EBuilding::Farm, 3},
+  };
+  lBuilding.Lvls[4].CostRes = {
+    { EResource::Food, 6000 }, { EResource::Wood, 6000 },
+    { EResource::Iron, 0 }, { EResource::Mithril, 0 }
+  };
+  lBuilding.Lvls[4].CostTime = 1500;
+  lBuilding.Lvls[4].Reword.Exp = 73;
+  lBuilding.Lvls[4].kingdomPoint = 376;
+  lBuilding.Lvls[4].Reword.Power = 280;
+  lBuilding.Lvls[4].unlockedBuild = EBuilding::Fortress;
 
+  lBuilding.Lvls[5] = {};
+  lBuilding.Lvls[5].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[5].lvl = 5;
+  lBuilding.Lvls[5].kingdomLv = 0;
+  lBuilding.Lvls[5].PreCond = {
+    {EBuilding::Wall, 4},
+    {EBuilding::Barrack, 4},
+    {EBuilding::DrillGrounds, 4}
+  };
+  lBuilding.Lvls[5].CostRes = {
+    {EResource::Food, (uint)1e4}, {EResource::Wood, (uint)1e4},
+    {EResource::Iron, 0}, {EResource::Mithril, 0}
+  };
+  lBuilding.Lvls[5].CostTime = 3600;
+  lBuilding.Lvls[5].Reword.Exp = 142;
+  lBuilding.Lvls[5].kingdomPoint = 933;
+  lBuilding.Lvls[5].Reword.Power = 530;
+  lBuilding.Lvls[5].unlockedBuild = EBuilding::ChariotPlant;
 
-  // lBuilding.Lvls[5] = {};
-  // lBuilding.Lvls[5].BuildingID = EBuilding::Castle;
-  // lBuilding.Lvls[5].lvl = 5;
-  // lBuilding.Lvls[5].kingdomLv = 0;
-  // lBuilding.Lvls[5].PreCond = {
-  //   {EBuilding::Wall, 4},
-  //   {EBuilding::Barrack, 4},
-  //   {EBuilding::DrillGrounds, 4}
-  // };
-  // lBuilding.Lvls[5].CostRes = {
-  //   {EResource::Food, 1e4}, {EResource::Wood, 1e4},
-  //   {EResource::Iron, 0}, {EResource::Mithril, 0}
-  // };
-  // lBuilding.Lvls[5]._CostTime = 3600;
-  // lBuilding.Lvls[5].Reword.exp = 142;
-  // lBuilding.Lvls[5].kingdomPoint = 933;
-  // lBuilding.Lvls[5].Reword.power = 530;
-  // lBuilding.Lvls[5].unlockedBuild = EBuilding::ChariotPlant;
-  //   [6] = {
-  //     index = 6,
-  //     bid = 101,
-  //     blv = 6,
-  //     kingdomLv = 0,
-  //     preCond = {
-  //       102,
-  //       5,
-  //       206,
-  //       5
-  //     },
-  //     costRes = {
-  //       1002,
-  //       17000,
-  //       1003,
-  //       17000,
-  //       1004,
-  //       0,
-  //       1005,
-  //       0
-  //     },
-  //     costTime = 7200,
-  //     exp = 279,
-  //     kingdomPoint = 1920,
-  //     power = 960,
-  //     unlockedBuild = 111,
-  //     costTools = {},
-  //     costWEs = {}
-  //   },
-  //   [7] = {
-  //     index = 7,
-  //     bid = 101,
-  //     blv = 7,
-  //     kingdomLv = 0,
-  //     preCond = {
-  //       102,
-  //       6,
-  //       105,
-  //       6,
-  //       113,
-  //       6
-  //     },
-  //     costRes = {
-  //       1002,
-  //       35000,
-  //       1003,
-  //       35000,
-  //       1004,
-  //       0,
-  //       1005,
-  //       0
-  //     },
-  //     costTime = 14400,
-  //     exp = 416,
-  //     kingdomPoint = 3946,
-  //     power = 1610,
-  //     unlockedBuild = 114,
-  //     costTools = {},
-  //     costWEs = {}
-  //   },
-  //   [8] = {
-  //     index = 8,
-  //     bid = 101,
-  //     blv = 8,
-  //     kingdomLv = 0,
-  //     preCond = {
-  //       102,
-  //       7,
-  //       116,
-  //       7,
-  //       118,
-  //       7
-  //     },
-  //     costRes = {
-  //       1002,
-  //       65000,
-  //       1003,
-  //       65000,
-  //       1004,
-  //       0,
-  //       1005,
-  //       0
-  //     },
-  //     costTime = 19800,
-  //     exp = 570,
-  //     kingdomPoint = 5573,
-  //     power = 2495,
-  //     unlockedBuild = 0,
-  //     costTools = {},
-  //     costWEs = {}
-  //   },
-  //   [9] = {
-  //     index = 9,
-  //     bid = 101,
-  //     blv = 9,
-  //     kingdomLv = 0,
-  //     preCond = {
-  //       102,
-  //       8,
-  //       117,
-  //       8
-  //     },
-  //     costRes = {
-  //       1002,
-  //       129000,
-  //       1003,
-  //       129000,
-  //       1004,
-  //       0,
-  //       1005,
-  //       0
-  //     },
-  //     costTime = 26700,
-  //     exp = 767,
-  //     kingdomPoint = 7713,
-  //     power = 3535,
-  //     unlockedBuild = 0,
-  //     costTools = {},
-  //     costWEs = {}
-  //   },
-  //   [10] = {
-  //     index = 10,
-  //     bid = 101,
-  //     blv = 10,
-  //     kingdomLv = 0,
-  //     preCond = {
-  //       102,
-  //       9,
-  //       119,
-  //       9
-  //     },
-  //     costRes = {
-  //       1002,
-  //       250000,
-  //       1003,
-  //       250000,
-  //       1004,
-  //       0,
-  //       1005,
-  //       0
-  //     },
-  //     costTime = 36300,
-  //     exp = 1042,
-  //     kingdomPoint = 10755,
-  //     power = 4760,
-  //     unlockedBuild = 203,
-  //     costTools = {},
-  //     costWEs = {}
-  //   },
-  //   [11] = {
-  //     index = 11,
-  //     bid = 101,
-  //     blv = 11,
-  //     kingdomLv = 0,
-  //     preCond = {
-  //       102,
-  //       10,
-  //       118,
-  //       10,
-  //       121,
-  //       10
-  //     },
-  //     costRes = {
-  //       1002,
-  //       400000,
-  //       1003,
-  //       400000,
-  //       1004,
-  //       40000,
-  //       1005,
-  //       0
-  //     },
-  //     costTime = 49200,
-  //     exp = 1410,
-  //     kingdomPoint = 14941,
-  //     power = 6200,
-  //     unlockedBuild = 0,
-  //     costTools = {},
-  //     costWEs = {}
-  //   },
-  //   [12] = {
-  //     index = 12,
-  //     bid = 101,
-  //     blv = 12,
-  //     kingdomLv = 0,
-  //     preCond = {
-  //       102,
-  //       11,
-  //       206,
-  //       11
-  //     },
-  //     costRes = {
-  //       1002,
-  //       800000,
-  //       1003,
-  //       800000,
-  //       1004,
-  //       80000,
-  //       1005,
-  //       0
-  //     },
-  //     costTime = 66900,
-  //     exp = 1916,
-  //     kingdomPoint = 20813,
-  //     power = 7965,
-  //     unlockedBuild = 0,
-  //     costTools = {},
-  //     costWEs = {}
-  //   },
-  //   [13] = {
-  //     index = 13,
-  //     bid = 101,
-  //     blv = 13,
-  //     kingdomLv = 0,
-  //     preCond = {
-  //       102,
-  //       12,
-  //       121,
-  //       12
-  //     },
-  //     costRes = {
-  //       1002,
-  //       1530000,
-  //       1003,
-  //       1530000,
-  //       1004,
-  //       153000,
-  //       1005,
-  //       0
-  //     },
-  //     costTime = 90000,
-  //     exp = 2576,
-  //     kingdomPoint = 28666,
-  //     power = 10120,
-  //     unlockedBuild = 0,
-  //     costTools = {},
-  //     costWEs = {}
-  //   },
-  //   [14] = {
-  //     index = 14,
-  //     bid = 101,
-  //     blv = 14,
-  //     kingdomLv = 0,
-  //     preCond = {
-  //       102,
-  //       13,
-  //       118,
-  //       13,
-  //       121,
-  //       13
-  //     },
-  //     costRes = {
-  //       1002,
-  //       2750000,
-  //       1003,
-  //       2750000,
-  //       1004,
-  //       275000,
-  //       1005,
-  //       0
-  //     },
-  //     costTime = 122400,
-  //     exp = 3502,
-  //     kingdomPoint = 39893,
-  //     power = 12755,
-  //     unlockedBuild = 0,
-  //     costTools = {},
-  //     costWEs = {}
-  //   },
-  //   [15] = {
-  //     index = 15,
-  //     bid = 101,
-  //     blv = 15,
-  //     kingdomLv = 0,
-  //     preCond = {
-  //       102,
-  //       14,
-  //       117,
-  //       14
-  //     },
-  //     costRes = {
-  //       1002,
-  //       4200000,
-  //       1003,
-  //       4200000,
-  //       1004,
-  //       420000,
-  //       1005,
-  //       0
-  //     },
-  //     costTime = 165600,
-  //     exp = 4736,
-  //     kingdomPoint = 55200,
-  //     power = 15970,
-  //     unlockedBuild = 204,
-  //     costTools = {},
-  //     costWEs = {}
-  //   },
-  //   [16] = {
-  //     index = 16,
-  //     bid = 101,
-  //     blv = 16,
-  //     kingdomLv = 0,
-  //     preCond = {
-  //       102,
-  //       15,
-  //       204,
-  //       15
-  //     },
-  //     costRes = {
-  //       1002,
-  //       5500000,
-  //       1003,
-  //       5500000,
-  //       1004,
-  //       550000,
-  //       1005,
-  //       34000
-  //     },
-  //     costTime = 223200,
-  //     exp = 6382,
-  //     kingdomPoint = 76053,
-  //     power = 19905,
-  //     unlockedBuild = 0,
-  //     costTools = {},
-  //     costWEs = {}
-  //   },
-  //   [17] = {
-  //     index = 17,
-  //     bid = 101,
-  //     blv = 17,
-  //     kingdomLv = 0,
-  //     preCond = {
-  //       102,
-  //       16,
-  //       203,
-  //       16
-  //     },
-  //     costRes = {
-  //       1002,
-  //       7700000,
-  //       1003,
-  //       7700000,
-  //       1004,
-  //       770000,
-  //       1005,
-  //       48000
-  //     },
-  //     costTime = 302400,
-  //     exp = 8645,
-  //     kingdomPoint = 105280,
-  //     power = 24710,
-  //     unlockedBuild = 0,
-  //     costTools = {},
-  //     costWEs = {}
-  //   },
-  //   [18] = {
-  //     index = 18,
-  //     bid = 101,
-  //     blv = 18,
-  //     kingdomLv = 0,
-  //     preCond = {
-  //       102,
-  //       17,
-  //       201,
-  //       17
-  //     },
-  //     costRes = {
-  //       1002,
-  //       10000000,
-  //       1003,
-  //       10000000,
-  //       1004,
-  //       1000000,
-  //       1005,
-  //       62000
-  //     },
-  //     costTime = 345600,
-  //     exp = 9879,
-  //     kingdomPoint = 122880,
-  //     power = 30580,
-  //     unlockedBuild = 0,
-  //     costTools = {},
-  //     costWEs = {}
-  //   },
-  //   [19] = {
-  //     index = 19,
-  //     bid = 101,
-  //     blv = 19,
-  //     kingdomLv = 0,
-  //     preCond = {
-  //       102,
-  //       18,
-  //       113,
-  //       18
-  //     },
-  //     costRes = {
-  //       1002,
-  //       13000000,
-  //       1003,
-  //       13000000,
-  //       1004,
-  //       1300000,
-  //       1005,
-  //       81000
-  //     },
-  //     costTime = 388800,
-  //     exp = 11113,
-  //     kingdomPoint = 141120,
-  //     power = 37755,
-  //     unlockedBuild = 0,
-  //     costTools = {},
-  //     costWEs = {}
-  //   },
+  lBuilding.Lvls[6] = {};
+  lBuilding.Lvls[6].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[6].lvl = 6;
+  lBuilding.Lvls[6].kingdomLv = 0;
+  lBuilding.Lvls[6].PreCond = {
+    {EBuilding::Wall, 5},
+    {EBuilding::FirstAidTent, 5}
+  };
+  lBuilding.Lvls[6].CostRes = {
+    {EResource::Food, (uint)17e3}, {EResource::Wood, (uint)17e3},
+    {EResource::Iron, 0}, {EResource::Mithril, 0}
+  };
+  lBuilding.Lvls[6].CostTime = 7200;
+  lBuilding.Lvls[6].Reword.Exp = 279;
+  lBuilding.Lvls[6].kingdomPoint = 1920;
+  lBuilding.Lvls[6].Reword.Power = 960;
+  lBuilding.Lvls[6].unlockedBuild = EBuilding::Embassy;
+
+  lBuilding.Lvls[7] = {};
+  lBuilding.Lvls[7].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[7].lvl = 7;
+  lBuilding.Lvls[7].kingdomLv = 0;
+  lBuilding.Lvls[7].PreCond = {
+    {EBuilding::Wall, 6},
+    {EBuilding::Depot, 6},
+    {EBuilding::Institute, 6}
+  };
+  lBuilding.Lvls[7].CostRes = {
+    {EResource::Food, (uint)35e3}, {EResource::Wood, (uint)35e3},
+    {EResource::Iron, 0}, {EResource::Mithril, 0}
+  };
+  lBuilding.Lvls[7].CostTime = 14400;
+  lBuilding.Lvls[7].Reword.Exp = 416;
+  lBuilding.Lvls[7].kingdomPoint = 3946;
+  lBuilding.Lvls[7].Reword.Power = 1610;
+  lBuilding.Lvls[7].unlockedBuild = EBuilding::TreasurePool;
+
+  lBuilding.Lvls[8] = {};
+  lBuilding.Lvls[8].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[8].lvl = 8;
+  lBuilding.Lvls[8].kingdomLv = 0;
+  lBuilding.Lvls[8].PreCond = {
+    {EBuilding::Wall, 7},
+    {EBuilding::Stable, 7},
+    {EBuilding::Barrack, 7}
+  };
+  lBuilding.Lvls[8].CostRes = {
+    {EResource::Food, (uint)65e3}, {EResource::Wood, (uint)65e3},
+    {EResource::Iron, 0}, {EResource::Mithril, 0}
+  };
+  lBuilding.Lvls[8].CostTime = 19800;
+  lBuilding.Lvls[8].Reword.Exp = 570;
+  lBuilding.Lvls[8].kingdomPoint = 5573;
+  lBuilding.Lvls[8].Reword.Power = 2495;
+  lBuilding.Lvls[8].unlockedBuild = EBuilding::None;
+
+  lBuilding.Lvls[9] = {};
+  lBuilding.Lvls[9].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[9].lvl = 9;
+  lBuilding.Lvls[9].kingdomLv = 0;
+  lBuilding.Lvls[9].PreCond = {
+    {EBuilding::Wall, 8},
+    {EBuilding::TargetRange, 8}
+  };
+  lBuilding.Lvls[9].CostRes = {
+    {EResource::Food, 129000}, {EResource::Wood, 129000},
+    {EResource::Iron, 0}, {EResource::Mithril, 0}
+  };
+  lBuilding.Lvls[9].CostTime = 26700;
+  lBuilding.Lvls[9].Reword.Exp = 767;
+  lBuilding.Lvls[9].kingdomPoint = 7713;
+  lBuilding.Lvls[9].Reword.Power = 3535;
+  lBuilding.Lvls[9].unlockedBuild = EBuilding::None;
+
+  lBuilding.Lvls[10] = {};
+  lBuilding.Lvls[10].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[10].lvl = 10;
+  lBuilding.Lvls[10].kingdomLv = 0;
+  lBuilding.Lvls[10].PreCond = {
+    {EBuilding::Wall, 9},
+    {EBuilding::ChariotPlant, 9}
+  };
+  lBuilding.Lvls[10].CostRes = {
+    {EResource::Food, 250000}, {EResource::Wood, 250000},
+    {EResource::Iron, 0}, {EResource::Mithril, 0}
+  };
+  lBuilding.Lvls[10].CostTime = 36300;
+  lBuilding.Lvls[10].Reword.Exp = 1042;
+  lBuilding.Lvls[10].kingdomPoint = 10755;
+  lBuilding.Lvls[10].Reword.Power = 4760;
+  lBuilding.Lvls[10].unlockedBuild = EBuilding::IronMine;
+
+  lBuilding.Lvls[11] = {};
+  lBuilding.Lvls[11].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[11].lvl = 11;
+  lBuilding.Lvls[11].kingdomLv = 0;
+  lBuilding.Lvls[11].PreCond = {
+    {EBuilding::Wall, 10},
+    {EBuilding::Barrack, 10},
+    {EBuilding::DrillGrounds, 10}
+  };
+  lBuilding.Lvls[11].CostRes = {
+    {EResource::Food, 400000}, {EResource::Wood, 400000},
+    {EResource::Iron, 40000}, {EResource::Mithril, 0}
+  };
+  lBuilding.Lvls[11].CostTime = 49200;
+  lBuilding.Lvls[11].Reword.Exp = 1410;
+  lBuilding.Lvls[11].kingdomPoint = 14941;
+  lBuilding.Lvls[11].Reword.Power = 6200;
+  lBuilding.Lvls[11].unlockedBuild = EBuilding::None;
+
+  lBuilding.Lvls[12] = {};
+  lBuilding.Lvls[12].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[12].lvl = 12;
+  lBuilding.Lvls[12].kingdomLv = 0;
+  lBuilding.Lvls[12].PreCond = {
+    {EBuilding::Wall, 11},
+    {EBuilding::FirstAidTent, 11}
+  };
+  lBuilding.Lvls[12].CostRes = {
+    {EResource::Food, 800000}, {EResource::Wood, 800000},
+    {EResource::Iron, 80000}, {EResource::Mithril, 0}
+  };
+  lBuilding.Lvls[12].CostTime = 66900;
+  lBuilding.Lvls[12].Reword.Exp = 1916;
+  lBuilding.Lvls[12].kingdomPoint = 20813;
+  lBuilding.Lvls[12].Reword.Power = 7965;
+  lBuilding.Lvls[12].unlockedBuild = EBuilding::None;
+
+  lBuilding.Lvls[13] = {};
+  lBuilding.Lvls[13].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[13].lvl = 13;
+  lBuilding.Lvls[13].kingdomLv = 0;
+  lBuilding.Lvls[13].PreCond = {
+    {EBuilding::Wall, 12},
+    {EBuilding::DrillGrounds, 12}
+  };
+  lBuilding.Lvls[13].CostRes = {
+    {EResource::Food, 1530000}, {EResource::Wood, 1530000},
+    {EResource::Iron, 153000}, {EResource::Mithril, 0}
+  };
+  lBuilding.Lvls[13].CostTime = 90000;
+  lBuilding.Lvls[13].Reword.Exp = 2576;
+  lBuilding.Lvls[13].kingdomPoint = 28666;
+  lBuilding.Lvls[13].Reword.Power = 10120;
+  lBuilding.Lvls[13].unlockedBuild = EBuilding::None;
+
+  lBuilding.Lvls[14] = {};
+  lBuilding.Lvls[14].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[14].lvl = 14;
+  lBuilding.Lvls[14].kingdomLv = 0;
+  lBuilding.Lvls[14].PreCond = {
+    {EBuilding::Wall, 13},
+    {EBuilding::Barrack, 13},
+    {EBuilding::DrillGrounds, 13}
+  };
+  lBuilding.Lvls[14].CostRes = {
+    {EResource::Food, 2750000}, {EResource::Wood, 2750000},
+    {EResource::Iron, 275000}, {EResource::Mithril, 0}
+  };
+  lBuilding.Lvls[14].CostTime = 122400;
+  lBuilding.Lvls[14].Reword.Exp = 3502;
+  lBuilding.Lvls[14].kingdomPoint = 39893;
+  lBuilding.Lvls[14].Reword.Power = 12755;
+  lBuilding.Lvls[14].unlockedBuild = EBuilding::None;
+
+  lBuilding.Lvls[15] = {};
+  lBuilding.Lvls[15].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[15].lvl = 15;
+  lBuilding.Lvls[15].kingdomLv = 0;
+  lBuilding.Lvls[15].PreCond = {
+    {EBuilding::Wall, 14},
+    {EBuilding::TargetRange, 14}
+  };
+  lBuilding.Lvls[15].CostRes = {
+    {EResource::Food, 4200000}, {EResource::Wood, 4200000},
+    {EResource::Iron, 420000}, {EResource::Mithril, 0}
+  };
+  lBuilding.Lvls[15].CostTime = 165600;
+  lBuilding.Lvls[15].Reword.Exp = 4736;
+  lBuilding.Lvls[15].kingdomPoint = 55200;
+  lBuilding.Lvls[15].Reword.Power = 15970;
+  lBuilding.Lvls[15].unlockedBuild = EBuilding::SilverMine;
+
+  lBuilding.Lvls[16] = {};
+  lBuilding.Lvls[16].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[16].lvl = 16;
+  lBuilding.Lvls[16].kingdomLv = 0;
+  lBuilding.Lvls[16].PreCond = {
+    {EBuilding::Wall, 15},
+    {EBuilding::SilverMine, 15}
+  };
+  lBuilding.Lvls[16].CostRes = {
+    {EResource::Food, 5500000}, {EResource::Wood, 5500000},
+    {EResource::Iron, 550000}, {EResource::Mithril, 34000}
+  };
+  lBuilding.Lvls[16].CostTime = 223200;
+  lBuilding.Lvls[16].Reword.Exp = 6382;
+  lBuilding.Lvls[16].kingdomPoint = 76053;
+  lBuilding.Lvls[16].Reword.Power = 19905;
+  lBuilding.Lvls[16].unlockedBuild = EBuilding::None;
+
+  lBuilding.Lvls[17] = {};
+  lBuilding.Lvls[17].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[17].lvl = 17;
+  lBuilding.Lvls[17].kingdomLv = 0;
+  lBuilding.Lvls[17].PreCond = {
+    {EBuilding::Wall, 16},
+    {EBuilding::IronMine, 16}
+  };
+  lBuilding.Lvls[17].CostRes = {
+    {EResource::Food, 7700000}, {EResource::Wood, 5500000},
+    {EResource::Iron, 770000}, {EResource::Mithril, 48000}
+  };
+  lBuilding.Lvls[17].CostTime = 302400;
+  lBuilding.Lvls[17].Reword.Exp = 8645;
+  lBuilding.Lvls[17].kingdomPoint = 105280;
+  lBuilding.Lvls[17].Reword.Power = 24710;
+  lBuilding.Lvls[17].unlockedBuild = EBuilding::None;
+
+  lBuilding.Lvls[18] = {};
+  lBuilding.Lvls[18].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[18].lvl = 18;
+  lBuilding.Lvls[18].kingdomLv = 0;
+  lBuilding.Lvls[18].PreCond = {
+    {EBuilding::Wall, 17},
+    {EBuilding::Farm, 17}
+  };
+  lBuilding.Lvls[18].CostRes = {
+    {EResource::Food, 10000000}, {EResource::Wood, 10000000},
+    {EResource::Iron, 1000000}, {EResource::Mithril, 62000}
+  };
+  lBuilding.Lvls[18].CostTime = 345600;
+  lBuilding.Lvls[18].Reword.Exp = 9879;
+  lBuilding.Lvls[18].kingdomPoint = 122880;
+  lBuilding.Lvls[18].Reword.Power = 30580;
+  lBuilding.Lvls[18].unlockedBuild = EBuilding::None;
+
+  lBuilding.Lvls[19] = {};
+  lBuilding.Lvls[19].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[19].lvl = 19;
+  lBuilding.Lvls[19].kingdomLv = 0;
+  lBuilding.Lvls[19].PreCond = {
+    {EBuilding::Wall, 18},
+    {EBuilding::Institute, 18}
+  };
+  lBuilding.Lvls[19].CostRes = {
+    {EResource::Food, 13000000}, {EResource::Wood, 13000000},
+    {EResource::Iron, 1300000}, {EResource::Mithril, 81000}
+  };
+  lBuilding.Lvls[19].CostTime = 388800;
+  lBuilding.Lvls[19].Reword.Exp = 11113;
+  lBuilding.Lvls[19].kingdomPoint = 141120;
+  lBuilding.Lvls[19].Reword.Power = 37755;
+  lBuilding.Lvls[19].unlockedBuild = EBuilding::None;
+
   //   [20] = {
   //     index = 20,
   //     bid = 101,

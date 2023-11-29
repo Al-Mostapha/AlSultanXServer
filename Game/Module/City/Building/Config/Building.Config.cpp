@@ -2,6 +2,7 @@
 #include "QJsonObject"
 #include <QJsonDocument>
 #include <QFile>
+#include "Core/Setting/XSetting.h"
 
 CBuilding *CBuilding::Get(){
   static CBuilding *pBuilding = new CBuilding();
@@ -47,24 +48,18 @@ void CBuilding::Init(){
   InitStarBraveStatue();
   InitLeisureHouse();
   InitNebulaPalace();
-
   ProduceJson();
-  qDebug() << "JsonFile Produced";
 }
 
 void CBuilding::ProduceJson(){
   QJsonObject lJson;
-
   for(auto [lBuildingType, lBuilding] : _BuildingSpecs.asKeyValueRange()){
     lJson.insert(
       QString::number(static_cast<int>(lBuildingType)),
       lBuilding->ToJson());
   }
-
-  qDebug() << lJson["101"];
-
   QJsonDocument lJsonDoc(lJson);
-  QFile file("Test1231.json");
+  QFile file(XSetting::Get()->_StaticFilesPath + "Json/CityBuildings.json");
   file.open(QIODevice::ReadWrite | QIODevice::Text);
   auto lJsonString = lJsonDoc.toJson();
   file.write(lJsonString);

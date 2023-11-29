@@ -10,10 +10,11 @@ XSetting *XSetting::Get(){
 bool XSetting::Init(){
   auto lPath = QCoreApplication::applicationDirPath() + "/Config/Config.Static.ini";
   QSettings lSettings(lPath, QSettings::IniFormat);
-  _DBHost     = lSettings.value("DB/DBHost").toString();
-  _DBName     = lSettings.value("DB/DBName").toString();
-  _DBUser     = lSettings.value("DB/DBUser").toString();
-  _DBPassword = lSettings.value("DB/DBPassword").toString();
-  _DBPort     = lSettings.value("DB/DBPort").toInt();
+  _DBHost          = lSettings.value("DB/DBHost").toString();
+  _DBName          = lSettings.value("DB/DBName").toString();
+  _DBUser          = lSettings.value("DB/DBUser").toString();
+  _DBPassword      = lSettings.value("DB/DBPassword").toString();
+  _DBPort          = lSettings.value("DB/DBPort").toInt();
+  _StaticFilesPath = lSettings.value("Global/StaticFilesPath").toString();
   return true;
 }

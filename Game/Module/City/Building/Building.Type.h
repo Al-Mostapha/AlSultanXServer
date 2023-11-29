@@ -245,9 +245,10 @@ class RBuildingSpecs : public QObject {
     lJson["WarDescribe"] = WarDescribe;
     lJson["StarDescribe"] = StarDescribe;
     lJson["TipButtons"] = TipButtons.ToJson();
-    lJson["Lvls"] = QJsonObject();
+    QJsonObject lLvls;
     for(auto [lLvl, lOneLvlData] : Lvls.asKeyValueRange())
-      lJson["Lvls"].toObject()[QString::number(lLvl)] = lOneLvlData.ToJson();
+      lLvls[QString::number(lLvl)] = lOneLvlData.ToJson();
+    lJson["Lvls"] = lLvls;
     return lJson;
   }
 };

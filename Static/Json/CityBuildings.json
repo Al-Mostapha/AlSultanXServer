@@ -1,0 +1,2680 @@
+{
+    "101": {
+        "BuildingBrief": "",
+        "BuildingID": 101,
+        "BuildingIcon": "quest_building_101.png",
+        "BuildingName": "buildDes_name_101",
+        "Describe": "buildDes_describe_101",
+        "Lvls": {
+            "1": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 0,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 0,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 1,
+                "PreCond": [
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 0,
+                    "Power": 25
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 0,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 118,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "10": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 250000,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 250000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 36300,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 10,
+                "PreCond": [
+                    {
+                        "Lvl": 9,
+                        "Type": 102
+                    },
+                    {
+                        "Lvl": 9,
+                        "Type": 119
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 1042,
+                    "Power": 4760
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 10755,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 203,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "11": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 400000,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 400000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 40000,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 49200,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 11,
+                "PreCond": [
+                    {
+                        "Lvl": 10,
+                        "Type": 102
+                    },
+                    {
+                        "Lvl": 10,
+                        "Type": 118
+                    },
+                    {
+                        "Lvl": 10,
+                        "Type": 121
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 1410,
+                    "Power": 6200
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 14941,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 0,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "12": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 800000,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 800000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 80000,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 66900,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 12,
+                "PreCond": [
+                    {
+                        "Lvl": 11,
+                        "Type": 102
+                    },
+                    {
+                        "Lvl": 11,
+                        "Type": 206
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 1916,
+                    "Power": 7965
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 20813,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 0,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "13": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 1530000,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 1530000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 153000,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 90000,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 13,
+                "PreCond": [
+                    {
+                        "Lvl": 12,
+                        "Type": 102
+                    },
+                    {
+                        "Lvl": 12,
+                        "Type": 121
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 2576,
+                    "Power": 10120
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 28666,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 0,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "14": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 2750000,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 2750000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 275000,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 122400,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 14,
+                "PreCond": [
+                    {
+                        "Lvl": 13,
+                        "Type": 102
+                    },
+                    {
+                        "Lvl": 13,
+                        "Type": 118
+                    },
+                    {
+                        "Lvl": 13,
+                        "Type": 121
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 3502,
+                    "Power": 12755
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 39893,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 0,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "15": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 4200000,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 4200000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 420000,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 165600,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 15,
+                "PreCond": [
+                    {
+                        "Lvl": 14,
+                        "Type": 102
+                    },
+                    {
+                        "Lvl": 14,
+                        "Type": 117
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 4736,
+                    "Power": 15970
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 55200,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 204,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "16": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 5500000,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 5500000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 550000,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 34000,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 223200,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 16,
+                "PreCond": [
+                    {
+                        "Lvl": 15,
+                        "Type": 102
+                    },
+                    {
+                        "Lvl": 15,
+                        "Type": 204
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 6382,
+                    "Power": 19905
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 76053,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 0,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "17": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 7700000,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 5500000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 770000,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 48000,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 302400,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 17,
+                "PreCond": [
+                    {
+                        "Lvl": 16,
+                        "Type": 102
+                    },
+                    {
+                        "Lvl": 16,
+                        "Type": 203
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 8645,
+                    "Power": 24710
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 105280,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 0,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "18": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 10000000,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 10000000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 1000000,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 62000,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 345600,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 18,
+                "PreCond": [
+                    {
+                        "Lvl": 17,
+                        "Type": 102
+                    },
+                    {
+                        "Lvl": 17,
+                        "Type": 201
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 9879,
+                    "Power": 30580
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 122880,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 0,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "19": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 13000000,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 13000000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 1300000,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 81000,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 388800,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 19,
+                "PreCond": [
+                    {
+                        "Lvl": 18,
+                        "Type": 102
+                    },
+                    {
+                        "Lvl": 18,
+                        "Type": 113
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 11113,
+                    "Power": 37755
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 141120,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 0,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "2": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 2800,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 2800,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 210,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 2,
+                "PreCond": [
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 13,
+                    "Power": 70
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 48,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 113,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "3": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 4000,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 4000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 290,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 3,
+                "PreCond": [
+                    {
+                        "Lvl": 2,
+                        "Type": 102
+                    },
+                    {
+                        "Lvl": 2,
+                        "Type": 202
+                    },
+                    {
+                        "Lvl": 2,
+                        "Type": 105
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 22,
+                    "Power": 145
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 101,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 117,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "4": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 6000,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 6000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 1500,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 4,
+                "PreCond": [
+                    {
+                        "Lvl": 3,
+                        "Type": 102
+                    },
+                    {
+                        "Lvl": 3,
+                        "Type": 201
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 73,
+                    "Power": 280
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 376,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 120,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "5": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 10000,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 10000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 3600,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 5,
+                "PreCond": [
+                    {
+                        "Lvl": 4,
+                        "Type": 102
+                    },
+                    {
+                        "Lvl": 4,
+                        "Type": 118
+                    },
+                    {
+                        "Lvl": 4,
+                        "Type": 121
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 142,
+                    "Power": 530
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 933,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 119,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "6": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 17000,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 17000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 7200,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 6,
+                "PreCond": [
+                    {
+                        "Lvl": 5,
+                        "Type": 102
+                    },
+                    {
+                        "Lvl": 5,
+                        "Type": 206
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 279,
+                    "Power": 960
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 1920,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 111,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "7": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 35000,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 35000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 14400,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 7,
+                "PreCond": [
+                    {
+                        "Lvl": 6,
+                        "Type": 102
+                    },
+                    {
+                        "Lvl": 6,
+                        "Type": 105
+                    },
+                    {
+                        "Lvl": 6,
+                        "Type": 113
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 416,
+                    "Power": 1610
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 3946,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 114,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "8": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 65000,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 65000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 19800,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 8,
+                "PreCond": [
+                    {
+                        "Lvl": 7,
+                        "Type": 102
+                    },
+                    {
+                        "Lvl": 7,
+                        "Type": 116
+                    },
+                    {
+                        "Lvl": 7,
+                        "Type": 118
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 570,
+                    "Power": 2495
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 5573,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 0,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "9": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 129000,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 129000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 26700,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 9,
+                "PreCond": [
+                    {
+                        "Lvl": 8,
+                        "Type": 102
+                    },
+                    {
+                        "Lvl": 8,
+                        "Type": 117
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 767,
+                    "Power": 3535
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 7713,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 0,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            }
+        },
+        "StarDescribe": "star_describe_101",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "buildDes_upgrade_brief_101",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 0,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 1,
+        "initLvl": 1,
+        "isBuild": false,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": false,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 1,
+        "oldUnlocklevel": 1,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 1
+    },
+    "102": {
+        "BuildingBrief": "",
+        "BuildingID": 102,
+        "BuildingIcon": "quest_building_102.png",
+        "BuildingName": "buildDes_name_102",
+        "Describe": "buildDes_describe_102",
+        "Lvls": {
+        },
+        "StarDescribe": "star_describe_102",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 70,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 2,
+        "initLvl": 1,
+        "isBuild": false,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": false,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 1,
+        "oldUnlocklevel": 1,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 1
+    },
+    "103": {
+        "BuildingBrief": "",
+        "BuildingID": 103,
+        "BuildingIcon": "quest_building_103.png",
+        "BuildingName": "buildDes_name_103",
+        "Describe": "buildDes_describe_103",
+        "Lvls": {
+        },
+        "StarDescribe": "star_describe_103",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 70,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 3,
+        "initLvl": 1,
+        "isBuild": false,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": false,
+        "isUpgrade": true,
+        "maxCount": 2,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 7,
+        "oldUnlocklevel": 7,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 7
+    },
+    "104": {
+        "BuildingBrief": "",
+        "BuildingID": 104,
+        "BuildingIcon": "quest_building_104.png",
+        "BuildingName": "buildDes_name_104",
+        "Describe": "buildDes_describe_104",
+        "Lvls": {
+        },
+        "StarDescribe": "",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "buildDes_upgrade_brief_104",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 0,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 4,
+        "initLvl": 1,
+        "isBuild": false,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": false,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 30,
+        "maxStarLv": 0,
+        "oldShowlevel": 1,
+        "oldUnlocklevel": 1,
+        "openStar": false,
+        "openWl": false,
+        "showlevel": 1,
+        "unlocklevel": 5
+    },
+    "105": {
+        "BuildingBrief": "",
+        "BuildingID": 105,
+        "BuildingIcon": "quest_building_105.png",
+        "BuildingName": "buildDes_name_105",
+        "Describe": "buildDes_describe_105",
+        "Lvls": {
+        },
+        "StarDescribe": "star_describe_105",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 70,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 5,
+        "initLvl": 1,
+        "isBuild": false,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": true,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 1,
+        "oldUnlocklevel": 1,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 1
+    },
+    "106": {
+        "BuildingBrief": "",
+        "BuildingID": 0,
+        "BuildingIcon": "",
+        "BuildingName": "buildDes_name_106",
+        "Describe": "",
+        "Lvls": {
+        },
+        "StarDescribe": "",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 0,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 6,
+        "initLvl": 1,
+        "isBuild": false,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": false,
+        "isUpgrade": false,
+        "maxCount": 1,
+        "maxLvl": 1,
+        "maxStarLv": 0,
+        "oldShowlevel": 1,
+        "oldUnlocklevel": 1,
+        "openStar": false,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 7
+    },
+    "107": {
+        "BuildingBrief": "",
+        "BuildingID": 0,
+        "BuildingIcon": "",
+        "BuildingName": "buildDes_name_107",
+        "Describe": "",
+        "Lvls": {
+        },
+        "StarDescribe": "",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 0,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 7,
+        "initLvl": 1,
+        "isBuild": false,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": false,
+        "isUpgrade": false,
+        "maxCount": 1,
+        "maxLvl": 1,
+        "maxStarLv": 0,
+        "oldShowlevel": 1,
+        "oldUnlocklevel": 1,
+        "openStar": false,
+        "openWl": false,
+        "showlevel": 1,
+        "unlocklevel": 12
+    },
+    "108": {
+        "BuildingBrief": "",
+        "BuildingID": 0,
+        "BuildingIcon": "",
+        "BuildingName": "buildDes_name_108",
+        "Describe": "buildDes_describe_108",
+        "Lvls": {
+        },
+        "StarDescribe": "",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 0,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 8,
+        "initLvl": 1,
+        "isBuild": false,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": false,
+        "isUpgrade": false,
+        "maxCount": 1,
+        "maxLvl": 1,
+        "maxStarLv": 0,
+        "oldShowlevel": 1,
+        "oldUnlocklevel": 1,
+        "openStar": false,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 1
+    },
+    "109": {
+        "BuildingBrief": "",
+        "BuildingID": 0,
+        "BuildingIcon": "",
+        "BuildingName": "buildDes_name_109",
+        "Describe": "",
+        "Lvls": {
+        },
+        "StarDescribe": "",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 0,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 9,
+        "initLvl": 1,
+        "isBuild": false,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": false,
+        "isUpgrade": false,
+        "maxCount": 1,
+        "maxLvl": 1,
+        "maxStarLv": 0,
+        "oldShowlevel": 1,
+        "oldUnlocklevel": 1,
+        "openStar": false,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 1
+    },
+    "110": {
+        "BuildingBrief": "",
+        "BuildingID": 0,
+        "BuildingIcon": "",
+        "BuildingName": "buildDes_name_110",
+        "Describe": "",
+        "Lvls": {
+        },
+        "StarDescribe": "",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 0,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 10,
+        "initLvl": 1,
+        "isBuild": false,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": false,
+        "isUpgrade": false,
+        "maxCount": 1,
+        "maxLvl": 1,
+        "maxStarLv": 0,
+        "oldShowlevel": 1,
+        "oldUnlocklevel": 1,
+        "openStar": false,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 1
+    },
+    "111": {
+        "BuildingBrief": "buildDes_build_brief_111",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_111.png",
+        "BuildingName": "buildDes_name_111",
+        "Describe": "buildDes_describe_111",
+        "Lvls": {
+        },
+        "StarDescribe": "star_describe_111",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 70,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 11,
+        "initLvl": 1,
+        "isBuild": true,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": true,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 6,
+        "oldUnlocklevel": 6,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 8
+    },
+    "112": {
+        "BuildingBrief": "buildDes_build_brief_112",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_112.png",
+        "BuildingName": "buildDes_name_112",
+        "Describe": "buildDes_describe_112",
+        "Lvls": {
+        },
+        "StarDescribe": "",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 0,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 12,
+        "initLvl": 1,
+        "isBuild": true,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": true,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 30,
+        "maxStarLv": 0,
+        "oldShowlevel": 6,
+        "oldUnlocklevel": 6,
+        "openStar": false,
+        "openWl": false,
+        "showlevel": 1,
+        "unlocklevel": 8
+    },
+    "113": {
+        "BuildingBrief": "buildDes_build_brief_113",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_113.png",
+        "BuildingName": "buildDes_name_113",
+        "Describe": "buildDes_describe_113",
+        "Lvls": {
+        },
+        "StarDescribe": "star_describe_113",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "buildDes_upgrade_brief_113",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 70,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 13,
+        "initLvl": 1,
+        "isBuild": true,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": true,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 2,
+        "oldUnlocklevel": 2,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 4
+    },
+    "114": {
+        "BuildingBrief": "buildDes_build_brief_114",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_114.png",
+        "BuildingName": "buildDes_name_114",
+        "Describe": "buildDes_describe_114",
+        "Lvls": {
+        },
+        "StarDescribe": "star_describe_114",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "buildDes_upgrade_brief_114",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 70,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 14,
+        "initLvl": 1,
+        "isBuild": true,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": true,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 7,
+        "oldUnlocklevel": 7,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 11
+    },
+    "115": {
+        "BuildingBrief": "buildDes_build_brief_115",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_115.png",
+        "BuildingName": "buildDes_name_115",
+        "Describe": "buildDes_describe_115",
+        "Lvls": {
+        },
+        "StarDescribe": "",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 0,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 15,
+        "initLvl": 1,
+        "isBuild": false,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": false,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 30,
+        "maxStarLv": 0,
+        "oldShowlevel": 10,
+        "oldUnlocklevel": 10,
+        "openStar": false,
+        "openWl": false,
+        "showlevel": 1,
+        "unlocklevel": 10
+    },
+    "116": {
+        "BuildingBrief": "buildDes_build_brief_116",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_116.png",
+        "BuildingName": "buildDes_name_116",
+        "Describe": "buildDes_describe_116",
+        "Lvls": {
+        },
+        "StarDescribe": "Glory_text_05",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "buildDes_upgrade_brief_116",
+        "WarDescribe": "buildDes_war_describe_01",
+        "addmaxstarlv": 70,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 16,
+        "initLvl": 1,
+        "isBuild": true,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": true,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 1,
+        "oldUnlocklevel": 1,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 1
+    },
+    "117": {
+        "BuildingBrief": "buildDes_build_brief_117",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_117.png",
+        "BuildingName": "buildDes_name_117",
+        "Describe": "buildDes_describe_117",
+        "Lvls": {
+        },
+        "StarDescribe": "Glory_text_06",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "buildDes_upgrade_brief_117",
+        "WarDescribe": "buildDes_war_describe_02",
+        "addmaxstarlv": 70,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 17,
+        "initLvl": 1,
+        "isBuild": true,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": true,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 3,
+        "oldUnlocklevel": 3,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 1
+    },
+    "118": {
+        "BuildingBrief": "buildDes_build_brief_118",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_118.png",
+        "BuildingName": "buildDes_name_118",
+        "Describe": "buildDes_describe_118",
+        "Lvls": {
+        },
+        "StarDescribe": "Glory_text_04",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "buildDes_upgrade_brief_118",
+        "WarDescribe": "buildDes_war_describe_03",
+        "addmaxstarlv": 70,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 18,
+        "initLvl": 1,
+        "isBuild": true,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": true,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 1,
+        "oldUnlocklevel": 1,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 1
+    },
+    "119": {
+        "BuildingBrief": "buildDes_build_brief_119",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_119.png",
+        "BuildingName": "buildDes_name_119",
+        "Describe": "buildDes_describe_119",
+        "Lvls": {
+        },
+        "StarDescribe": "Glory_text_07",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "buildDes_upgrade_brief_119",
+        "WarDescribe": "buildDes_war_describe_04",
+        "addmaxstarlv": 70,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 19,
+        "initLvl": 1,
+        "isBuild": true,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": true,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 4,
+        "oldUnlocklevel": 4,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 1
+    },
+    "120": {
+        "BuildingBrief": "buildDes_build_brief_120",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_120.png",
+        "BuildingName": "buildDes_name_120",
+        "Describe": "buildDes_describe_120",
+        "Lvls": {
+        },
+        "StarDescribe": "",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "buildDes_upgrade_brief_120",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 0,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 20,
+        "initLvl": 1,
+        "isBuild": true,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": true,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 30,
+        "maxStarLv": 0,
+        "oldShowlevel": 6,
+        "oldUnlocklevel": 6,
+        "openStar": false,
+        "openWl": false,
+        "showlevel": 1,
+        "unlocklevel": 6
+    },
+    "121": {
+        "BuildingBrief": "buildDes_build_brief_121",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_121.png",
+        "BuildingName": "buildDes_name_121",
+        "Describe": "buildDes_describe_121",
+        "Lvls": {
+        },
+        "StarDescribe": "",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 70,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 21,
+        "initLvl": 1,
+        "isBuild": true,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": true,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 1,
+        "oldUnlocklevel": 1,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 1
+    },
+    "122": {
+        "BuildingBrief": "buildDes_build_brief_201",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_201.png",
+        "BuildingName": "buildDes_name_201",
+        "Describe": "buildDes_describe_201",
+        "Lvls": {
+        },
+        "StarDescribe": "star_describe_201",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 70,
+        "bType": 1,
+        "buildingType": 0,
+        "index": 23,
+        "initLvl": 1,
+        "isBuild": true,
+        "isCanBuild": true,
+        "isDemolish": true,
+        "isExchange": true,
+        "isUpgrade": true,
+        "maxCount": 10,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 1,
+        "oldUnlocklevel": 1,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 1
+    },
+    "123": {
+        "BuildingBrief": "buildDes_build_brief_123",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_123.png",
+        "BuildingName": "buildDes_name_123",
+        "Describe": "buildDes_describe_123",
+        "Lvls": {
+        },
+        "StarDescribe": "",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 0,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 32,
+        "initLvl": 1,
+        "isBuild": true,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": true,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 30,
+        "maxStarLv": 0,
+        "oldShowlevel": 7,
+        "oldUnlocklevel": 7,
+        "openStar": false,
+        "openWl": false,
+        "showlevel": 1,
+        "unlocklevel": 13
+    },
+    "124": {
+        "BuildingBrief": "buildDes_build_brief_124",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_124.png",
+        "BuildingName": "buildDes_name_124",
+        "Describe": "buildDes_describe_124",
+        "Lvls": {
+        },
+        "StarDescribe": "",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 70,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 33,
+        "initLvl": 1,
+        "isBuild": false,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": false,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 16,
+        "oldUnlocklevel": 16,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 23
+    },
+    "125": {
+        "BuildingBrief": "buildDes_build_brief_125",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_125.png",
+        "BuildingName": "buildDes_name_125",
+        "Describe": "buildDes_describe_125",
+        "Lvls": {
+        },
+        "StarDescribe": "star_describe_125",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 70,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 34,
+        "initLvl": 1,
+        "isBuild": false,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": false,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 16,
+        "oldUnlocklevel": 16,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 20
+    },
+    "202": {
+        "BuildingBrief": "buildDes_build_brief_202",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_202.png",
+        "BuildingName": "buildDes_name_202",
+        "Describe": "buildDes_describe_202",
+        "Lvls": {
+        },
+        "StarDescribe": "star_describe_202",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 70,
+        "bType": 1,
+        "buildingType": 0,
+        "index": 24,
+        "initLvl": 1,
+        "isBuild": true,
+        "isCanBuild": true,
+        "isDemolish": true,
+        "isExchange": true,
+        "isUpgrade": true,
+        "maxCount": 10,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 1,
+        "oldUnlocklevel": 1,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 1
+    },
+    "203": {
+        "BuildingBrief": "buildDes_build_brief_203",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_203.png",
+        "BuildingName": "buildDes_name_203",
+        "Describe": "buildDes_describe_203",
+        "Lvls": {
+        },
+        "StarDescribe": "star_describe_203",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 70,
+        "bType": 1,
+        "buildingType": 0,
+        "index": 25,
+        "initLvl": 1,
+        "isBuild": true,
+        "isCanBuild": true,
+        "isDemolish": true,
+        "isExchange": true,
+        "isUpgrade": true,
+        "maxCount": 8,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 10,
+        "oldUnlocklevel": 10,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 10
+    },
+    "204": {
+        "BuildingBrief": "buildDes_build_brief_204",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_204.png",
+        "BuildingName": "buildDes_name_204",
+        "Describe": "buildDes_describe_204",
+        "Lvls": {
+        },
+        "StarDescribe": "star_describe_204",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 70,
+        "bType": 1,
+        "buildingType": 0,
+        "index": 26,
+        "initLvl": 1,
+        "isBuild": true,
+        "isCanBuild": true,
+        "isDemolish": true,
+        "isExchange": true,
+        "isUpgrade": true,
+        "maxCount": 8,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 15,
+        "oldUnlocklevel": 15,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 15
+    },
+    "205": {
+        "BuildingBrief": "buildDes_build_brief_205",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_205.png",
+        "BuildingName": "buildDes_name_205",
+        "Describe": "buildDes_describe_205",
+        "Lvls": {
+        },
+        "StarDescribe": "star_describe_205",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 70,
+        "bType": 1,
+        "buildingType": 0,
+        "index": 27,
+        "initLvl": 1,
+        "isBuild": true,
+        "isCanBuild": true,
+        "isDemolish": true,
+        "isExchange": true,
+        "isUpgrade": true,
+        "maxCount": 8,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 2,
+        "oldUnlocklevel": 2,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 1
+    },
+    "206": {
+        "BuildingBrief": "buildDes_build_brief_206",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_206.png",
+        "BuildingName": "buildDes_name_206",
+        "Describe": "buildDes_describe_206",
+        "Lvls": {
+        },
+        "StarDescribe": "star_describe_206",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 70,
+        "bType": 1,
+        "buildingType": 0,
+        "index": 28,
+        "initLvl": 1,
+        "isBuild": true,
+        "isCanBuild": true,
+        "isDemolish": true,
+        "isExchange": true,
+        "isUpgrade": true,
+        "maxCount": 8,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 4,
+        "oldUnlocklevel": 4,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 4
+    },
+    "207": {
+        "BuildingBrief": "buildDes_build_brief_207",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_207.png",
+        "BuildingName": "common_text_3969",
+        "Describe": "buildDes_describe_207",
+        "Lvls": {
+        },
+        "StarDescribe": "star_describe_207",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 70,
+        "bType": 3,
+        "buildingType": 0,
+        "index": 31,
+        "initLvl": 1,
+        "isBuild": false,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": false,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 60,
+        "oldUnlocklevel": 60,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 60
+    },
+    "30001": {
+        "BuildingBrief": "",
+        "BuildingID": 0,
+        "BuildingIcon": "",
+        "BuildingName": "",
+        "Describe": "Describe",
+        "Lvls": {
+        },
+        "StarDescribe": "",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "",
+        "addmaxstarlv": 0,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 40,
+        "initLvl": 1,
+        "isBuild": false,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": false,
+        "isUpgrade": false,
+        "maxCount": 1,
+        "maxLvl": 1,
+        "maxStarLv": 0,
+        "oldShowlevel": 1,
+        "oldUnlocklevel": 1,
+        "openStar": false,
+        "openWl": false,
+        "showlevel": 1,
+        "unlocklevel": 5
+    },
+    "301": {
+        "BuildingBrief": "buildDes_build_brief_301",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_301.png",
+        "BuildingName": "buildDes_name_301",
+        "Describe": "buildDes_describe_301",
+        "Lvls": {
+        },
+        "StarDescribe": "star_describe_301",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "buildDes_describe_301",
+        "WarDescribe": "buildDes_upgrade_brief_301",
+        "addmaxstarlv": 70,
+        "bType": 3,
+        "buildingType": 0,
+        "index": 29,
+        "initLvl": 30,
+        "isBuild": true,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": false,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 130,
+        "maxStarLv": 70,
+        "oldShowlevel": 30,
+        "oldUnlocklevel": 30,
+        "openStar": true,
+        "openWl": true,
+        "showlevel": 1,
+        "unlocklevel": 30
+    },
+    "302": {
+        "BuildingBrief": "buildDes_build_brief_302",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_302.png",
+        "BuildingName": "common_text_3129",
+        "Describe": "buildDes_describe_302",
+        "Lvls": {
+        },
+        "StarDescribe": "",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "buildDes_upgrade_brief_302",
+        "WarDescribe": "",
+        "addmaxstarlv": 0,
+        "bType": 3,
+        "buildingType": 0,
+        "index": 30,
+        "initLvl": 1,
+        "isBuild": false,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": false,
+        "isUpgrade": true,
+        "maxCount": 1,
+        "maxLvl": 5,
+        "maxStarLv": 0,
+        "oldShowlevel": 16,
+        "oldUnlocklevel": 16,
+        "openStar": false,
+        "openWl": false,
+        "showlevel": 1,
+        "unlocklevel": 20
+    },
+    "304": {
+        "BuildingBrief": "buildDes_build_brief_304",
+        "BuildingID": 0,
+        "BuildingIcon": "quest_building_man.png",
+        "BuildingName": "Soldiers_armor_text_48",
+        "Describe": "buildDes_describe_304",
+        "Lvls": {
+        },
+        "StarDescribe": "buildDes_describe_304",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "",
+        "addmaxstarlv": 260,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 35,
+        "initLvl": 1,
+        "isBuild": false,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": false,
+        "isUpgrade": false,
+        "maxCount": 1,
+        "maxLvl": 1,
+        "maxStarLv": 160,
+        "oldShowlevel": 0,
+        "oldUnlocklevel": 0,
+        "openStar": true,
+        "openWl": false,
+        "showlevel": 1,
+        "unlocklevel": 110
+    },
+    "305": {
+        "BuildingBrief": "",
+        "BuildingID": 0,
+        "BuildingIcon": "",
+        "BuildingName": "",
+        "Describe": "Describe",
+        "Lvls": {
+        },
+        "StarDescribe": "",
+        "TipButtons": {
+        },
+        "UpgradeBrief": "",
+        "WarDescribe": "",
+        "addmaxstarlv": 0,
+        "bType": 0,
+        "buildingType": 0,
+        "index": 40,
+        "initLvl": 1,
+        "isBuild": false,
+        "isCanBuild": true,
+        "isDemolish": false,
+        "isExchange": false,
+        "isUpgrade": false,
+        "maxCount": 1,
+        "maxLvl": 1,
+        "maxStarLv": 0,
+        "oldShowlevel": 1,
+        "oldUnlocklevel": 1,
+        "openStar": false,
+        "openWl": false,
+        "showlevel": 1,
+        "unlocklevel": 5
+    }
+}

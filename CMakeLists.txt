@@ -13,7 +13,7 @@ project(${PROJECT_NAME} VERSION 1.0.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Core WebSockets Sql)
+find_package(Qt6 REQUIRED COMPONENTS Core WebSockets Sql HttpServer)
 
 
 file(GLOB_RECURSE SourceFileList "WsServer/**/*.cpp")
@@ -35,7 +35,7 @@ add_executable(
 
 
 add_library(XServer.Fwk STATIC ${FwkSourceFileList} ${FwkHeaderFileList})
-target_link_libraries(XServer.Fwk PUBLIC Qt::Core Qt::WebSockets Qt::Sql)
+target_link_libraries(XServer.Fwk PUBLIC Qt::Core Qt::WebSockets Qt::Sql Qt::HttpServer)
 target_include_directories(XServer.Fwk PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/Fwk)
 
 add_library(XServer.Game STATIC ${GameSourceFileList} ${GameHeaderFileList})
@@ -57,6 +57,6 @@ add_custom_command(
         $<TARGET_FILE:Qt6::WebSockets>
         $<TARGET_FILE:Qt6::Network>
         $<TARGET_FILE:Qt6::Sql>
-        ${CMAKE_SOURCE_DIR}/Config
+        $<TARGET_FILE:Qt6::HttpServer>
         $<TARGET_FILE_DIR:${PROJECT_NAME}>
 )

@@ -10,5 +10,6 @@ class XSetting : public IManager{
   QString _DBUser;
   QString _DBPassword;
   int _DBPort;
+  QString _StaticFilesPath;
   bool Init() override;
 };

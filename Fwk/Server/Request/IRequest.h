@@ -6,7 +6,7 @@
 
 typedef QHash<QString, QString> XHashString;
 
-
+class QHttpServerRequest;
 class IRequest : public XJson
 {
   Q_OBJECT
@@ -29,5 +29,6 @@ class IRequest : public XJson
   public:
   static IRequest *Create();
   static IRequest *CreateFromWsMsg(const QString &pMsg, XConnection *pCon);
+  static IRequest *CreateFromHttpReq(const QHttpServerRequest &pReq);
   QString GetPath();
 };
