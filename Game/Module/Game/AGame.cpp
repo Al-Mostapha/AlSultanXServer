@@ -6,3 +6,10 @@ QVariantHash AGame::GetGameState(){
     {"GameState", "Opened"}
   };
 }
+
+QVariantHash AGame::GetServersList(){
+  return QVariantHash{
+    {"State", "Ok"},
+    {"Servers", QVariantList{}}
+  };
+}

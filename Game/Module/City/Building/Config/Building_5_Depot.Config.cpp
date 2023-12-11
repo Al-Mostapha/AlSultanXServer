@@ -5,7 +5,7 @@ void CBuilding::InitDepot(){
   _BuildingSpecs.insert(EBuilding::Depot, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Depot]; // 105
   lBuilding.index = 5;
-  lBuilding.BuildingID = EBuilding::Depot; // 105
+  lBuilding.buildingID = EBuilding::Depot; // 105
   lBuilding.oldUnlocklevel = 1;
   lBuilding.oldShowlevel = 1;
   lBuilding.unlocklevel = 1;

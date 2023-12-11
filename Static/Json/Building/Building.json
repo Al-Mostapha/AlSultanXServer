@@ -1,7 +1,6 @@
 {
     "101": {
         "BuildingBrief": "",
-        "BuildingID": 101,
         "BuildingIcon": "quest_building_101.png",
         "BuildingName": "buildDes_name_101",
         "Describe": "buildDes_describe_101",
@@ -934,6 +933,84 @@
                 "unlockedSoldier": 0,
                 "unlockedTechnology": 0
             },
+            "20": {
+                "BuildingID": 101,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 16000000,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 16000000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 1600000,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 100000,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 442800,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 20,
+                "PreCond": [
+                    {
+                        "Lvl": 19,
+                        "Type": 102
+                    },
+                    {
+                        "Lvl": 18,
+                        "Type": 113
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 12656,
+                    "Power": 46525
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 164000,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 0,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
             "3": {
                 "BuildingID": 101,
                 "CostItems": [
@@ -1499,16 +1576,48 @@
         },
         "StarDescribe": "star_describe_101",
         "TipButtons": {
+            "BuildingName": "buildDes_name_101",
+            "CoolingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "pic400000_2.png",
+            "NormalOperateList": [
+                1003,
+                1006,
+                1018,
+                1022,
+                1019
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -30
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -30
+            },
+            "PicFile": "#pic400000_2.png",
+            "TrainingOperateList": [
+            ],
+            "bCanBuild": 0,
+            "bIsInnerBuilding": true,
+            "bid": 101,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "buildDes_upgrade_brief_101",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 0,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 101,
         "index": 1,
         "initLvl": 1,
         "isBuild": false,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": false,
         "isUpgrade": true,
@@ -1524,24 +1633,204 @@
     },
     "102": {
         "BuildingBrief": "",
-        "BuildingID": 102,
         "BuildingIcon": "quest_building_102.png",
         "BuildingName": "buildDes_name_102",
         "Describe": "buildDes_describe_102",
         "Lvls": {
+            "1": {
+                "BuildingID": 102,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 0,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 0,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 1,
+                "PreCond": [
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 0,
+                    "Power": 10
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 1000,
+                "defValue": 8000,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 0,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 0,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "2": {
+                "BuildingID": 102,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 0,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 2500,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 150,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 2,
+                "PreCond": [
+                    {
+                        "Lvl": 2,
+                        "Type": 101
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 11,
+                    "Power": 35
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 2000,
+                "defValue": 8100,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 35,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 0,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            }
         },
         "StarDescribe": "star_describe_102",
         "TipButtons": {
+            "BuildingName": "buildDes_name_102",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                1016,
+                0,
+                0
+            ],
+            "ImgFile": "chengmen_3.png",
+            "NormalOperateList": [
+                1003,
+                1006,
+                1016,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 20,
+                "y": -90
+            },
+            "OffsetByzantine": {
+                "x": 20,
+                "y": -90
+            },
+            "PicFile": "UnDefined.png",
+            "TrainingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "bCanBuild": 0,
+            "bIsInnerBuilding": true,
+            "bid": 102,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 70,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 102,
         "index": 2,
         "initLvl": 1,
         "isBuild": false,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": false,
         "isUpgrade": true,
@@ -1557,7 +1846,6 @@
     },
     "103": {
         "BuildingBrief": "",
-        "BuildingID": 103,
         "BuildingIcon": "quest_building_103.png",
         "BuildingName": "buildDes_name_103",
         "Describe": "buildDes_describe_103",
@@ -1565,16 +1853,53 @@
         },
         "StarDescribe": "star_describe_103",
         "TipButtons": {
+            "BuildingName": "buildDes_name_103",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "jianta_2.png",
+            "NormalOperateList": [
+                1003,
+                1006,
+                0,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -90
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -90
+            },
+            "PicFile": "UnDefined.png",
+            "TrainingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "bCanBuild": 0,
+            "bIsInnerBuilding": true,
+            "bid": 103,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 70,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 103,
         "index": 3,
         "initLvl": 1,
         "isBuild": false,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": false,
         "isUpgrade": true,
@@ -1590,7 +1915,6 @@
     },
     "104": {
         "BuildingBrief": "",
-        "BuildingID": 104,
         "BuildingIcon": "quest_building_104.png",
         "BuildingName": "buildDes_name_104",
         "Describe": "buildDes_describe_104",
@@ -1598,16 +1922,53 @@
         },
         "StarDescribe": "",
         "TipButtons": {
+            "BuildingName": "buildDes_name_104",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                1017,
+                0,
+                0
+            ],
+            "ImgFile": "pic417000_2.png",
+            "NormalOperateList": [
+                1003,
+                1006,
+                1017,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -115
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -115
+            },
+            "PicFile": "pic417000_2.png",
+            "TrainingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "bCanBuild": 0,
+            "bIsInnerBuilding": true,
+            "bid": 104,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "buildDes_upgrade_brief_104",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 0,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 104,
         "index": 4,
         "initLvl": 1,
         "isBuild": false,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": false,
         "isUpgrade": true,
@@ -1623,7 +1984,6 @@
     },
     "105": {
         "BuildingBrief": "",
-        "BuildingID": 105,
         "BuildingIcon": "quest_building_105.png",
         "BuildingName": "buildDes_name_105",
         "Describe": "buildDes_describe_105",
@@ -1631,16 +1991,53 @@
         },
         "StarDescribe": "star_describe_105",
         "TipButtons": {
+            "BuildingName": "buildDes_name_105",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "building_005.png",
+            "NormalOperateList": [
+                1003,
+                1006,
+                0,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -30
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -30
+            },
+            "PicFile": "pic404000_2.png",
+            "TrainingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "bCanBuild": 0,
+            "bIsInnerBuilding": true,
+            "bid": 105,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 70,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 105,
         "index": 5,
         "initLvl": 1,
         "isBuild": false,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": true,
         "isUpgrade": true,
@@ -1656,7 +2053,6 @@
     },
     "106": {
         "BuildingBrief": "",
-        "BuildingID": 0,
         "BuildingIcon": "",
         "BuildingName": "buildDes_name_106",
         "Describe": "",
@@ -1664,16 +2060,53 @@
         },
         "StarDescribe": "",
         "TipButtons": {
+            "BuildingName": "",
+            "CoolingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "",
+            "NormalOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": 0
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": 0
+            },
+            "PicFile": "",
+            "TrainingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "bCanBuild": 0,
+            "bIsInnerBuilding": false,
+            "bid": 106,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 0,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 6,
         "initLvl": 1,
         "isBuild": false,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": false,
         "isUpgrade": false,
@@ -1689,7 +2122,6 @@
     },
     "107": {
         "BuildingBrief": "",
-        "BuildingID": 0,
         "BuildingIcon": "",
         "BuildingName": "buildDes_name_107",
         "Describe": "",
@@ -1697,16 +2129,53 @@
         },
         "StarDescribe": "",
         "TipButtons": {
+            "BuildingName": "",
+            "CoolingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "",
+            "NormalOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": 0
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": 0
+            },
+            "PicFile": "",
+            "TrainingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "bCanBuild": 0,
+            "bIsInnerBuilding": false,
+            "bid": 107,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 0,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 7,
         "initLvl": 1,
         "isBuild": false,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": false,
         "isUpgrade": false,
@@ -1722,7 +2191,6 @@
     },
     "108": {
         "BuildingBrief": "",
-        "BuildingID": 0,
         "BuildingIcon": "",
         "BuildingName": "buildDes_name_108",
         "Describe": "buildDes_describe_108",
@@ -1730,16 +2198,53 @@
         },
         "StarDescribe": "",
         "TipButtons": {
+            "BuildingName": "",
+            "CoolingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "",
+            "NormalOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": 0
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": 0
+            },
+            "PicFile": "",
+            "TrainingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "bCanBuild": 0,
+            "bIsInnerBuilding": false,
+            "bid": 108,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 0,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 8,
         "initLvl": 1,
         "isBuild": false,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": false,
         "isUpgrade": false,
@@ -1755,7 +2260,6 @@
     },
     "109": {
         "BuildingBrief": "",
-        "BuildingID": 0,
         "BuildingIcon": "",
         "BuildingName": "buildDes_name_109",
         "Describe": "",
@@ -1763,16 +2267,53 @@
         },
         "StarDescribe": "",
         "TipButtons": {
+            "BuildingName": "",
+            "CoolingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "",
+            "NormalOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": 0
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": 0
+            },
+            "PicFile": "",
+            "TrainingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "bCanBuild": 0,
+            "bIsInnerBuilding": false,
+            "bid": 109,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 0,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 9,
         "initLvl": 1,
         "isBuild": false,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": false,
         "isUpgrade": false,
@@ -1788,7 +2329,6 @@
     },
     "110": {
         "BuildingBrief": "",
-        "BuildingID": 0,
         "BuildingIcon": "",
         "BuildingName": "buildDes_name_110",
         "Describe": "",
@@ -1796,16 +2336,53 @@
         },
         "StarDescribe": "",
         "TipButtons": {
+            "BuildingName": "",
+            "CoolingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "",
+            "NormalOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": 0
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": 0
+            },
+            "PicFile": "",
+            "TrainingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "bCanBuild": 0,
+            "bIsInnerBuilding": false,
+            "bid": 110,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 0,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 10,
         "initLvl": 1,
         "isBuild": false,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": false,
         "isUpgrade": false,
@@ -1821,7 +2398,6 @@
     },
     "111": {
         "BuildingBrief": "buildDes_build_brief_111",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_111.png",
         "BuildingName": "buildDes_name_111",
         "Describe": "buildDes_describe_111",
@@ -1829,16 +2405,48 @@
         },
         "StarDescribe": "star_describe_111",
         "TipButtons": {
+            "BuildingName": "buildDes_name_111",
+            "CoolingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "building_009.png",
+            "NormalOperateList": [
+                1003,
+                1006,
+                1012,
+                1013,
+                1056
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -30
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -30
+            },
+            "PicFile": "pic402000_2.png",
+            "TrainingOperateList": [
+            ],
+            "bCanBuild": 1,
+            "bIsInnerBuilding": true,
+            "bid": 111,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 70,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 11,
         "initLvl": 1,
         "isBuild": true,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": true,
         "isUpgrade": true,
@@ -1854,7 +2462,6 @@
     },
     "112": {
         "BuildingBrief": "buildDes_build_brief_112",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_112.png",
         "BuildingName": "buildDes_name_112",
         "Describe": "buildDes_describe_112",
@@ -1862,16 +2469,43 @@
         },
         "StarDescribe": "",
         "TipButtons": {
+            "BuildingName": "buildDes_name_112",
+            "CoolingOperateList": [
+            ],
+            "ImgFile": "building_010.png",
+            "NormalOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -30
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -30
+            },
+            "PicFile": "pic401000_2.png",
+            "TrainingOperateList": [
+            ],
+            "bCanBuild": 1,
+            "bIsInnerBuilding": true,
+            "bid": 112,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 0,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 12,
         "initLvl": 1,
         "isBuild": true,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": true,
         "isUpgrade": true,
@@ -1887,7 +2521,6 @@
     },
     "113": {
         "BuildingBrief": "buildDes_build_brief_113",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_113.png",
         "BuildingName": "buildDes_name_113",
         "Describe": "buildDes_describe_113",
@@ -1895,16 +2528,43 @@
         },
         "StarDescribe": "star_describe_113",
         "TipButtons": {
+            "BuildingName": "buildDes_name_113",
+            "CoolingOperateList": [
+            ],
+            "ImgFile": "building_002.png",
+            "NormalOperateList": [
+                1003,
+                1004,
+                1009,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -30
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -30
+            },
+            "PicFile": "pic403000_2.png",
+            "TrainingOperateList": [
+            ],
+            "bCanBuild": 1,
+            "bIsInnerBuilding": true,
+            "bid": 113,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "buildDes_upgrade_brief_113",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 70,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 13,
         "initLvl": 1,
         "isBuild": true,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": true,
         "isUpgrade": true,
@@ -1920,7 +2580,6 @@
     },
     "114": {
         "BuildingBrief": "buildDes_build_brief_114",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_114.png",
         "BuildingName": "buildDes_name_114",
         "Describe": "buildDes_describe_114",
@@ -1928,16 +2587,53 @@
         },
         "StarDescribe": "star_describe_114",
         "TipButtons": {
+            "BuildingName": "buildDes_name_114",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                1014,
+                1061,
+                0
+            ],
+            "ImgFile": "building_013.png",
+            "NormalOperateList": [
+                1003,
+                1006,
+                1014,
+                1061,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -30
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -30
+            },
+            "PicFile": "pic428000_2.png",
+            "TrainingOperateList": [
+                1003,
+                1004,
+                1014,
+                1061,
+                0
+            ],
+            "bCanBuild": 1,
+            "bIsInnerBuilding": true,
+            "bid": 114,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "buildDes_upgrade_brief_114",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 70,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 14,
         "initLvl": 1,
         "isBuild": true,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": true,
         "isUpgrade": true,
@@ -1953,7 +2649,6 @@
     },
     "115": {
         "BuildingBrief": "buildDes_build_brief_115",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_115.png",
         "BuildingName": "buildDes_name_115",
         "Describe": "buildDes_describe_115",
@@ -1961,16 +2656,43 @@
         },
         "StarDescribe": "",
         "TipButtons": {
+            "BuildingName": "buildDes_name_115",
+            "CoolingOperateList": [
+            ],
+            "ImgFile": "building_014.png",
+            "NormalOperateList": [
+                1003,
+                1004,
+                1025,
+                1026,
+                1054
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -30
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -30
+            },
+            "PicFile": "pic429000_2.png",
+            "TrainingOperateList": [
+            ],
+            "bCanBuild": 1,
+            "bIsInnerBuilding": true,
+            "bid": 115,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 0,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 15,
         "initLvl": 1,
         "isBuild": false,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": false,
         "isUpgrade": true,
@@ -1986,7 +2708,6 @@
     },
     "116": {
         "BuildingBrief": "buildDes_build_brief_116",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_116.png",
         "BuildingName": "buildDes_name_116",
         "Describe": "buildDes_describe_116",
@@ -1994,16 +2715,53 @@
         },
         "StarDescribe": "Glory_text_05",
         "TipButtons": {
+            "BuildingName": "buildDes_name_116",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "",
+            "NormalOperateList": [
+                1003,
+                1006,
+                1011,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -30
+            },
+            "OffsetByzantine": {
+                "x": 40,
+                "y": -30
+            },
+            "PicFile": "building_012.png",
+            "TrainingOperateList": [
+                1003,
+                1004,
+                1011,
+                0,
+                0
+            ],
+            "bCanBuild": 1,
+            "bIsInnerBuilding": true,
+            "bid": 116,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "buildDes_upgrade_brief_116",
         "WarDescribe": "buildDes_war_describe_01",
         "addmaxstarlv": 70,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 16,
         "initLvl": 1,
         "isBuild": true,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": true,
         "isUpgrade": true,
@@ -2019,7 +2777,6 @@
     },
     "117": {
         "BuildingBrief": "buildDes_build_brief_117",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_117.png",
         "BuildingName": "buildDes_name_117",
         "Describe": "buildDes_describe_117",
@@ -2027,16 +2784,53 @@
         },
         "StarDescribe": "Glory_text_06",
         "TipButtons": {
+            "BuildingName": "buildDes_name_117",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "building_011.png",
+            "NormalOperateList": [
+                1003,
+                1006,
+                1011,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -30
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -30
+            },
+            "PicFile": "pic425000_2.png",
+            "TrainingOperateList": [
+                1003,
+                1004,
+                1011,
+                0,
+                0
+            ],
+            "bCanBuild": 1,
+            "bIsInnerBuilding": true,
+            "bid": 117,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "buildDes_upgrade_brief_117",
         "WarDescribe": "buildDes_war_describe_02",
         "addmaxstarlv": 70,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 17,
         "initLvl": 1,
         "isBuild": true,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": true,
         "isUpgrade": true,
@@ -2052,7 +2846,6 @@
     },
     "118": {
         "BuildingBrief": "buildDes_build_brief_118",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_118.png",
         "BuildingName": "buildDes_name_118",
         "Describe": "buildDes_describe_118",
@@ -2060,16 +2853,53 @@
         },
         "StarDescribe": "Glory_text_04",
         "TipButtons": {
+            "BuildingName": "buildDes_name_118",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "ImgFile.png",
+            "NormalOperateList": [
+                1003,
+                1006,
+                1011,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -30
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -30
+            },
+            "PicFile": "pic423000_2.png",
+            "TrainingOperateList": [
+                1003,
+                1004,
+                1011,
+                0,
+                0
+            ],
+            "bCanBuild": 1,
+            "bIsInnerBuilding": true,
+            "bid": 118,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "buildDes_upgrade_brief_118",
         "WarDescribe": "buildDes_war_describe_03",
         "addmaxstarlv": 70,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 18,
         "initLvl": 1,
         "isBuild": true,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": true,
         "isUpgrade": true,
@@ -2085,7 +2915,6 @@
     },
     "119": {
         "BuildingBrief": "buildDes_build_brief_119",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_119.png",
         "BuildingName": "buildDes_name_119",
         "Describe": "buildDes_describe_119",
@@ -2093,16 +2922,53 @@
         },
         "StarDescribe": "Glory_text_07",
         "TipButtons": {
+            "BuildingName": "buildDes_name_119",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "building_004.png",
+            "NormalOperateList": [
+                1003,
+                1006,
+                1011,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -30
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -30
+            },
+            "PicFile": "pic412000_2.png",
+            "TrainingOperateList": [
+                1003,
+                1004,
+                1011,
+                0,
+                0
+            ],
+            "bCanBuild": 1,
+            "bIsInnerBuilding": true,
+            "bid": 119,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "buildDes_upgrade_brief_119",
         "WarDescribe": "buildDes_war_describe_04",
         "addmaxstarlv": 70,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 19,
         "initLvl": 1,
         "isBuild": true,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": true,
         "isUpgrade": true,
@@ -2118,7 +2984,6 @@
     },
     "120": {
         "BuildingBrief": "buildDes_build_brief_120",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_120.png",
         "BuildingName": "buildDes_name_120",
         "Describe": "buildDes_describe_120",
@@ -2126,16 +2991,53 @@
         },
         "StarDescribe": "",
         "TipButtons": {
+            "BuildingName": "buildDes_name_120",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "building_008.png",
+            "NormalOperateList": [
+                1003,
+                1006,
+                1010,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -30
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -30
+            },
+            "PicFile": "pic416000_2.png",
+            "TrainingOperateList": [
+                1003,
+                1004,
+                1010,
+                0,
+                0
+            ],
+            "bCanBuild": 1,
+            "bIsInnerBuilding": true,
+            "bid": 120,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "buildDes_upgrade_brief_120",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 0,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 20,
         "initLvl": 1,
         "isBuild": true,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": true,
         "isUpgrade": true,
@@ -2151,7 +3053,6 @@
     },
     "121": {
         "BuildingBrief": "buildDes_build_brief_121",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_121.png",
         "BuildingName": "buildDes_name_121",
         "Describe": "buildDes_describe_121",
@@ -2159,16 +3060,48 @@
         },
         "StarDescribe": "",
         "TipButtons": {
+            "BuildingName": "buildDes_name_121",
+            "CoolingOperateList": [
+            ],
+            "ImgFile": "building_006.png",
+            "NormalOperateList": [
+                1003,
+                1006,
+                1042,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -30
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -30
+            },
+            "PicFile": "pic427000_2.png",
+            "TrainingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "bCanBuild": 1,
+            "bIsInnerBuilding": true,
+            "bid": 121,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 70,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 21,
         "initLvl": 1,
         "isBuild": true,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": true,
         "isUpgrade": true,
@@ -2184,7 +3117,6 @@
     },
     "122": {
         "BuildingBrief": "buildDes_build_brief_201",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_201.png",
         "BuildingName": "buildDes_name_201",
         "Describe": "buildDes_describe_201",
@@ -2192,16 +3124,53 @@
         },
         "StarDescribe": "star_describe_201",
         "TipButtons": {
+            "BuildingName": "buildDes_name_201",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "building_015.png",
+            "NormalOperateList": [
+                1002,
+                1003,
+                1006,
+                1024,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -15
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -15
+            },
+            "PicFile": "nt_lvmiao02.png",
+            "TrainingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "bCanBuild": 2,
+            "bIsInnerBuilding": false,
+            "bid": 201,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 70,
         "bType": 1,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 23,
         "initLvl": 1,
         "isBuild": true,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": true,
         "isExchange": true,
         "isUpgrade": true,
@@ -2217,7 +3186,6 @@
     },
     "123": {
         "BuildingBrief": "buildDes_build_brief_123",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_123.png",
         "BuildingName": "buildDes_name_123",
         "Describe": "buildDes_describe_123",
@@ -2225,16 +3193,48 @@
         },
         "StarDescribe": "",
         "TipButtons": {
+            "BuildingName": "buildDes_name_123",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                1049,
+                0,
+                0
+            ],
+            "ImgFile": "building_007.png",
+            "NormalOperateList": [
+                1003,
+                1006,
+                1049,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -30
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -30
+            },
+            "PicFile": "pic407000_2.png",
+            "TrainingOperateList": [
+            ],
+            "bCanBuild": 1,
+            "bIsInnerBuilding": true,
+            "bid": 123,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 0,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 32,
         "initLvl": 1,
         "isBuild": true,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": true,
         "isUpgrade": true,
@@ -2250,7 +3250,6 @@
     },
     "124": {
         "BuildingBrief": "buildDes_build_brief_124",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_124.png",
         "BuildingName": "buildDes_name_124",
         "Describe": "buildDes_describe_124",
@@ -2258,16 +3257,53 @@
         },
         "StarDescribe": "",
         "TipButtons": {
+            "BuildingName": "buildDes_name_124",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                1048,
+                0,
+                0
+            ],
+            "ImgFile": "building_007.png",
+            "NormalOperateList": [
+                1003,
+                1006,
+                1048,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -110
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -110
+            },
+            "PicFile": "pic407000_2.png",
+            "TrainingOperateList": [
+                1003,
+                1004,
+                1048,
+                0,
+                0
+            ],
+            "bCanBuild": 1,
+            "bIsInnerBuilding": true,
+            "bid": 124,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 70,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 33,
         "initLvl": 1,
         "isBuild": false,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": false,
         "isUpgrade": true,
@@ -2283,7 +3319,6 @@
     },
     "125": {
         "BuildingBrief": "buildDes_build_brief_125",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_125.png",
         "BuildingName": "buildDes_name_125",
         "Describe": "buildDes_describe_125",
@@ -2291,16 +3326,43 @@
         },
         "StarDescribe": "star_describe_125",
         "TipButtons": {
+            "BuildingName": "buildDes_name_125",
+            "CoolingOperateList": [
+            ],
+            "ImgFile": "building_007.png",
+            "NormalOperateList": [
+                1003,
+                1004,
+                1050,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -30
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -30
+            },
+            "PicFile": "pic407000_2.png",
+            "TrainingOperateList": [
+            ],
+            "bCanBuild": 1,
+            "bIsInnerBuilding": true,
+            "bid": 125,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 70,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 34,
         "initLvl": 1,
         "isBuild": false,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": false,
         "isUpgrade": true,
@@ -2316,7 +3378,6 @@
     },
     "202": {
         "BuildingBrief": "buildDes_build_brief_202",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_202.png",
         "BuildingName": "buildDes_name_202",
         "Describe": "buildDes_describe_202",
@@ -2324,16 +3385,53 @@
         },
         "StarDescribe": "star_describe_202",
         "TipButtons": {
+            "BuildingName": "buildDes_name_202",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "building_016.png",
+            "NormalOperateList": [
+                1002,
+                1003,
+                1006,
+                1024,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -15
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -15
+            },
+            "PicFile": "dimian.png",
+            "TrainingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "bCanBuild": 2,
+            "bIsInnerBuilding": false,
+            "bid": 202,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 70,
         "bType": 1,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 24,
         "initLvl": 1,
         "isBuild": true,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": true,
         "isExchange": true,
         "isUpgrade": true,
@@ -2349,7 +3447,6 @@
     },
     "203": {
         "BuildingBrief": "buildDes_build_brief_203",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_203.png",
         "BuildingName": "buildDes_name_203",
         "Describe": "buildDes_describe_203",
@@ -2357,16 +3454,53 @@
         },
         "StarDescribe": "star_describe_203",
         "TipButtons": {
+            "BuildingName": "buildDes_name_203",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "building_018.png",
+            "NormalOperateList": [
+                1002,
+                1003,
+                1006,
+                1024,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -15
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -15
+            },
+            "PicFile": "pic414000_2.png",
+            "TrainingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "bCanBuild": 2,
+            "bIsInnerBuilding": false,
+            "bid": 203,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 70,
         "bType": 1,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 25,
         "initLvl": 1,
         "isBuild": true,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": true,
         "isExchange": true,
         "isUpgrade": true,
@@ -2382,7 +3516,6 @@
     },
     "204": {
         "BuildingBrief": "buildDes_build_brief_204",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_204.png",
         "BuildingName": "buildDes_name_204",
         "Describe": "buildDes_describe_204",
@@ -2390,16 +3523,53 @@
         },
         "StarDescribe": "star_describe_204",
         "TipButtons": {
+            "BuildingName": "buildDes_name_204",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "building_019.png",
+            "NormalOperateList": [
+                1002,
+                1003,
+                1006,
+                1024,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -15
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -15
+            },
+            "PicFile": "miyinkuangchang.png",
+            "TrainingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "bCanBuild": 2,
+            "bIsInnerBuilding": false,
+            "bid": 204,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 70,
         "bType": 1,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 26,
         "initLvl": 1,
         "isBuild": true,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": true,
         "isExchange": true,
         "isUpgrade": true,
@@ -2415,7 +3585,6 @@
     },
     "205": {
         "BuildingBrief": "buildDes_build_brief_205",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_205.png",
         "BuildingName": "buildDes_name_205",
         "Describe": "buildDes_describe_205",
@@ -2423,16 +3592,53 @@
         },
         "StarDescribe": "star_describe_205",
         "TipButtons": {
+            "BuildingName": "buildDes_name_205",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "building_017.png",
+            "NormalOperateList": [
+                1003,
+                1006,
+                0,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -15
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -15
+            },
+            "PicFile": "pic410000_2.png",
+            "TrainingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "bCanBuild": 2,
+            "bIsInnerBuilding": false,
+            "bid": 205,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 70,
         "bType": 1,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 27,
         "initLvl": 1,
         "isBuild": true,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": true,
         "isExchange": true,
         "isUpgrade": true,
@@ -2448,7 +3654,6 @@
     },
     "206": {
         "BuildingBrief": "buildDes_build_brief_206",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_206.png",
         "BuildingName": "buildDes_name_206",
         "Describe": "buildDes_describe_206",
@@ -2456,16 +3661,53 @@
         },
         "StarDescribe": "star_describe_206",
         "TipButtons": {
+            "BuildingName": "buildDes_name_206",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "building_020.png",
+            "NormalOperateList": [
+                1003,
+                1006,
+                1023,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -15
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -15
+            },
+            "PicFile": "pic411000_2.png",
+            "TrainingOperateList": [
+                1003,
+                1004,
+                0,
+                0,
+                0
+            ],
+            "bCanBuild": 2,
+            "bIsInnerBuilding": false,
+            "bid": 206,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 70,
         "bType": 1,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 28,
         "initLvl": 1,
         "isBuild": true,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": true,
         "isExchange": true,
         "isUpgrade": true,
@@ -2481,7 +3723,6 @@
     },
     "207": {
         "BuildingBrief": "buildDes_build_brief_207",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_207.png",
         "BuildingName": "common_text_3969",
         "Describe": "buildDes_describe_207",
@@ -2489,16 +3730,53 @@
         },
         "StarDescribe": "star_describe_207",
         "TipButtons": {
+            "BuildingName": "common_text_3969",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "building_018.png",
+            "NormalOperateList": [
+                1002,
+                1003,
+                1006,
+                1024,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": 45
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": 45
+            },
+            "PicFile": "pic414000_2.png",
+            "TrainingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "bCanBuild": 0,
+            "bIsInnerBuilding": false,
+            "bid": 207,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 70,
         "bType": 3,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 31,
         "initLvl": 1,
         "isBuild": false,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": false,
         "isUpgrade": true,
@@ -2514,7 +3792,6 @@
     },
     "30001": {
         "BuildingBrief": "",
-        "BuildingID": 0,
         "BuildingIcon": "",
         "BuildingName": "",
         "Describe": "Describe",
@@ -2522,16 +3799,42 @@
         },
         "StarDescribe": "",
         "TipButtons": {
+            "BuildingName": "buildDes_name_101",
+            "CoolingOperateList": [
+            ],
+            "ImgFile": "",
+            "NormalOperateList": [
+                1003,
+                1006,
+                1042,
+                1015
+            ],
+            "Offset": {
+                "x": 0,
+                "y": 0
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": 0
+            },
+            "PicFile": "",
+            "TrainingOperateList": [
+            ],
+            "bCanBuild": -842150451,
+            "bIsInnerBuilding": true,
+            "bid": -842150451,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "",
         "addmaxstarlv": 0,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 40,
         "initLvl": 1,
         "isBuild": false,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": false,
         "isUpgrade": false,
@@ -2547,7 +3850,6 @@
     },
     "301": {
         "BuildingBrief": "buildDes_build_brief_301",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_301.png",
         "BuildingName": "buildDes_name_301",
         "Describe": "buildDes_describe_301",
@@ -2555,16 +3857,48 @@
         },
         "StarDescribe": "star_describe_301",
         "TipButtons": {
+            "BuildingName": "buildDes_name_301",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                1040,
+                1041,
+                0
+            ],
+            "ImgFile": "BG_statue.png",
+            "NormalOperateList": [
+                1003,
+                1031,
+                1040,
+                1041,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": 0
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": 0
+            },
+            "PicFile": "BG_statue.png",
+            "TrainingOperateList": [
+            ],
+            "bCanBuild": 0,
+            "bIsInnerBuilding": true,
+            "bid": 301,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "buildDes_describe_301",
         "WarDescribe": "buildDes_upgrade_brief_301",
         "addmaxstarlv": 70,
         "bType": 3,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 29,
         "initLvl": 30,
         "isBuild": true,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": false,
         "isUpgrade": true,
@@ -2580,7 +3914,6 @@
     },
     "302": {
         "BuildingBrief": "buildDes_build_brief_302",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_302.png",
         "BuildingName": "common_text_3129",
         "Describe": "buildDes_describe_302",
@@ -2588,16 +3921,53 @@
         },
         "StarDescribe": "",
         "TipButtons": {
+            "BuildingName": "common_text_3129",
+            "CoolingOperateList": [
+                1003,
+                1004,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "jingyingdiantang.png",
+            "NormalOperateList": [
+                1003,
+                1006,
+                1011,
+                0,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": 0
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": 0
+            },
+            "PicFile": "jingyingdiantang.png",
+            "TrainingOperateList": [
+                1003,
+                1004,
+                1011,
+                0,
+                0
+            ],
+            "bCanBuild": 0,
+            "bIsInnerBuilding": true,
+            "bid": 302,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "buildDes_upgrade_brief_302",
         "WarDescribe": "",
         "addmaxstarlv": 0,
         "bType": 3,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 30,
         "initLvl": 1,
         "isBuild": false,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": false,
         "isUpgrade": true,
@@ -2613,7 +3983,6 @@
     },
     "304": {
         "BuildingBrief": "buildDes_build_brief_304",
-        "BuildingID": 0,
         "BuildingIcon": "quest_building_man.png",
         "BuildingName": "Soldiers_armor_text_48",
         "Describe": "buildDes_describe_304",
@@ -2621,16 +3990,53 @@
         },
         "StarDescribe": "buildDes_describe_304",
         "TipButtons": {
+            "BuildingName": "Soldiers_armor_text_48",
+            "CoolingOperateList": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "ImgFile": "",
+            "NormalOperateList": [
+                1003,
+                1062,
+                1063,
+                1064,
+                0
+            ],
+            "Offset": {
+                "x": 0,
+                "y": -100
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": -100
+            },
+            "PicFile": "",
+            "TrainingOperateList": [
+                1003,
+                1004,
+                1062,
+                1063,
+                1064
+            ],
+            "bCanBuild": 0,
+            "bIsInnerBuilding": true,
+            "bid": 304,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "",
         "addmaxstarlv": 260,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 35,
         "initLvl": 1,
         "isBuild": false,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": false,
         "isUpgrade": false,
@@ -2646,7 +4052,6 @@
     },
     "305": {
         "BuildingBrief": "",
-        "BuildingID": 0,
         "BuildingIcon": "",
         "BuildingName": "",
         "Describe": "Describe",
@@ -2654,16 +4059,42 @@
         },
         "StarDescribe": "",
         "TipButtons": {
+            "BuildingName": "buildDes_name_101",
+            "CoolingOperateList": [
+            ],
+            "ImgFile": "",
+            "NormalOperateList": [
+                1003,
+                1006,
+                1042,
+                1015
+            ],
+            "Offset": {
+                "x": 0,
+                "y": 0
+            },
+            "OffsetByzantine": {
+                "x": 0,
+                "y": 0
+            },
+            "PicFile": "",
+            "TrainingOperateList": [
+            ],
+            "bCanBuild": -842150451,
+            "bIsInnerBuilding": true,
+            "bid": -842150451,
+            "buildingID": -842150451,
+            "cityBuildingState": 0
         },
         "UpgradeBrief": "",
         "WarDescribe": "",
         "addmaxstarlv": 0,
         "bType": 0,
-        "buildingType": 0,
+        "buildingID": 0,
         "index": 40,
         "initLvl": 1,
         "isBuild": false,
-        "isCanBuild": true,
+        "isCanBuild": 1,
         "isDemolish": false,
         "isExchange": false,
         "isUpgrade": false,

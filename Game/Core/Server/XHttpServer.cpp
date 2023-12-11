@@ -9,6 +9,28 @@
 void XHttpServer::Start(){
   MapRoutes();
   _HttpServer.listen(QHostAddress::Any, _Port);
+  _HttpServer.afterRequest([this](const QHttpServerRequest &pReq, QHttpServerResponse &&pRes){
+    qDebug() << "Request: " << pReq.url().toString();
+    qDebug() << "Response: " << pRes.statusCode();
+    pRes.setHeader("Content-Type", "application/json");
+    if(pRes.statusCode() == QHttpServerResponse::StatusCode::NotFound){
+      pRes = QHttpServerResponse(QJsonObject{
+        {"State", "Error"},
+        {"Code", 404}, 
+        {"Message", "Not Found"}
+      }, QHttpServerResponse::StatusCode::NotFound);
+    }
+
+    if(pRes.statusCode() == QHttpServerResponse::StatusCode::InternalServerError){
+      pRes = QHttpServerResponse(R"({
+          "State": "Error",
+          "Code": 500,
+          "Message": "Internal Server Error"
+        })", QHttpServerResponse::StatusCode::InternalServerError);
+    }
+
+    return std::move(pRes);
+  });
 }
 
 XHttpServer::XHttpServer(quint16 pPort, QObject *parent){

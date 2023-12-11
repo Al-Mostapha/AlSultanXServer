@@ -5,7 +5,7 @@ void CBuilding::InitArrowTower(){
   _BuildingSpecs.insert(EBuilding::ArrowTower, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::ArrowTower]; // 103
   lBuilding.index = 3;
-  lBuilding.BuildingID = EBuilding::ArrowTower; // 103
+  lBuilding.buildingID = EBuilding::ArrowTower; // 103
   lBuilding.oldUnlocklevel = 7;
   lBuilding.oldShowlevel = 7;
   lBuilding.unlocklevel = 7;

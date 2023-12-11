@@ -5,7 +5,7 @@ void CBuilding::InitWatchTower(){
   _BuildingSpecs.insert(EBuilding::WatchTower, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::WatchTower]; // 104
   lBuilding.index = 4;
-  lBuilding.BuildingID = EBuilding::WatchTower; // 104
+  lBuilding.buildingID = EBuilding::WatchTower; // 104
   lBuilding.oldUnlocklevel = 1;
   lBuilding.oldShowlevel = 1;
   lBuilding.unlocklevel = 5;

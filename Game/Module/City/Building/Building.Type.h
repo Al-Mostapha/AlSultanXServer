@@ -158,8 +158,8 @@ struct RBuildingLvlSpecs {
 Q_DECLARE_METATYPE(RBuildingLvlSpecs);
 struct RBuildingTipsBtnListData{
   int bid;
-  EBuilding idBuilding;
-  ECityBuildingState _CityBuildingState = ECityBuildingState::None;
+  EBuilding buildingID;
+  ECityBuildingState cityBuildingState = ECityBuildingState::None;
   QString BuildingName = "buildDes_name_101";
   QString PicFile;
   QString ImgFile;
@@ -176,7 +176,36 @@ struct RBuildingTipsBtnListData{
   QList<EBuildingTips> CoolingOperateList;
   QList<EBuildingTips> TrainingOperateList;
   QJsonObject ToJson(){
-    return {};
+    QJsonObject lJson;
+    lJson["bid"] = bid;
+    lJson["buildingID"] = (int)buildingID;
+    lJson["cityBuildingState"] = (int)cityBuildingState;
+    lJson["BuildingName"] = BuildingName;
+    lJson["PicFile"] = PicFile;
+    lJson["ImgFile"] = ImgFile;
+    lJson["Offset"] = QJsonObject({
+      {"x", Offset.x()},
+      {"y", Offset.y()}
+    });
+    lJson["OffsetByzantine"] = QJsonObject({
+      {"x", OffsetByzantine.x()},
+      {"y", OffsetByzantine.y()}
+    });
+    lJson["bIsInnerBuilding"] = bIsInnerBuilding;
+    lJson["bCanBuild"] = bCanBuild;
+    QJsonArray lNormalOperateList;
+    for(auto lOp : NormalOperateList)
+      lNormalOperateList.push_back((int)lOp);
+    lJson["NormalOperateList"] = lNormalOperateList;
+    QJsonArray lCoolingOperateList;
+    for(auto lOp : CoolingOperateList)
+      lCoolingOperateList.push_back((int)lOp);
+    lJson["CoolingOperateList"] = lCoolingOperateList;
+    QJsonArray lTrainingOperateList;
+    for(auto lOp : TrainingOperateList)
+      lTrainingOperateList.push_back((int)lOp);
+    lJson["TrainingOperateList"] = lTrainingOperateList;
+    return lJson;
   };
 };
 
@@ -186,7 +215,7 @@ class RBuildingSpecs : public QObject {
   public:
   explicit RBuildingSpecs(QObject *parent = nullptr) : QObject(parent) {}
   int index = 0;
-  EBuilding BuildingID = EBuilding::None;
+  EBuilding buildingID = EBuilding::None;
   int oldUnlocklevel = 0;
   int oldShowlevel = 0;
   int unlocklevel = 0;
@@ -196,14 +225,13 @@ class RBuildingSpecs : public QObject {
   bool isExchange = false;
   bool isBuild = false;
   bool isUpgrade = false;
-  EBuilding buildingType = EBuilding::None;
   int maxCount = 0;
   int maxLvl = 0;
   int initLvl = 0;
   bool openWl = false;
   bool openStar = false;
   int maxStarLv = 0;
-  bool isCanBuild = true;
+  int isCanBuild = 1;
   unsigned int addmaxstarlv = 0;
   const char *BuildingName = "";
   const char *BuildingIcon = "";
@@ -218,7 +246,7 @@ class RBuildingSpecs : public QObject {
     QJsonObject lJson;
     
     lJson["index"] = index;
-    lJson["BuildingID"] = (int)BuildingID;
+    lJson["buildingID"] = (int)buildingID;
     lJson["oldUnlocklevel"] = oldUnlocklevel;
     lJson["oldShowlevel"] = oldShowlevel;
     lJson["unlocklevel"] = unlocklevel;
@@ -228,7 +256,6 @@ class RBuildingSpecs : public QObject {
     lJson["isExchange"] = isExchange;
     lJson["isBuild"] = isBuild;
     lJson["isUpgrade"] = isUpgrade;
-    lJson["buildingType"] = (int)buildingType;
     lJson["maxCount"] = maxCount;
     lJson["maxLvl"] = maxLvl;
     lJson["initLvl"] = initLvl;

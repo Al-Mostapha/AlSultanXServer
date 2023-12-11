@@ -59,7 +59,7 @@ void CBuilding::ProduceJson(){
       lBuilding->ToJson());
   }
   QJsonDocument lJsonDoc(lJson);
-  QFile file(XSetting::Get()->_StaticFilesPath + "Json/CityBuildings.json");
+  QFile file(XSetting::Get()->_StaticFilesPath + "Json/Building/Building.json");
   file.open(QIODevice::ReadWrite | QIODevice::Text);
   auto lJsonString = lJsonDoc.toJson();
   file.write(lJsonString);

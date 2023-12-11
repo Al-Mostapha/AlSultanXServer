@@ -7,7 +7,7 @@ void CBuilding::InitCastle(){
   _BuildingSpecs.insert(EBuilding::Castle, lPointer);
   RBuildingSpecs &lBuilding = *_BuildingSpecs[EBuilding::Castle]; // 101
   lBuilding.index = 1;
-  lBuilding.BuildingID = EBuilding::Castle;
+  lBuilding.buildingID = EBuilding::Castle;
   lBuilding.oldUnlocklevel = 1;
   lBuilding.oldShowlevel = 1;
   lBuilding.unlocklevel = 1;
@@ -409,30 +409,23 @@ void CBuilding::InitCastle(){
   lBuilding.Lvls[19].Reword.Power = 37755;
   lBuilding.Lvls[19].unlockedBuild = EBuilding::None;
 
-  //   [20] = {
-  //     index = 20,
-  //     bid = 101,
-  //     blv = 20,
-  //     kingdomLv = 0,
-  //     preCond = {102, 19},
-  //     costRes = {
-  //       1002,
-  //       16000000,
-  //       1003,
-  //       16000000,
-  //       1004,
-  //       1600000,
-  //       1005,
-  //       100000
-  //     },
-  //     costTime = 442800,
-  //     exp = 12656,
-  //     kingdomPoint = 164000,
-  //     power = 46525,
-  //     unlockedBuild = 0,
-  //     costTools = {},
-  //     costWEs = {}
-  //   },
+  lBuilding.Lvls[20] = {};
+  lBuilding.Lvls[20].BuildingID = EBuilding::Castle;
+  lBuilding.Lvls[20].lvl = 20;
+  lBuilding.Lvls[20].kingdomLv = 0;
+  lBuilding.Lvls[20].PreCond = {
+    {EBuilding::Wall, 19},
+    {EBuilding::Institute, 18}
+  };
+  lBuilding.Lvls[20].CostRes = {
+    {EResource::Food, 16000000}, {EResource::Wood, 16000000},
+    {EResource::Iron, 1600000}, {EResource::Mithril, 100000}
+  };
+  lBuilding.Lvls[20].CostTime = 442800;
+  lBuilding.Lvls[20].Reword.Exp = 12656;
+  lBuilding.Lvls[20].kingdomPoint = 164000;
+  lBuilding.Lvls[20].Reword.Power = 46525;
+  lBuilding.Lvls[20].unlockedBuild = EBuilding::None;
   //   [21] = {
   //     index = 21,
   //     bid = 101,
