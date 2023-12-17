@@ -1,0 +1,1003 @@
+{
+    "0": {
+        "ActionName": "common_text_059",
+        "BtnDesc": "common_text_059",
+        "OpSortIndex": 30,
+        "PicFile": "icon_building_details.png",
+        "btnEnum": 1003,
+        "btnId": 1003,
+        "offset": {
+            "x": 5,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1001": {
+        "ActionName": "OpBoostByTool",
+        "BtnDesc": "common_text_058",
+        "OpSortIndex": 10,
+        "PicFile": "icon_building_up_food.png",
+        "btnEnum": 1001,
+        "btnId": 1001,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1002": {
+        "ActionName": "OpBoost",
+        "BtnDesc": "common_text_058",
+        "OpSortIndex": 20,
+        "PicFile": "icon_building_output_speedup.png",
+        "btnEnum": 1002,
+        "btnId": 1002,
+        "offset": {
+            "x": 5,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1003": {
+        "ActionName": "OpDetails",
+        "BtnDesc": "common_text_059",
+        "OpSortIndex": 30,
+        "PicFile": "icon_building_details.png",
+        "btnEnum": 1003,
+        "btnId": 1003,
+        "offset": {
+            "x": 5,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1004": {
+        "ActionName": "OpSpeedUpByGold",
+        "BtnDesc": "common_text_018",
+        "OpSortIndex": 40,
+        "PicFile": "icon_building_gold_speedup.png",
+        "btnEnum": 1004,
+        "btnId": 1004,
+        "offset": {
+            "x": 0,
+            "y": -4
+        },
+        "scale": 0
+    },
+    "1005": {
+        "ActionName": "OpSpeedUpByTool",
+        "BtnDesc": "common_text_018",
+        "OpSortIndex": 50,
+        "PicFile": "icon_building_speedup.png",
+        "btnEnum": 1005,
+        "btnId": 1005,
+        "offset": {
+            "x": -5,
+            "y": 2
+        },
+        "scale": 0
+    },
+    "1006": {
+        "ActionName": "OpUpgrade",
+        "BtnDesc": "common_text_055",
+        "OpSortIndex": 60,
+        "PicFile": "icon_building_levelup.png",
+        "btnEnum": 1006,
+        "btnId": 1006,
+        "offset": {
+            "x": 4,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1007": {
+        "ActionName": "OpTrade",
+        "BtnDesc": "common_text_044",
+        "OpSortIndex": 70,
+        "PicFile": "icon_building_trade.png",
+        "btnEnum": 1007,
+        "btnId": 1007,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1008": {
+        "ActionName": "OpAuction",
+        "BtnDesc": "common_text_2768",
+        "OpSortIndex": 80,
+        "PicFile": "icon_saleRoom.png",
+        "btnEnum": 1008,
+        "btnId": 1008,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1009": {
+        "ActionName": "OpResearch",
+        "BtnDesc": "common_text_062",
+        "OpSortIndex": 90,
+        "PicFile": "icon_building_research.png",
+        "btnEnum": 1009,
+        "btnId": 1009,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1010": {
+        "ActionName": "OpBuild",
+        "BtnDesc": "common_text_042",
+        "OpSortIndex": 100,
+        "PicFile": "icon_building_trap_bulid.png",
+        "btnEnum": 1010,
+        "btnId": 1010,
+        "offset": {
+            "x": 5,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1011": {
+        "ActionName": "OpTrain",
+        "BtnDesc": "common_text_061",
+        "OpSortIndex": 110,
+        "PicFile": "icon_building_training.png",
+        "btnEnum": 1011,
+        "btnId": 1011,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1012": {
+        "ActionName": "OpHelp",
+        "BtnDesc": "common_text_037",
+        "OpSortIndex": 120,
+        "PicFile": "icon_building_alliancehelp.png",
+        "btnEnum": 1012,
+        "btnId": 1012,
+        "offset": {
+            "x": 5,
+            "y": -2
+        },
+        "scale": 0
+    },
+    "1013": {
+        "ActionName": "OpReinforcements",
+        "BtnDesc": "common_text_010",
+        "OpSortIndex": 130,
+        "PicFile": "icon_building_armyhelp.png",
+        "btnEnum": 1013,
+        "btnId": 1013,
+        "offset": {
+            "x": 5,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1014": {
+        "ActionName": "OpWish",
+        "BtnDesc": "common_text_060",
+        "OpSortIndex": 140,
+        "PicFile": "icon_building_xunbao.png",
+        "btnEnum": 1014,
+        "btnId": 1014,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1015": {
+        "ActionName": "OpAllianceBattle",
+        "BtnDesc": "common_text_047",
+        "OpSortIndex": 150,
+        "PicFile": "icon_building_alliance_war.png",
+        "btnEnum": 1015,
+        "btnId": 1015,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1016": {
+        "ActionName": "OpDefend",
+        "BtnDesc": "common_text_041",
+        "OpSortIndex": 160,
+        "PicFile": "icon_building_def.png",
+        "btnEnum": 1016,
+        "btnId": 1016,
+        "offset": {
+            "x": 5,
+            "y": -10
+        },
+        "scale": 0
+    },
+    "1017": {
+        "ActionName": "OpMilitaryInfo",
+        "BtnDesc": "common_text_045",
+        "OpSortIndex": 170,
+        "PicFile": "icon_building_military.png",
+        "btnEnum": 1017,
+        "btnId": 1017,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1018": {
+        "ActionName": "OpCityInfo",
+        "BtnDesc": "common_text_039",
+        "OpSortIndex": 190,
+        "PicFile": "icon_building_cityinfo.png",
+        "btnEnum": 1018,
+        "btnId": 1018,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1019": {
+        "ActionName": "OpCityDecorate",
+        "BtnDesc": "common_text_1798",
+        "OpSortIndex": 200,
+        "PicFile": "icon_main_skin.png",
+        "btnEnum": 1019,
+        "btnId": 1019,
+        "offset": {
+            "x": 0,
+            "y": 5
+        },
+        "scale": 0.699999988079071
+    },
+    "1020": {
+        "ActionName": "OpCityGift",
+        "BtnDesc": "common_text_4030",
+        "OpSortIndex": 180,
+        "PicFile": "icon_castleLv_privilege.png",
+        "btnEnum": 1020,
+        "btnId": 1020,
+        "offset": {
+            "x": -2,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1021": {
+        "ActionName": "OpAllianceTreasure",
+        "BtnDesc": "allitreas_title_01",
+        "OpSortIndex": 190,
+        "PicFile": "allitreas_box_01.png",
+        "btnEnum": 1021,
+        "btnId": 1021,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0.6000000238418579
+    },
+    "1022": {
+        "ActionName": "OpCityBuff",
+        "BtnDesc": "common_text_014",
+        "OpSortIndex": 210,
+        "PicFile": "icon_building_cityeffect.png",
+        "btnEnum": 1022,
+        "btnId": 1022,
+        "offset": {
+            "x": 5,
+            "y": 0
+        },
+        "scale": 1.2000000476837158
+    },
+    "1023": {
+        "ActionName": "OpHeal",
+        "BtnDesc": "common_text_065",
+        "OpSortIndex": 220,
+        "PicFile": "icon_building_cure.png",
+        "btnEnum": 1023,
+        "btnId": 1023,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1024": {
+        "ActionName": "OpCollect",
+        "BtnDesc": "common_text_057",
+        "OpSortIndex": 230,
+        "PicFile": "ui_food.png",
+        "btnEnum": 1024,
+        "btnId": 1024,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1025": {
+        "ActionName": "OpForging",
+        "BtnDesc": "common_text_1339",
+        "OpSortIndex": 240,
+        "PicFile": "icon_equip_forge2.png",
+        "btnEnum": 1025,
+        "btnId": 1025,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1026": {
+        "ActionName": "OpStoragebox",
+        "BtnDesc": "common_text_040",
+        "OpSortIndex": 250,
+        "PicFile": "icon_equip_storagebox.png",
+        "btnEnum": 1026,
+        "btnId": 1026,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1027": {
+        "ActionName": "OpPyramid",
+        "BtnDesc": "common_text_1140",
+        "OpSortIndex": 260,
+        "PicFile": "btn_pyramid.png",
+        "btnEnum": 1027,
+        "btnId": 1027,
+        "offset": {
+            "x": 1,
+            "y": 0
+        },
+        "scale": 0.8999999761581421
+    },
+    "1028": {
+        "ActionName": "OpBadgeBourse",
+        "BtnDesc": "common_text_1906",
+        "OpSortIndex": 270,
+        "PicFile": "btn_badgeexchange.png",
+        "btnEnum": 1028,
+        "btnId": 1028,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1029": {
+        "ActionName": "OpFriend",
+        "BtnDesc": "friend_name_01",
+        "OpSortIndex": 280,
+        "PicFile": "btn_embassy_friend.png",
+        "btnEnum": 1029,
+        "btnId": 1029,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0.800000011920929
+    },
+    "1030": {
+        "ActionName": "OpMilitaryPoint",
+        "BtnDesc": "common_text_2408",
+        "OpSortIndex": 290,
+        "PicFile": "icon_miltary_exchange.png",
+        "btnEnum": 1030,
+        "btnId": 1030,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1031": {
+        "ActionName": "OpWar",
+        "BtnDesc": "common_text_310",
+        "OpSortIndex": 60,
+        "PicFile": "icon_main_honourgrade.png",
+        "btnEnum": 1031,
+        "btnId": 1031,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 1.2000000476837158
+    },
+    "1032": {
+        "ActionName": "OpMonthGift",
+        "BtnDesc": "common_text_2476",
+        "OpSortIndex": 300,
+        "PicFile": "icon_monthly_boat.png",
+        "btnEnum": 1032,
+        "btnId": 1032,
+        "offset": {
+            "x": 5,
+            "y": 0
+        },
+        "scale": 0.800000011920929
+    },
+    "1033": {
+        "ActionName": "OpDaylySign",
+        "BtnDesc": "login_title_01",
+        "OpSortIndex": 310,
+        "PicFile": "btn_dailyreward.png",
+        "btnEnum": 1033,
+        "btnId": 1033,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1034": {
+        "ActionName": "OpResuscitate",
+        "BtnDesc": "common_text_2499",
+        "OpSortIndex": 320,
+        "PicFile": "btn_rechareactivity_27.png",
+        "btnEnum": 1034,
+        "btnId": 1034,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0.5600000023841858
+    },
+    "1035": {
+        "ActionName": "OpDailyReward",
+        "BtnDesc": "common_text_2657",
+        "OpSortIndex": 330,
+        "PicFile": "icon_Daily_reward_sign.png",
+        "btnEnum": 1035,
+        "btnId": 1035,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1036": {
+        "ActionName": "OpPet",
+        "BtnDesc": "common_text_2975",
+        "OpSortIndex": 340,
+        "PicFile": "icon_build_pet.png",
+        "btnEnum": 1036,
+        "btnId": 1036,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1037": {
+        "ActionName": "OpPetMap",
+        "BtnDesc": "common_text_2935",
+        "OpSortIndex": 350,
+        "PicFile": "icon_build_pet_book.png",
+        "btnEnum": 1037,
+        "btnId": 1037,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1038": {
+        "ActionName": "OpPetExchange",
+        "BtnDesc": "common_text_3799",
+        "OpSortIndex": 350,
+        "PicFile": "icon_pet_exchange_enter.png",
+        "btnEnum": 1038,
+        "btnId": 1038,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1039": {
+        "ActionName": "OpPremiumVipMall",
+        "BtnDesc": "common_text_1967",
+        "OpSortIndex": 360,
+        "PicFile": "icon_wharf_Extreme_shop.png",
+        "btnEnum": 1039,
+        "btnId": 1039,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1040": {
+        "ActionName": "OpWarGem",
+        "BtnDesc": "common_text_3878",
+        "OpSortIndex": 360,
+        "PicFile": "icon_stone_enter.png",
+        "btnEnum": 1040,
+        "btnId": 1040,
+        "offset": {
+            "x": 0,
+            "y": 5
+        },
+        "scale": 0
+    },
+    "1041": {
+        "ActionName": "OpWarTechnology",
+        "BtnDesc": "common_text_3905",
+        "OpSortIndex": 370,
+        "PicFile": "icon_WarTechnology_enter.png",
+        "btnEnum": 1041,
+        "btnId": 1041,
+        "offset": {
+            "x": 0,
+            "y": 5
+        },
+        "scale": 0
+    },
+    "1042": {
+        "ActionName": "OpArena",
+        "BtnDesc": "arena_btn_01",
+        "OpSortIndex": 380,
+        "PicFile": "btn_arena.png",
+        "btnEnum": 1042,
+        "btnId": 1042,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1043": {
+        "ActionName": "OpDiscuss",
+        "BtnDesc": "common_text_3421",
+        "OpSortIndex": 390,
+        "PicFile": "icon_community.png",
+        "btnEnum": 1043,
+        "btnId": 1043,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 1.25
+    },
+    "1044": {
+        "ActionName": "OpSupport",
+        "BtnDesc": "common_btn_06",
+        "OpSortIndex": 400,
+        "PicFile": "icon_service.png",
+        "btnEnum": 1044,
+        "btnId": 1044,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 1.25
+    },
+    "1045": {
+        "ActionName": "OpSpringOfLife",
+        "BtnDesc": "common_text_3459",
+        "OpSortIndex": 325,
+        "PicFile": "btn_life_water.png",
+        "btnEnum": 1045,
+        "btnId": 1045,
+        "offset": {
+            "x": 2,
+            "y": 0
+        },
+        "scale": 1.2000000476837158
+    },
+    "1046": {
+        "ActionName": "OpFaction",
+        "BtnDesc": "civilization_system_text_04",
+        "OpSortIndex": 410,
+        "PicFile": "btn_civilization_exchange.png",
+        "btnEnum": 1046,
+        "btnId": 1046,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1047": {
+        "ActionName": "OpInfoCenter",
+        "BtnDesc": "common_text_3162_ros",
+        "OpSortIndex": 385,
+        "PicFile": "icon_message_01.png",
+        "btnEnum": 1047,
+        "btnId": 1047,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1048": {
+        "ActionName": "OpMonument",
+        "BtnDesc": "buildDes_name_124",
+        "OpSortIndex": 420,
+        "PicFile": "btn_main_monument.png",
+        "btnEnum": 1048,
+        "btnId": 1048,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1049": {
+        "ActionName": "OpTrainHall",
+        "BtnDesc": "common_text_061",
+        "OpSortIndex": 430,
+        "PicFile": "btn_main_herotrain.png",
+        "btnEnum": 1049,
+        "btnId": 1049,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1050": {
+        "ActionName": "OpPrison",
+        "BtnDesc": "buildDes_name_125",
+        "OpSortIndex": 440,
+        "PicFile": "btn_hero_prison_01.png",
+        "btnEnum": 1050,
+        "btnId": 1050,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1051": {
+        "ActionName": "OpMastery",
+        "BtnDesc": "specialization_text_02",
+        "OpSortIndex": 450,
+        "PicFile": "btn_specialization_star.png",
+        "btnEnum": 1051,
+        "btnId": 1051,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1052": {
+        "ActionName": "OpMainMastery",
+        "BtnDesc": "specialization_text_03",
+        "OpSortIndex": 445,
+        "PicFile": "btn_main_specialization.png",
+        "btnEnum": 1052,
+        "btnId": 1052,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1053": {
+        "ActionName": "OpDrawing",
+        "BtnDesc": "drawing_btn_01",
+        "OpSortIndex": 448,
+        "PicFile": "btn_drawing_01.png",
+        "btnEnum": 1053,
+        "btnId": 1053,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1054": {
+        "ActionName": "OpArtifact",
+        "BtnDesc": "artifact_title_01",
+        "OpSortIndex": 449,
+        "PicFile": "icon_artifact_entrance.png",
+        "btnEnum": 1054,
+        "btnId": 1054,
+        "offset": {
+            "x": -2,
+            "y": -1
+        },
+        "scale": 1.2000000476837158
+    },
+    "1055": {
+        "ActionName": "OpMonumentLegend",
+        "BtnDesc": "history_name_11",
+        "OpSortIndex": 448,
+        "PicFile": "btn_drawing_01.png",
+        "btnEnum": 1055,
+        "btnId": 1055,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1056": {
+        "ActionName": "OpIntetior",
+        "BtnDesc": "parliament_name_01",
+        "OpSortIndex": 449,
+        "PicFile": "icon_parliament_enter.png",
+        "btnEnum": 1056,
+        "btnId": 1056,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1057": {
+        "ActionName": "OpCounterSys",
+        "BtnDesc": "CounterSystem_btn_01",
+        "OpSortIndex": 450,
+        "PicFile": "icon_alliance_counter_sys.png",
+        "btnEnum": 1057,
+        "btnId": 1057,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1058": {
+        "ActionName": "OpExclusiveVip",
+        "BtnDesc": "privilege_text_06",
+        "OpSortIndex": 451,
+        "PicFile": "btn_zxvip_01.png",
+        "btnEnum": 1058,
+        "btnId": 1058,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0.800000011920929
+    },
+    "1059": {
+        "ActionName": "OpStarUpgrade",
+        "BtnDesc": "Glory_text_10",
+        "OpSortIndex": 451,
+        "PicFile": "icon_build_star_06.png",
+        "btnEnum": 1059,
+        "btnId": 1059,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0.800000011920929
+    },
+    "1060": {
+        "ActionName": "OpStarSpeedUp",
+        "BtnDesc": "Glory_text_29",
+        "OpSortIndex": 451,
+        "PicFile": "icon_building_speedup.png",
+        "btnEnum": 1060,
+        "btnId": 1060,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0.800000011920929
+    },
+    "1061": {
+        "ActionName": "OpEndlessTreasure",
+        "BtnDesc": "endless_treasures_text_01",
+        "OpSortIndex": 145,
+        "PicFile": "icon_building_wjbz.png",
+        "btnEnum": 1061,
+        "btnId": 1061,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1062": {
+        "ActionName": "OpProcessStudy",
+        "BtnDesc": "Soldiers_armor_text_2",
+        "OpSortIndex": 163,
+        "PicFile": "btn_armor_technology.png",
+        "btnEnum": 1062,
+        "btnId": 1062,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1063": {
+        "ActionName": "OpWarframeForg",
+        "BtnDesc": "Soldiers_armor_text_3",
+        "OpSortIndex": 162,
+        "PicFile": "btn_armor_forging.png",
+        "btnEnum": 1063,
+        "btnId": 1063,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1064": {
+        "ActionName": "OpWarframeStoreroom",
+        "BtnDesc": "Soldiers_armor_text_4",
+        "OpSortIndex": 161,
+        "PicFile": "btn_armor_stockpile.png",
+        "btnEnum": 1064,
+        "btnId": 1064,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1065": {
+        "ActionName": "OpstatueBrave",
+        "BtnDesc": "ice_carnival_text03",
+        "OpSortIndex": 451,
+        "PicFile": "icon_build_star_06.png",
+        "btnEnum": 1065,
+        "btnId": 1065,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1066": {
+        "ActionName": "OpMilitaryFortress",
+        "BtnDesc": "fortress_name_01",
+        "OpSortIndex": 451,
+        "PicFile": "btn_main_fortress.png",
+        "btnEnum": 1066,
+        "btnId": 1066,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1067": {
+        "ActionName": "OpForeignPavilion",
+        "BtnDesc": "activity_name_9001374",
+        "OpSortIndex": 451,
+        "PicFile": "icon_ygg_rktb.png",
+        "btnEnum": 1067,
+        "btnId": 1067,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1068": {
+        "ActionName": "OpNebulaTechnology",
+        "BtnDesc": "nebula_war_text_0156",
+        "OpSortIndex": 451,
+        "PicFile": "icon_building_research.png",
+        "btnEnum": 1068,
+        "btnId": 1068,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1069": {
+        "ActionName": "OpNebulaTechnologyReward",
+        "BtnDesc": "Nebula_science_text_001",
+        "OpSortIndex": 451,
+        "PicFile": "icon_castleLv_privilege.png",
+        "btnEnum": 1069,
+        "btnId": 1069,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1070": {
+        "ActionName": "OpMeteorMagic",
+        "BtnDesc": "meteoritesmagic_text_1",
+        "OpSortIndex": 451,
+        "PicFile": "icon_yxmn_rukou.png",
+        "btnEnum": 1070,
+        "btnId": 1070,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1071": {
+        "ActionName": "OpMagicLamp",
+        "BtnDesc": "magic_lamp_text_016",
+        "OpSortIndex": 451,
+        "PicFile": "icon_nebulawars_zheni.png",
+        "btnEnum": 1071,
+        "btnId": 1071,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1072": {
+        "ActionName": "OpMagicLampPray",
+        "BtnDesc": "magic_lamp_text_003",
+        "OpSortIndex": 450,
+        "PicFile": "icon_yxmn_rukou.png",
+        "btnEnum": 1072,
+        "btnId": 1072,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1073": {
+        "ActionName": "OpMagicLampBreak",
+        "BtnDesc": "magic_lamp_text_005",
+        "OpSortIndex": 449,
+        "PicFile": "icon_building_speedup.png",
+        "btnEnum": 1073,
+        "btnId": 1073,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1074": {
+        "ActionName": "OpMagicLampStrength",
+        "BtnDesc": "magic_lamp_text_007",
+        "OpSortIndex": 448,
+        "PicFile": "icon_building_speedup.png",
+        "btnEnum": 1074,
+        "btnId": 1074,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1075": {
+        "ActionName": "OpMagicLampClass",
+        "BtnDesc": "magic_lamp_text_009",
+        "OpSortIndex": 448,
+        "PicFile": "icon_building_speedup.png",
+        "btnEnum": 1075,
+        "btnId": 1075,
+        "offset": {
+            "x": 0,
+            "y": 0
+        },
+        "scale": 0
+    },
+    "1076": {
+        "ActionName": "common_text_059",
+        "BtnDesc": "common_text_059",
+        "OpSortIndex": 30,
+        "PicFile": "icon_building_details.png",
+        "btnEnum": 1003,
+        "btnId": 1003,
+        "offset": {
+            "x": 5,
+            "y": 0
+        },
+        "scale": 0
+    }
+}

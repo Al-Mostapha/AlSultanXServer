@@ -281,3 +281,31 @@ class RBuildingSpecs : public QObject {
 };
 
 Q_DECLARE_METATYPE(RBuildingSpecs);
+
+
+struct RBuildingTipConfig : public QObject
+{
+	unsigned int btnId = 1003;
+	EBuildingTips btnEnum = EBuildingTips::OpDetails;
+	QString OpName = "common_text_059";
+	QString Desc = "common_text_059";
+	QString PicFile = "icon_building_details.png";
+	unsigned int OpSortIndex = 30;
+	float scale = 0;
+	QPoint offset = {5, 0};
+  QJsonObject ToJson(){
+    return{
+      {"btnId", (int)btnId},
+      {"btnEnum", (int)btnEnum},
+      {"ActionName", OpName},
+      {"BtnDesc", Desc},
+      {"PicFile", PicFile},
+      {"OpSortIndex", (int)OpSortIndex},
+      {"scale", scale},
+      {"offset", QJsonObject({
+        {"x", offset.x()},
+        {"y", offset.y()}
+      })}
+    };
+  }
+};

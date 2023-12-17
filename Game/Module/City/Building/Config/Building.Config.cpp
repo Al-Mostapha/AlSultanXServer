@@ -1,4 +1,4 @@
-#include "Building.Config.h"
+#include "Module/City/Building/Config/Building.Config.h"
 #include "QJsonObject"
 #include <QJsonDocument>
 #include <QFile>
