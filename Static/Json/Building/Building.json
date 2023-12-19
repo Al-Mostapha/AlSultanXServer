@@ -1780,6 +1780,286 @@
                 "unlockedBuild": 0,
                 "unlockedSoldier": 0,
                 "unlockedTechnology": 0
+            },
+            "3": {
+                "BuildingID": 102,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 0,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 3500,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 300,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 3,
+                "PreCond": [
+                    {
+                        "Lvl": 3,
+                        "Type": 101
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 18,
+                    "Power": 70
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 3000,
+                "defValue": 8200,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 73,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 0,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "4": {
+                "BuildingID": 102,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 0,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 5000,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 1200,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 4,
+                "PreCond": [
+                    {
+                        "Lvl": 4,
+                        "Type": 101
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 59,
+                    "Power": 135
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 4000,
+                "defValue": 8300,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 301,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 0,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "5": {
+                "BuildingID": 102,
+                "CostItems": [
+                ],
+                "CostRes": [
+                    {
+                        "Amount": 0,
+                        "Type": 1002
+                    },
+                    {
+                        "Amount": 13500,
+                        "Type": 1003
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1004
+                    },
+                    {
+                        "Amount": 0,
+                        "Type": 1005
+                    }
+                ],
+                "CostTime": 5760,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 5,
+                "PreCond": [
+                    {
+                        "Lvl": 5,
+                        "Type": 101
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 224,
+                    "Power": 465
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 6000,
+                "defValue": 8500,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 1535,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 0,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
+            },
+            "6": {
+                "BuildingID": 102,
+                "CostItems": [
+                ],
+                "CostRes": [
+                ],
+                "CostTime": 0,
+                "CostWEs": [
+                ],
+                "ElitePointLimit": 0,
+                "Lvl": 6,
+                "PreCond": [
+                    {
+                        "Lvl": 6,
+                        "Type": 101
+                    }
+                ],
+                "ResourceCapacity": [
+                ],
+                "Reword": {
+                    "Exp": 0,
+                    "Power": 0
+                },
+                "WatchTowerEffect": 0,
+                "addOutputCostGold": 0,
+                "atkAdd": 0,
+                "atkSpeedAdd": 0,
+                "attack": 0,
+                "baseAtkSpeed": 0,
+                "baseExp": 0,
+                "buildTime": 0,
+                "capacity": 0,
+                "defValue": 0,
+                "defense": 0,
+                "forgeSpeed": 0,
+                "freeTime": 0,
+                "gunshot": 0,
+                "helpCount": 0,
+                "heroNum": 0,
+                "kingdomLv": 0,
+                "kingdomPoint": 0,
+                "life": 0,
+                "maxSoldier": 0,
+                "output": 0,
+                "prisonNum": 0,
+                "reduceTime": 0,
+                "reinforcements": 0,
+                "speed": 0,
+                "speedTime": 0,
+                "steelReduce": 0,
+                "taxRate": 0,
+                "trainExpBonus": 0,
+                "trainSpeed": 0,
+                "unlockDescribe": "",
+                "unlockedBuild": 0,
+                "unlockedSoldier": 0,
+                "unlockedTechnology": 0
             }
         },
         "StarDescribe": "star_describe_102",

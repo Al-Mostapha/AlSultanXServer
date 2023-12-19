@@ -1,12 +1,14 @@
-#include "BuildingTips.Config.h" 
+#include "BuildingTips.Config.h"
 #include "QJsonObject"
 #include <QJsonDocument>
 #include <QFile>
 #include "Core/Setting/XSetting.h"
 
-CBuildingTip *CBuildingTip::Get(){
+CBuildingTip *CBuildingTip::Get()
+{
   static CBuildingTip *p = nullptr;
-  if(!p){
+  if (!p)
+  {
     p = new CBuildingTip();
     p->_BuildingTipConfig[EBuildingTips::OpNone] = QPointer<RBuildingTipConfig>(new RBuildingTipConfig());
     p->_BuildingTipConfig[EBuildingTips::OpBoostByTool] = QPointer<RBuildingTipConfig>(new RBuildingTipConfig());
@@ -89,12 +91,14 @@ CBuildingTip *CBuildingTip::Get(){
   return p;
 }
 
-void CBuildingTip::ProduceJson(){
-    QJsonObject lJson;
-  for(auto [lBuildingType, lBuilding] : _BuildingTipConfig.asKeyValueRange()){
+void CBuildingTip::ProduceJson()
+{
+  QJsonObject lJson;
+  for (auto [lBuildingType, lBuilding] : _BuildingTipConfig.asKeyValueRange())
+  {
     lJson.insert(
-      QString::number(static_cast<int>(lBuildingType)),
-      lBuilding->ToJson());
+        QString::number(static_cast<int>(lBuildingType)),
+        lBuilding->ToJson());
   }
   QJsonDocument lJsonDoc(lJson);
   QFile file(XSetting::Get()->_StaticFilesPath + "Json/Building/BuildingTips.json");
@@ -104,7 +108,8 @@ void CBuildingTip::ProduceJson(){
   file.close();
 }
 
-void CBuildingTip::Init(){
+void CBuildingTip::Init()
+{
   auto lTip = _BuildingTipConfig[EBuildingTips::OpBoostByTool];
   lTip->btnId = 1001;
   lTip->btnEnum = EBuildingTips::OpBoostByTool;
@@ -134,7 +139,7 @@ void CBuildingTip::Init(){
   lTip->OpSortIndex = 30;
   lTip->scale = 0;
   lTip->offset = {5, 0};
-  
+
   lTip = _BuildingTipConfig[EBuildingTips::OpSpeedUpByGold];
   lTip->btnId = 1004;
   lTip->btnEnum = EBuildingTips::OpSpeedUpByGold;
@@ -144,7 +149,7 @@ void CBuildingTip::Init(){
   lTip->OpSortIndex = 40;
   lTip->scale = 0;
   lTip->offset = {0, -4};
-  
+
   lTip = _BuildingTipConfig[EBuildingTips::OpSpeedUpByTool];
   lTip->btnId = 1005;
   lTip->btnEnum = EBuildingTips::OpSpeedUpByTool;
@@ -184,7 +189,7 @@ void CBuildingTip::Init(){
   lTip->OpSortIndex = 80;
   lTip->scale = 0;
   lTip->offset = {0, 0};
-  
+
   lTip = _BuildingTipConfig[EBuildingTips::OpResearch];
   lTip->btnId = 1009;
   lTip->btnEnum = EBuildingTips::OpResearch;
@@ -194,7 +199,7 @@ void CBuildingTip::Init(){
   lTip->OpSortIndex = 90;
   lTip->scale = 0;
   lTip->offset = {0, 0};
-  
+
   lTip = _BuildingTipConfig[EBuildingTips::OpBuild];
   lTip->btnId = 1010;
   lTip->btnEnum = EBuildingTips::OpBuild;
@@ -214,7 +219,7 @@ void CBuildingTip::Init(){
   lTip->OpSortIndex = 110;
   lTip->scale = 0;
   lTip->offset = {0, 0};
-  
+
   lTip = _BuildingTipConfig[EBuildingTips::OpHelp];
   lTip->btnId = 1012;
   lTip->btnEnum = EBuildingTips::OpHelp;
@@ -235,7 +240,7 @@ void CBuildingTip::Init(){
   lTip->scale = 0;
   lTip->offset = {5, 0};
 
-  lTip  = _BuildingTipConfig[EBuildingTips::OpWish];
+  lTip = _BuildingTipConfig[EBuildingTips::OpWish];
   lTip->btnId = 1014;
   lTip->btnEnum = EBuildingTips::OpWish;
   lTip->OpName = "OpWish";
@@ -454,7 +459,7 @@ void CBuildingTip::Init(){
   lTip->OpSortIndex = 330;
   lTip->scale = 0;
   lTip->offset = {0, 0};
-  
+
   lTip = _BuildingTipConfig[EBuildingTips::OpPet];
   lTip->btnId = 1036;
   lTip->btnEnum = EBuildingTips::OpPet;
@@ -784,7 +789,7 @@ void CBuildingTip::Init(){
   lTip->OpSortIndex = 451;
   lTip->scale = 0;
   lTip->offset = {0, 0};
-  
+
   lTip = _BuildingTipConfig[EBuildingTips::OpNebulaTechnologyReward];
   lTip->btnId = 1069;
   lTip->btnEnum = EBuildingTips::OpNebulaTechnologyReward;
@@ -794,7 +799,7 @@ void CBuildingTip::Init(){
   lTip->OpSortIndex = 451;
   lTip->scale = 0;
   lTip->offset = {0, 0};
-  
+
   lTip = _BuildingTipConfig[EBuildingTips::OpMeteorMagic];
   lTip->btnId = 1070;
   lTip->btnEnum = EBuildingTips::OpMeteorMagic;
@@ -804,7 +809,7 @@ void CBuildingTip::Init(){
   lTip->OpSortIndex = 451;
   lTip->scale = 0;
   lTip->offset = {0, 0};
-  
+
   lTip = _BuildingTipConfig[EBuildingTips::OpMagicLamp];
   lTip->btnId = 1071;
   lTip->btnEnum = EBuildingTips::OpMagicLamp;
@@ -814,7 +819,7 @@ void CBuildingTip::Init(){
   lTip->OpSortIndex = 451;
   lTip->scale = 0;
   lTip->offset = {0, 0};
-  
+
   lTip = _BuildingTipConfig[EBuildingTips::OpMagicLampPray];
   lTip->btnId = 1072;
   lTip->btnEnum = EBuildingTips::OpMagicLampPray;
@@ -824,7 +829,7 @@ void CBuildingTip::Init(){
   lTip->OpSortIndex = 450;
   lTip->scale = 0;
   lTip->offset = {0, 0};
-  
+
   lTip = _BuildingTipConfig[EBuildingTips::OpMagicLampBreak];
   lTip->btnId = 1073;
   lTip->btnEnum = EBuildingTips::OpMagicLampBreak;
@@ -834,7 +839,7 @@ void CBuildingTip::Init(){
   lTip->OpSortIndex = 449;
   lTip->scale = 0;
   lTip->offset = {0, 0};
-  
+
   lTip = _BuildingTipConfig[EBuildingTips::OpMagicLampStrength];
   lTip->btnId = 1074;
   lTip->btnEnum = EBuildingTips::OpMagicLampStrength;
@@ -857,5 +862,3 @@ void CBuildingTip::Init(){
 
   ProduceJson();
 }
-
-
