@@ -241,7 +241,7 @@ class RBuildingSpecs : public QObject {
   const char *WarDescribe = "";
   const char *StarDescribe = "";
   RBuildingTipsBtnListData TipButtons;
-  QHash<int, RBuildingLvlSpecs> Lvls;
+  QMap<int, RBuildingLvlSpecs> Lvls;
   QJsonObject ToJson(){
     QJsonObject lJson;
     
